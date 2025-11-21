@@ -1,12 +1,10 @@
+IMPORTANT: I did not upload the dataset file so that you don't need to redownload it. Just put your copy in the root folder next to the .py file
+
 This code reads the .csv file, puts it into an object, and has functions
 for sorting the ratings and prices WITHOUT the built in sortingfunctions.
  
 For my testing, I just had the .csv in the same folder as the file. If they are in different folders, 
-some changes might need to be made to how it is read
-
-
-Enter this command to install Pandas:
-pip install pandas
+some changes might need to be made to how it is read. 
 
 
 You can test it with if __name__ == "__main__": function at the bottom

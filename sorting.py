@@ -1,9 +1,9 @@
 import pandas as pd
 from typing import Any, Hashable
 
-def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location for all restaurants
+def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
     # Load data to dictionary
-    df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"])
+    df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
     data_list = df.to_dict("records")
 
     tag = str(tag).lower() #these lines make sure that the tag and sort method are lowercase strings
@@ -22,23 +22,27 @@ def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashab
     else: 
         print("sorting option not recognized")
 
+
+    for item in data_list: #prints sorted list
+        print(*item.values()) 
+
+    '''
     count = 0
-    for item in data_list: #printing sorted list
+    for item in data_list: #printing SOME, but not all elements from across the list
         count += 1
         if count % 5 == 0: 
             print(*item.values())
 
     return data_list
-'''
-the counter is here so that you can see values from across the list, 
-and not just the end of it that the IDE doesn't cut off. You might want to remove this print function in the actual program
-if you plan to catch the returned data set and print it somewhere else.
+
+the counter is here so that in testing, you can see values from across the list, 
+and not just the end of it that the IDE doesn't cut off. uncomment it and adjust the modulo value (5 right now) to change how many restaurants get printed
 '''
     
         
 
-
-def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashable, Any]]:
+#returns a list containing only restaurants with the sorted tag
+def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashable, Any]]: 
     to_ret = []
 
     for restaurant in data_list[1:]: #puts every restaurant with the listed tag into the list, without case sensitivity
@@ -48,27 +52,31 @@ def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashab
     return to_ret
 
     
-#N/A values come last in the list. ascending by default
-def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict[Hashable, Any]]:
+#Returns list sorted by price, either ascending or descending depending on what was chosesn. N/A values always come last in the list. ascending by default
+def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict[Hashable, Any]]: 
     to_ret = []
     prices = [[], [], [], [], []] #index 1-4 hold 1-4 dollar sign values, index 0 holds N/A values
 
-    for restaurant in data_list[1:]: #reads every line except the first and puts each one into the prices list
-        if pd.isna(restaurant["price"]):
+    for restaurant in data_list[1:]: #reads every line except the first and puts each one into the prices list for counting sort
+        if pd.isna(restaurant["price"]): #N/A value
             prices[0].append(restaurant)
-        else:
+        else: #Non N/A value
             prices[restaurant["price"].count("$")].append(restaurant)
 
-    if ascending:
+
+#Once the code for sorting by locations is done, I'll apply it to each index of the counting sort array so that they will be sorted secondarily by location
+
+
+    if ascending: #sorts restaurants by ascending price
         for price_category in prices[1:]:
             for restaurant in price_category:
                 to_ret.append(restaurant)
-    else:
+    else: #sorts restaurants by descending price
         for price_category in prices[:0:-1]:
             for restaurant in price_category:
                 to_ret.append(restaurant)
 
-    for restaurant in prices[0]:
+    for restaurant in prices[0]: #adds the N/A values to the end of the dict
         to_ret.append(restaurant)
     
     return to_ret
@@ -80,26 +88,32 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
     ratings = [[], [], [], [], [], [], [], [], [], [], [], []] #index 0-10 hold ratings, which are in .5 increments, index 11 holds N/A values
 
     for restaurant in data_list[1:]: #reads every line except the first and puts each one into the ratings list
-        if pd.isna(restaurant["rating"]):
+        if pd.isna(restaurant["rating"]): #N/A value
             ratings[11].append(restaurant)
-        else:
+        else: #Non N/A value
             ratings[int(round(restaurant["rating"] * 2))].append(restaurant)
 
-    if ascending:
+
+#Once the code for sorting by locations is done, I'll apply it to each index of the counting sort array so that they will be sorted secondarily by location
+
+
+    if ascending: #sorts restaurants by ascending ratings
         for rating_category in ratings[:11]:
             for restaurant in rating_category:
                 to_ret.append(restaurant)
-    else:
+    else: #sorts restaurants by descending ratings
         for rating_category in ratings[10::-1]:
             for restaurant in rating_category:
                 to_ret.append(restaurant)
 
-    for restaurant in ratings[11]:
+    for restaurant in ratings[11]: #adds the N/A values to the end of the dict
             to_ret.append(restaurant)
     
     return to_ret
 
 
-if __name__ == "__main__": #This would only be called for testing from this file. You can try parameters here
+#This next function would only be called for testing from this file. 
+#You can try parameters here. Leave the ascending? parameter blank to use the default for each
+if __name__ == "__main__": 
     main("seafood", "price")
 
