@@ -1,0 +1,14 @@
+# Python Bytecode and Caching
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual Environment
+venv/
+
+# IDE/Editor Configuration (VS Code)
+.vscode/
+
+# Data File
+YELP.Restaurants.csv
