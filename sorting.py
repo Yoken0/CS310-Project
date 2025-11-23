@@ -1,10 +1,16 @@
 import pandas as pd
 from typing import Any, Hashable
+import requests
+import math
 
 def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
     # Load data to dictionary
     df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
     data_list = df.to_dict("records")
+
+    # Address data: user address and distances of restaurants to user
+    dists = dict()
+    user_address = "100 Morrissey Blvd,Boston, MA 02125,"
 
     tag = str(tag).lower() #these lines make sure that the tag and sort method are lowercase strings
     sort_method = str(sort_method).lower()
@@ -13,8 +19,7 @@ def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashab
         data_list = sortTags(data_list, tag)
 
     if sort_method == "location": #use sort method based on what is passed in
-        #SORT BY LOCATION GOES HERE
-        print("location sort not added yet")
+        data_list = sortLocation(data_list, dists, user_address, ascending)
     elif sort_method == "price":
         data_list = sortPrice(data_list, ascending)
     elif sort_method == "rating":
@@ -22,9 +27,8 @@ def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashab
     else: 
         print("sorting option not recognized")
 
-
     for item in data_list: #prints sorted list
-        print(*item.values()) 
+        print(*item.values())
 
     '''
     count = 0
@@ -51,7 +55,88 @@ def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashab
 
     return to_ret
 
-    
+# Returns list of restaurants sorted by their distance to the user's address; defaults to ascending order
+def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, ascending=True) -> list[dict[Hashable, Any]]:
+    to_ret = []
+    # radix sort by distance, up to 3rd significant digit
+    locations = [[], [], [], [], [], [], [], [], [], []]
+
+    # counting sort by first decimal place
+    for restaurant in data_list[1:]:
+        if restaurant["restaurant_address"] not in dists.keys():
+            addDistance(user_address, restaurant, dists)
+        locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
+
+    for digit in locations:
+        while len(digit) != 0:
+            to_ret.append(digit[0])
+            digit.pop(0)
+
+    # counting sort by least significant digit
+    for restaurant in to_ret:
+        locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-1])].append(restaurant)
+    to_ret = []
+
+    for digit in locations:
+        while len(digit) != 0:
+            to_ret.append(digit[0])
+            digit.pop(0)
+
+    # counting sort by 2nd least significant digit
+    for restaurant in to_ret:
+        if dists[restaurant["restaurant_address"]] >= 10.0:
+            locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-2])].append(restaurant)
+        else:
+            locations[0].append(restaurant)
+    to_ret = []
+
+    for digit in locations:
+        while len(digit) != 0:
+            to_ret.append(digit[0])
+            digit.pop(0)
+
+    # counting sort by 3rd least significant digit
+    for restaurant in to_ret:
+        if dists[restaurant["restaurant_address"]] >= 100.0:
+            locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-3])].append(restaurant)
+        else:
+            locations[0].append(restaurant)
+    to_ret = []
+
+    # sort by ascending distance
+    if ascending:
+        for digit in locations:
+            for restaurant in digit:
+                to_ret.append(restaurant)
+    # sort by descending distance
+    else:
+        for digit in locations[::-1]:
+            for restaurant in digit:
+                to_ret.append(restaurant)
+
+    return to_ret
+
+
+# lat/longitude code
+'''
+def addCoords(address, coords):
+    response = requests.get('https://maps.googleapis.com/maps/api/geocode/json', {
+        'address': address,
+        'key': "AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es"
+    })
+    if response.status_code == 200:
+        if response.json().get('results') and rs.get('status') == 'OK':
+            lat = response.json()['results'][0]['geometry']['location']['lat']
+            lon = response.json()['results'][0]['geometry']['location']['lng']
+            coords[f"{address}"] = [lat, lon]
+        else:
+            print("api request failed")
+    else:
+        print("api request failed")
+        lat = 0
+        lon = 0
+'''
+
 #Returns list sorted by price, either ascending or descending depending on what was chosesn. N/A values always come last in the list. ascending by default
 def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict[Hashable, Any]]: 
     to_ret = []
@@ -112,7 +197,30 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
     return to_ret
 
 
-#This next function would only be called for testing from this file. 
+# Helper function for sorting by location; adds a restaurant's distance to the user's address to the list of distances
+def addDistance(user_address, restaurant, dists):
+    # Google Place API call
+    response = requests.get("https://maps.googleapis.com/maps/api/distancematrix/json", {
+        'origins': user_address,
+        'destinations': restaurant["restaurant_address"],
+        'key': "AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es"
+    })
+    if response.status_code == 200:
+        if response.json().get('status') == 'OK':
+            # if the JSON response is valid, get the distance, convert it to miles, and add it to the list of distances
+            if response.json()['rows'][0]['elements'][0].get('status') == 'OK':
+                dist = response.json()['rows'][0]['elements'][0]['distance']['text']
+                dist = round((float(dist.split(" ")[0]) / 1.61), 2)
+                dists[f"{restaurant["restaurant_address"]}"] = dist
+            else:
+                print("api request failed")
+        else:
+            print("api request failed")
+    else:
+        print("api request failed")
+
+
+#This next function would only be called for testing from this file.
 #You can try parameters here. Leave the ascending? parameter blank to use the default for each
 if __name__ == "__main__": 
     main("seafood", "price")
