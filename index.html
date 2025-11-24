@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CS310 Food Reviewer </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="spaced-header">
+    <h1>CS310 Food Reviewer</h1>
+  </header>
+    <section class="controls">
+      <input id="search" placeholder="Search restaurants or tags (e.g., sushi, pizza)" />
+
+      <label>Tag <input id="tag" list="tag-suggestions" placeholder="e.g., Italian" />
+        <datalist id="tag-suggestions"></datalist>
+      </label>
+      <label>Min rating
+        <select id="min_rating">
+          <option value="0">Any</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="4.5">4.5+</option>
+        </select>
+      </label>
+      <label>Price
+        <select id="price">
+          <option value="">Any</option>
+          <option value="$">$</option>
+          <option value="$$">$$</option>
+          <option value="$$$">$$$</option>
+        </select>
+      </label>
+
+      <button id="search-btn">Search</button>
+      <button id="recommend-btn">Recommend For Me</button>
+    </section>
+
+    <section id="results">
+      <div id="loading" class="hidden">Loading…</div>
+      <!-- results will appear here -->
+    </section>
+
+    <div id="pagination" class="pagination hidden">
+      <button id="prev-page">◀ Prev</button>
+      <span id="page-info"></span>
+      <button id="next-page">Next ▶</button>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

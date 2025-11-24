@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Central Pizza",
+    "address": "123 Main St, Boston, MA",
+    "lat": 42.3601,
+    "lon": -71.0589,
+    "tags": ["Pizza","Italian","Casual"],
+    "rating": 4.2,
+    "price": "$$",
+    "review_count": 245
+  },
+  {
+    "name": "Harbor Sushi",
+    "address": "22 Harbor Ave, Boston, MA",
+    "lat": 42.3499,
+    "lon": -71.0446,
+    "tags": ["Sushi","Japanese","Seafood"],
+    "rating": 4.6,
+    "price": "$$$",
+    "review_count": 512
+  },
+  {
+    "name": "Beacon Diner",
+    "address": "10 Beacon St, Boston, MA",
+    "lat": 42.3570,
+    "lon": -71.0636,
+    "tags": ["Diner","Breakfast","Casual"],
+    "rating": 4.0,
+    "price": "$",
+    "review_count": 134
+  },
+  {
+    "name": "North End Pasta",
+    "address": "5 North End, Boston, MA",
+    "lat": 42.3656,
+    "lon": -71.0546,
+    "tags": ["Italian","Pasta","Romantic"],
+    "rating": 4.4,
+    "price": "$$$",
+    "review_count": 398
+  },
+  {
+    "name": "Green Leaf Vegan",
+    "address": "88 Green St, Boston, MA",
+    "lat": 42.3538,
+    "lon": -71.0642,
+    "tags": ["Vegan","Healthy"],
+    "rating": 4.5,
+    "price": "$$",
+    "review_count": 201
+  },
+  {
+    "name": "Taco Corner",
+    "address": "7 Elm St, Boston, MA",
+    "lat": 42.3625,
+    "lon": -71.0550,
+    "tags": ["Mexican","Tacos","Casual"],
+    "rating": 4.1,
+    "price": "$",
+    "review_count": 89
+  },
+  {
+    "name": "Pho House",
+    "address": "300 South St, Boston, MA",
+    "lat": 42.3473,
+    "lon": -71.0826,
+    "tags": ["Vietnamese","Noodles"],
+    "rating": 4.3,
+    "price": "$",
+    "review_count": 156
+  },
+  {
+    "name": "Curry Palace",
+    "address": "50 India St, Boston, MA",
+    "lat": 42.3530,
+    "lon": -71.0610,
+    "tags": ["Indian","Curry"],
+    "rating": 4.0,
+    "price": "$$",
+    "review_count": 210
+  },
+  {
+    "name": "Bakery Bliss",
+    "address": "12 Baker Ln, Boston, MA",
+    "lat": 42.3612,
+    "lon": -71.0570,
+    "tags": ["Bakery","Cafe","Breakfast"],
+    "rating": 4.7,
+    "price": "$",
+    "review_count": 420
+  },
+  {
+    "name": "The Steak Loft",
+    "address": "99 High St, Boston, MA",
+    "lat": 42.3585,
+    "lon": -71.0570,
+    "tags": ["Steak","Fine Dining"],
+    "rating": 4.5,
+    "price": "$$$",
+    "review_count": 305
+  }
+]
