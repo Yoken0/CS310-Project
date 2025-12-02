@@ -6,8 +6,7 @@ const state = {
   pageSize: 5,
   mapVisible: false,
   map: null,
-  markers: [],
-  showingRecs: false
+  markers: []
 }
 
 function setLoading(on){
@@ -17,19 +16,20 @@ function setLoading(on){
 
 async function fetchResults(){
   setLoading(true);
-  const q = byId('search').value.trim();
+
+  // UI is tag-driven. Use the Tag field as primary input.
   const tag = byId('tag').value.trim();
-  const min_rating = byId('min_rating').value;
-  const price = byId('price').value;
+  const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
+  const ascending = byId('ascending') ? !!byId('ascending').checked : false;
   const latEl = byId('lat'); const lonEl = byId('lon');
   const lat = latEl ? (latEl.value || '').trim() : '';
   const lon = lonEl ? (lonEl.value || '').trim() : '';
 
   const params = new URLSearchParams();
-  if(q) params.set('query', q);
+  // send tag and sorting intent to backend. Backend sorting code can use these params.
   if(tag) params.set('tag', tag);
-  if(min_rating) params.set('min_rating', min_rating);
-  if(price) params.set('price', price);
+  if(sort_method) params.set('sort_method', sort_method);
+  params.set('ascending', ascending ? '1' : '0');
   if(lat) params.set('lat', lat);
   if(lon) params.set('lon', lon);
 
@@ -39,7 +39,6 @@ async function fetchResults(){
     const data = await res.json();
     state.items = data;
     state.page = 1;
-    state.showingRecs = false;
     buildTagSuggestions();
     renderPage(state.page);
   }catch(err){
@@ -70,10 +69,7 @@ function renderResults(items){
     const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = `Rating: ${it.rating || 'N/A'}  •  Price: ${it.price || 'N/A'}  •  Reviews: ${it.review_count || 0}`;
     left.appendChild(h); left.appendChild(tags); left.appendChild(meta);
 
-    if(state.showingRecs && it._rec_score !== undefined){
-      const badge = document.createElement('span'); badge.className = 'badge'; badge.textContent = 'Recommended';
-      h.appendChild(badge);
-    }
+    // recommendation badges removed — recommendations are not supported without user history
 
     const right = document.createElement('div');
     if(it.distance_km !== null && it.distance_km !== undefined){
@@ -151,6 +147,7 @@ function updateMapMarkers(items){
 document.addEventListener('DOMContentLoaded', ()=>{
   byId('search-btn').addEventListener('click', fetchResults);
   byId('search').addEventListener('keydown', (e)=>{ if(e.key==='Enter') fetchResults(); });
+  // location UI removed; keep functionality safe if elements exist
   const useLocBtn = byId('use-location');
   if(useLocBtn){
     useLocBtn.addEventListener('click', ()=>{
@@ -166,6 +163,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   byId('prev-page').addEventListener('click', ()=> renderPage(state.page - 1));
   byId('next-page').addEventListener('click', ()=> renderPage(state.page + 1));
 
+  // map toggle removed from UI; keep safe if element exists
   const toggleMapBtn = byId('toggle-map');
   if(toggleMapBtn){
     toggleMapBtn.addEventListener('click', ()=>{
@@ -176,46 +174,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   }
 
-  // Recommend handler
-  const recommendBtn = byId('recommend-btn');
-  if(recommendBtn){
-    recommendBtn.addEventListener('click', async ()=>{
-      setLoading(true);
-      const q = byId('search').value.trim();
-      const tag = byId('tag').value.trim();
-      const min_rating = byId('min_rating').value;
-      const price = byId('price').value;
-
-      const params = new URLSearchParams();
-      if(q) params.set('query', q);
-      if(tag) params.set('tag', tag);
-      if(min_rating) params.set('min_rating', min_rating);
-      if(price) params.set('price', price);
-
-      try{
-        const res = await fetch('/api/restaurants?' + params.toString());
-        const data = await res.json();
-        // simple scoring: rating * (1 + review_count/100)
-        const scored = data.map(r=>{
-          const reviews = r.review_count || 0;
-          let score = (r.rating || 0) * (1 + reviews/100);
-          // boost if tag matches user's tag
-          if(tag && r.tags && r.tags.map(t=>t.toLowerCase()).includes(tag.toLowerCase())) score *= 1.2;
-          return Object.assign({}, r, {_rec_score: score});
-        });
-        scored.sort((a,b)=>b._rec_score - a._rec_score);
-        const top = scored.slice(0, Math.max(5, state.pageSize));
-        state.showingRecs = true;
-        // hide pagination while showing recommendations
-        const pag = byId('pagination'); if(pag) pag.classList.add('hidden');
-        renderResults(top);
-      }catch(e){
-        const container = byId('results'); container.textContent = 'Error computing recommendations: '+ e.message;
-      }finally{ setLoading(false); }
-    });
-  }
-
-  // Research mode removed from UI; no-op.
+  // Recommend button removed per request; no recommendation logic here.
 
   // initial load
   fetchResults();

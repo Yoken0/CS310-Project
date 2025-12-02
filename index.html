@@ -9,32 +9,26 @@
 <body>
   <header class="spaced-header">
     <h1>CS310 Food Reviewer</h1>
+    <p class="subtitle">Find and compare restaurants by tag, rating, and price</p>
   </header>
+  <main class="container">
     <section class="controls">
-      <input id="search" placeholder="Search restaurants or tags (e.g., sushi, pizza)" />
-
-      <label>Tag <input id="tag" list="tag-suggestions" placeholder="e.g., Italian" />
+      <!-- Single tag-driven search: backend sorts/filtering uses tag only -->
+      <label style="flex:1 1 320px">Tag <input id="tag" list="tag-suggestions" placeholder="e.g., Italian" />
         <datalist id="tag-suggestions"></datalist>
       </label>
-      <label>Min rating
-        <select id="min_rating">
-          <option value="0">Any</option>
-          <option value="3">3+</option>
-          <option value="4">4+</option>
-          <option value="4.5">4.5+</option>
-        </select>
-      </label>
-      <label>Price
-        <select id="price">
-          <option value="">Any</option>
-          <option value="$">$</option>
-          <option value="$$">$$</option>
-          <option value="$$$">$$$</option>
+
+      <label>Sort by
+        <select id="sort_method">
+          <option value="location">Location</option>
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
         </select>
       </label>
 
+      <label style="display:flex; align-items:center">Ascending <input id="ascending" type="checkbox" style="margin-left:6px" /></label>
+
       <button id="search-btn">Search</button>
-      <button id="recommend-btn">Recommend For Me</button>
     </section>
 
     <section id="results">
