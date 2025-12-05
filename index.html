@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CS310 Food Reviewer </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="spaced-header">
+    <h1>CS310 Food Reviewer</h1>
+    <p class="subtitle">Find and compare restaurants by tag, rating, and price</p>
+  </header>
+  <main class="container">
+    <section class="controls">
+      <!-- Single tag-driven search: backend sorts/filtering uses tag only -->
+      <label style="flex:1 1 320px">Tag <input id="tag" list="tag-suggestions" placeholder="e.g., Italian" />
+        <datalist id="tag-suggestions"></datalist>
+      </label>
+
+      <label>Sort by
+        <select id="sort_method">
+          <option value="location">Location</option>
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+        </select>
+      </label>
+
+      <label style="display:flex; align-items:center">Ascending <input id="ascending" type="checkbox" style="margin-left:6px" /></label>
+
+      <button id="search-btn">Search</button>
+    </section>
+
+    <section id="results">
+      <div id="loading" class="hidden">Loading…</div>
+      <!-- results will appear here -->
+    </section>
+
+    <div id="pagination" class="pagination hidden">
+      <button id="prev-page">◀ Prev</button>
+      <span id="page-info"></span>
+      <button id="next-page">Next ▶</button>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

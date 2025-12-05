@@ -3,21 +3,21 @@ from typing import Any, Hashable
 import requests
 import math
 
-def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
-    # Load data to dictionary
-    df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
-    data_list = df.to_dict("records")
+def main(tag=None, sort_method="location", ascending=None, data_list=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
 
+    if data_list is None:
+        # Load data to dictionary if not passed in
+        df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
+        data_list = df.to_dict("records")
     # Address data: user address and distances of restaurants to user
     dists = dict()
     user_address = "100 Morrissey Blvd,Boston, MA 02125,"
 
-    tag = str(tag).lower() #these lines make sure that the tag and sort method are lowercase strings
-    sort_method = str(sort_method).lower()
-
-    if tag != "none": #sort by tag based on what is passed in
+    if tag is not None: #sort by tag based on what is passed in
+        tag = str(tag).lower() #makes sure the tag is lowercase
         data_list = sortTags(data_list, tag)
 
+    sort_method = str(sort_method).lower() #makes sure the sort method is a lowercase string
     if sort_method == "location": #use sort method based on what is passed in
         data_list = sortLocation(data_list, dists, user_address, ascending)
     elif sort_method == "price":
@@ -27,17 +27,19 @@ def main(tag="none", sort_method="location", ascending=None) -> list[dict[Hashab
     else: 
         print("sorting option not recognized")
 
+    return data_list
+'''
     for item in data_list: #prints sorted list
         print(*item.values())
 
-    '''
+
     count = 0
     for item in data_list: #printing SOME, but not all elements from across the list
         count += 1
         if count % 5 == 0: 
             print(*item.values())
 
-    return data_list
+    
 
 the counter is here so that in testing, you can see values from across the list, 
 and not just the end of it that the IDE doesn't cut off. uncomment it and adjust the modulo value (5 right now) to change how many restaurants get printed
@@ -148,10 +150,6 @@ def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict
         else: #Non N/A value
             prices[restaurant["price"].count("$")].append(restaurant)
 
-
-#Once the code for sorting by locations is done, I'll apply it to each index of the counting sort array so that they will be sorted secondarily by location
-
-
     if ascending: #sorts restaurants by ascending price
         for price_category in prices[1:]:
             for restaurant in price_category:
@@ -177,10 +175,6 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
             ratings[11].append(restaurant)
         else: #Non N/A value
             ratings[int(round(restaurant["rating"] * 2))].append(restaurant)
-
-
-#Once the code for sorting by locations is done, I'll apply it to each index of the counting sort array so that they will be sorted secondarily by location
-
 
     if ascending: #sorts restaurants by ascending ratings
         for rating_category in ratings[:11]:
@@ -221,7 +215,9 @@ def addDistance(user_address, restaurant, dists):
 
 
 #This next function would only be called for testing from this file.
-#You can try parameters here. Leave the ascending? parameter blank to use the default for each
+#You can try parameters here. Leave the ascending? parameter blank to use the default for each. If you don't pass in a dict, it will just make a new one
 if __name__ == "__main__": 
-    main("seafood", "price")
+    data_list = main("pizza")
 
+    for item in data_list: #prints sorted list
+        print(*item.values())

@@ -1,0 +1,63 @@
+:root{
+  --max-width: 980px;
+  --accent: #1976d2;
+}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:24px; background:#f5f7fb; color:#222}
+
+/* layout container */
+.container{max-width:1100px; margin:0 auto; width:100%;}
+
+header{display:block; text-align:left}
+header h1{font-size:28px; margin:0; color:#0b2545}
+.subtitle{margin:6px 0 14px 0; color:#44566a}
+.spaced-header{margin-bottom:8px}
+
+.controls{display:flex; gap:10px; align-items:center; margin-bottom:18px; background:white; padding:12px; border-radius:10px; box-shadow:0 6px 14px rgba(20,30,60,0.06)}
+.controls label{display:flex; align-items:center; gap:8px; font-size:14px; color:#333}
+.controls input[type="text"], .controls input, .controls select{padding:8px 10px; border:1px solid #d6dde6; border-radius:6px; background:white}
+.controls input{min-width:180px}
+.controls label[style]{margin-left:auto}
+#search-btn{background:var(--accent); color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer}
+#search-btn:hover{filter:brightness(0.95)}
+
+#results{display:flex; flex-direction:column; gap:12px; margin-top:6px}
+.card{background:white; border-radius:8px; padding:14px; display:flex; justify-content:space-between; box-shadow:0 4px 10px rgba(20,30,60,0.04)}
+.card .left{max-width:78%}
+.card strong{font-size:16px}
+.tags{font-size:13px; color:#5b6b7a; margin-top:6px}
+.meta{font-size:13px; color:#7a8896; margin-top:4px}
+.distance{font-weight:600}
+
+
+.badge{display:inline-block; background:#ffecb3; color:#6b4f00; padding:2px 6px; border-radius:4px; font-size:12px; margin-left:8px}
+
+/* info panel (hidden by default) */
+#research-info{font-size:13px; color:#333; margin-top:8px; border-left:3px solid #1976d2; padding:8px 12px}
+
+/* pagination */
+/* pagination */
+.pagination{display:flex; gap:8px; align-items:center; justify-content:center; margin-top:12px}
+.pagination button{padding:6px 10px; border-radius:6px; border:1px solid #d6dde6; background:white; cursor:pointer}
+.pagination button:hover{filter:brightness(0.98)}
+.pagination .disabled{opacity:0.5; pointer-events:none}
+
+/* loading */
+#loading{padding:12px; text-align:center; color:#334}
+.hidden{display:none}
+
+/* map */
+/* map area (if re-enabled) */
+#map-wrap{margin-top:12px}
+#map{height:380px; border:1px solid #ddd; border-radius:6px}
+
+@media (max-width:860px){
+  .controls{flex-direction:column; align-items:stretch}
+  .controls label[style]{margin-left:0}
+  .card{flex-direction:column}
+  .card .left{max-width:100%}
+}
+
+@media (max-width:420px){
+  header h1{font-size:20px}
+  .controls input{width:100%}
+}
