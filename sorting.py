@@ -210,7 +210,7 @@ def addDistance(user_address, restaurant, dists):
             # if the JSON response is valid, get the distance, convert it to miles, and add it to the list of distances
             if response.json()['rows'][0]['elements'][0].get('status') == 'OK':
                 dist = response.json()['rows'][0]['elements'][0]['distance']['text']
-                dist = round((float(dist.split(" ")[0]) / 1.61), 2)
+                dist = round((float(dist.split(" ")[0]) / 1.60934), 2)
                 dists[f"{restaurant["restaurant_address"]}"] = dist
             else:
                 print("api request failed")
