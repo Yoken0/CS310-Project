@@ -1,7 +1,6 @@
 import pandas as pd
 from typing import Any, Hashable
 import requests
-import math
 
 def main(tag=None, sort_method="location", ascending=None, data_list=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
 
@@ -10,8 +9,18 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None) -> li
         df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
         data_list = df.to_dict("records")
     # Address data: user address and distances of restaurants to user
-    dists = dict()
+
     user_address = "100 Morrissey Blvd,Boston, MA 02125,"
+    try:
+        # If the distances between the user address and the restaurants have already been calculated, use the file
+        distdf = pd.read_csv(f"distances/{user_address}.csv", index_col = 0)
+        dists = distdf.to_dict("split")
+        dists = dict(zip(dists["index"], dists["data"]))
+        for address in dists:
+            dists[address] = dists[address][0]
+    except FileNotFoundError:
+        # Otherwise, use the API to calculate the distances, which will be saved to a file if location sort is called
+        dists = dict()
 
     if tag is not None: #sort by tag based on what is passed in
         tag = str(tag).lower() #makes sure the tag is lowercase
@@ -59,6 +68,7 @@ def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashab
 
 # Returns list of restaurants sorted by their distance to the user's address; defaults to ascending order
 def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, ascending=True) -> list[dict[Hashable, Any]]:
+    checknew = False
     to_ret = []
     # radix sort by distance, up to 3rd significant digit
     locations = [[], [], [], [], [], [], [], [], [], []]
@@ -67,7 +77,13 @@ def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, asce
     for restaurant in data_list[1:]:
         if restaurant["restaurant_address"] not in dists.keys():
             addDistance(user_address, restaurant, dists)
+            checknew = True
         locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
+
+    # if distances have been changed or added for a user address, save it to a file
+    if checknew == True:
+        temp = pd.DataFrame.from_dict(dists, orient="index")
+        temp.to_csv(f"distances/{user_address}.csv")
 
     for digit in locations:
         while len(digit) != 0:
@@ -117,27 +133,6 @@ def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, asce
                 to_ret.append(restaurant)
 
     return to_ret
-
-
-# lat/longitude code
-'''
-def addCoords(address, coords):
-    response = requests.get('https://maps.googleapis.com/maps/api/geocode/json', {
-        'address': address,
-        'key': "AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es"
-    })
-    if response.status_code == 200:
-        if response.json().get('results') and rs.get('status') == 'OK':
-            lat = response.json()['results'][0]['geometry']['location']['lat']
-            lon = response.json()['results'][0]['geometry']['location']['lng']
-            coords[f"{address}"] = [lat, lon]
-        else:
-            print("api request failed")
-    else:
-        print("api request failed")
-        lat = 0
-        lon = 0
-'''
 
 #Returns list sorted by price, either ascending or descending depending on what was chosesn. N/A values always come last in the list. ascending by default
 def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict[Hashable, Any]]: 
