@@ -13,7 +13,9 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None) -> li
     user_address = "100 Morrissey Blvd,Boston, MA 02125,"
     try:
         # If the distances between the user address and the restaurants have already been calculated, use the file
-        distdf = pd.read_csv(f"distances/{user_address}.csv", index_col = 0)
+        filename = user_address.replace(" ", "")
+        filename = filename.replace(",", "")
+        distdf = pd.read_csv(f"distances/{filename}.csv", index_col = 0)
         dists = distdf.to_dict("split")
         dists = dict(zip(dists["index"], dists["data"]))
         for address in dists:
@@ -82,8 +84,10 @@ def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, asce
 
     # if distances have been changed or added for a user address, save it to a file
     if checknew == True:
+        filename = user_address.replace(" ", "")
+        filename = filename.replace(",", "")
         temp = pd.DataFrame.from_dict(dists, orient="index")
-        temp.to_csv(f"distances/{user_address}.csv")
+        temp.to_csv(f"distances/{filename}.csv")
 
     for digit in locations:
         while len(digit) != 0:
