@@ -1,73 +1,650 @@
 ,0
+"660A Centre St,Jamaica Plain, MA 02130,",5.9
+"107 Salem St,Boston, MA 02113,",4.54
+"138 St James Ave,Boston, MA 02116,",3.98
+"66 Harrison Ave,Boston, MA 02111,",3.54
+"23 Edinboro St,Boston, MA 02111,",3.73
+"174 Lincoln St,Boston, MA 02111,",3.36
+"224 Boston St,Dorchester, MA 02125,",1.68
+"686 Morton St,Boston, MA 02124,",5.22
+"222 Friend St,Boston, MA 02114,",5.78
+"465 Huntington Ave,Boston, MA 02115,",4.16
+"49 Temple Pl,Boston, MA 02111,",3.85
+"228 Tremont St,Boston, MA 02116,",4.04
+"1450 Dorchester Ave,Dorchester, MA 02122,",2.05
+"225 Grove St,West Roxbury, MA 02132,",19.14
+"711 Centre St,Jamaica Plain, MA 02130,",5.78
+"75 Chestnut St,Boston, MA 02108,",6.03
+"220 Northern Ave,Boston, MA 02210,",4.23
+"753 South St,Roslindale, MA 02131,",6.65
+"7 Knapp St,Boston, MA 02111,",3.54
+"29-31 Austin St,Charlestown, MA 02129,",6.15
 "1409 Centre St,West Roxbury, MA 02132,",7.21
+"115 Beverly St,Boston, MA 02114,",4.85
 "2350 Washington St,Boston, MA 02119,",3.48
+"433 Cambridge St,Allston, MA 02134,",8.08
 "1427 Tremont St,Roxbury Crossing, MA 02120,",4.16
+"255 Tremont St,Boston, MA 02116,",3.67
+"793 Boylston St,Boston, MA 02116,",4.29
+"2360 Washington St,Roxbury, MA 02119,",3.48
+"464 Centre St,Jamaica Plain, MA 02130,",5.59
+"57 Boston Wharf Rd,Boston, MA 02210,",4.04
+"100 Federal St,Boston, MA 02110,",4.85
+"38 Hyde Park Ave,Boston, MA 02130,",5.22
+"196 Quincy St,Boston, MA 02125,",2.61
 "120 Blackstone St,Boston, MA 02109,",4.47
+"782 Adams St,Dorchester, MA 02122,",3.17
+"544 Tremont St,Boston, MA 02116,",3.29
+"Boston University,775 Commonwealth Ave, George Sherman Union,Boston, MA 02215,",8.02
+"15 Arlington St,Taj Boston,Boston, MA 02116,",6.34
 "102 Broad St,Boston, MA 02110,",4.78
 "82 Summer St,Boston, MA 02110,",3.6
+"109 Salem St,Boston, MA 02113,",4.54
+"1 Faneuil Hall Mrkt Pl,Boston, MA 02109,",4.41
+"1249 Vfw Pkwy,West Roxbury, MA 02132,",20.94
+"179 Essex St,Boston, MA 02111,",3.54
+"112 State St,Boston, MA 02109,",4.66
+"745 Atlantic Ave,Boston, MA 02111,",3.54
+"50 Lovejoy Wharf,Boston, MA 02114,",4.85
 "582 Dorchester Ave,Boston, MA 02127,",1.8
 "1252 Washington St,Boston, MA 02118,",3.11
+"229 Brighton Ave,Allston, MA 02134,",8.33
 "243 Dorchester St,South Boston, MA 02127,",1.8
+"145 E Berkeley St,Boston, MA 02118,",2.92
+"1188 Blue Hill Ave,Mattapan, MA 02126,",5.28
+"1035 Tremont St,Roxbury Crossing, MA 02120,",3.6
+"215 Charles St,Boston, MA 02114,",5.78
 "204 Cambridge St,Boston, MA 02114,",5.97
+"431 Cambridge St,Allston, MA 02134,",8.08
+"112 South St,Boston, MA 02111,",3.48
+"180 Brighton Ave,Allston, MA 02134,",8.45
+"309 Huntington Ave,Boston, MA 02115,",3.79
+"1936 Beacon St,Brighton, MA 02135,",10.0
+"135 Massachusetts Ave,Boston, MA 02115,",3.91
+"613 E Broadway,South Boston, MA 02127,",2.3
+"1971 Dorchester Ave,Boston, MA 02124,",3.11
+"155 Meridian St,Boston, MA 02128,",7.89
 "962 Blue Hill Ave,Dorchester Center, MA 02124,",5.65
+"80 W Broadway,Boston, MA 02127,",2.49
+"483 E Broadway,South Boston, MA 02127,",2.17
+"79 Hancock,Boston, MA 02125,",2.55
+"433 Columbus Ave,Boston, MA 02116,",3.98
 "153 Sutherland Rd,Brighton, MA 02135,",9.94
+"811 Harrison Ave,Boston, MA 02118,",2.92
 "395 Dorchester St,Boston, MA 02127,",1.93
+"131 Lexington St,Boston, MA 02128,",7.46
+"1012 Bennington St,Boston, MA 02128,",8.64
+"297 Chelsea St,Boston, MA 02128,",7.21
+"984 Hyde Park Ave,Hyde Park, MA 02136,",7.71
+"291 Adams St,Dorchester, MA 02122,",2.05
+"275 Medford St,Ste C2,Boston, MA 02129,",7.15
+"242 Cambridge St,Boston, MA 02114,",5.9
+"800 Boylston St,Boston, MA 02199,",4.23
+"4 Fish Pier St W,Boston, MA 02210,",4.6
+"101 S Market St,Boston, MA 02109,",4.78
+"252 Commercial St,Boston, MA 02109,",4.78
 "93 Salem St,Boston, MA 02113,",4.54
+"5 Fairmount Ave,Hyde Park, MA 02136,",9.32
+"288 Cambridge St,Boston, MA 02114,",5.84
 "1508 Dorchester Ave,Dorchester, MA 02122,",2.17
+"11A Allstate Rd,South Bay Shopping Center,South Bay Shopping Center,Dorchester, MA 02125,",1.93
+"135 Richmond St,Boston, MA 02109,",4.47
+"569 Tremont St,Boston, MA 02118,",3.36
+"900 Boylston St,Boston, MA 02115,",4.1
 "4025 Washington St,Roslindale, MA 02131,",6.46
+"101 Arch St,Boston, MA 02110,",3.79
+"12 Pi Aly,Boston, MA 02108,",5.03
+"264 E Berkeley St,Boston, MA 02118,",2.86
+"Dewey Sq,Boston, MA 02111,",3.67
+"384 Western Ave,Brighton, MA 02135,",8.45
+"1 Faneuil Hall Market Pl,Boston, MA 02109,",4.97
+"458 Western Ave,Brighton, MA 02135,",8.7
+"34 Yawkey Way,Boston, MA 02215,",7.83
+"10 Avery St,Boston, MA 02111,",4.04
+"6 Prince St,Boston, MA 02113,",4.54
+"89 Charles St,Boston, MA 02114,",5.84
+"253 Hanover St,Boston, MA 02113,",4.47
+"418 Market St,Brighton, MA 02135,",9.13
+"1 Ashburton Pl,Boston, MA 02108,",5.03
+"555 Talbot Ave,Dorchester, MA 02124,",2.98
+"630 Adams St,Dorchester, MA 02122,",2.49
+"291 Roxbury St,Boston, MA 02119,",4.1
+"44 Harvard Ave,Allston, MA 02134,",8.02
+"28 Harrison Ave,Boston, MA 02111,",3.73
+"1064 River St,Hyde Park, MA 02136,",7.08
+"Boston, MA 02108,",3.98
+"Logan International Airport,Terminal B,Boston, MA 02228,",6.96
+"29 Prince St,Boston, MA 02113,",4.72
+"47 Massachusetts Ave,Boston, MA 02115,",7.58
+"1418 Commonwealth Ave,Brighton, MA 02135,",9.2
+"407 Washington St,Brighton, MA 02135,",9.2
+"761 Boylston St,Boston, MA 02116,",4.29
+"16 Fish Pier St W,Boston, MA 02210,",4.47
+"260 Longwood Ave,Boston, MA 02115,",4.6
+"26 Park Plz,Boston, MA 02116,",4.04
+"750 Washington St,Boston, MA 02111,",3.91
+"53 State St,Boston, MA 02109,",4.78
+"300 Longwood Ave,Boston, MA 02115,",4.72
+"209 Cambridge St,Boston, MA 02114,",5.1
+"100 Huntington Ave,Boston, MA 02115,",3.98
+"133 Brookline Ave,Boston, MA 02215,",7.71
+"700 Atlantic Ave,South Station,Boston, MA 02110,",3.6
+"101 Merrimac St,Boston, MA 02114,",4.85
+"660 Summer St,Boston, MA 02210,",3.11
+"431 Boylston St,Boston, MA 02228,",3.67
+"75 Francis St,Brigham and Women's Hospital,Boston, MA 02115,",4.85
+"700 Atlantic Ave,Boston, MA 02111,",3.54
+"838 Beacon St,Boston, MA 02215,",7.77
+"1 Seaport Ln,Boston, MA 02210,",4.16
+"45 Beach St,Boston, MA 02111,",3.48
+"42 Beach St,Boston, MA 02111,",3.73
+"58 Franklin St,Boston, MA 02110,",3.73
+"1 Ave De Lafayette,Boston, MA 02111,",3.73
+"10 Avery Street,Boston, MA 02111,",4.04
+"54 Harvard Ave,Allston, MA 02134,",8.08
+"312 Northern Ave,Boston, MA 02210,",4.29
+"550 Tremont St,Boston, MA 02116,",3.36
+"131 Dartmouth St,Boston, MA 02116,",3.85
+"84 Summer St,Boston, MA 02110,",3.54
+"255 Washington St,Boston, MA 02201,",4.97
+"359 Huntington Ave,Boston, MA 02115,",3.98
+"360 Longwood Ave,Boston, MA 02215,",8.7
+"665 Boylston St,Boston, MA 02116,",6.9
+"1 Harborside Dr,Boston Logan International Airport,Boston, MA 02128,",5.65
+"182 Harvard Ave,Boston, MA 02134,",8.26
+"Surface Rd & Beach St,Boston, MA 02111,",3.42
+"61 Brookline Ave,Boston, MA 02215,",7.58
+"112 Canal St,Boston, MA 02114,",4.78
+"13A Hudson St,Boston, MA 02111,",3.42
+"49 Franklin St,Boston, MA 02110,",3.79
+"75 Spring St,Boston, MA 02132,",20.38
+"775 Commonwealth Ave,Boston, MA 02215,",8.02
+"62 Washington St,Brighton, MA 02135,",9.57
+"284 Newbury St,Boston, MA 02115,",7.77
+"31 St James Ave,Boston, MA 02116,",3.98
+"867 Boylston St,Boston, MA 02116,",4.16
+"2 West St,Boston, MA 02111,",3.79
 "539 Dudley St,Roxbury, MA 02119,",2.17
+"103 State St,Boston, MA 02109,",4.72
+"354 W Broadway,Boston, MA 02127,",2.36
+"1504 Dorchester Ave,Boston, MA 02122,",2.17
+"111 Dartmouth St,Boston, MA 02116,",3.85
+"100 Hanover St,Boston Public Farmers Market,Boston, MA 02108,",4.6
+"632 Dorchester Ave,Boston, MA 02127,",1.8
+"1616 Commonwealth Ave,Brighton, MA 02135,",9.69
+"1035 Dorchester Ave,Boston, MA 02125,",1.68
+"433 Washington St,Brighton, MA 02135,",9.32
+"1041 Tremont St,Boston, MA 02120,",3.6
+"1052 Dorchester Ave,Dorchester, MA 02125,",1.37
+"1759 Centre St,West Roxbury, MA 02132,",8.14
+"4541 Washington St,Roslindale, MA 02131,",7.27
+"1 Legends Way,Boston, MA 02114,",4.91
+"553 Tremont St,Boston, MA 02116,",3.6
+"84 Harrison Ave,Boston, MA 02111,",3.54
+"10 Huntington Ave,Boston, MA 02116,",3.91
+"776 Boylston St,Mandarin Oriental Hotel,Boston, MA 02199,",4.29
+"121 Brookline Ave,Boston, MA 02215,",7.77
+"1750 Washington St,Fl 1,Boston, MA 02118,",3.04
+"54 Devonshire St,Boston, MA 02109,",4.66
+"360 Harrison Ave,Boston, MA 02118,",3.67
+"259 Newbury St,Boston, MA 02116,",6.96
+"525 Tremont St,Boston, MA 02116,",3.29
+"88 Sleeper St,Boston, MA 02210,",4.29
+"241 A St,Boston, MA 02210,",3.36
+"15 Bosworth St,Boston, MA 02108,",4.91
+"700 Commonwealth Ave,Boston, MA 02215,",7.83
+"1338 Boylston St,Boston, MA 02215,",7.77
+"162 Columbus Ave,Boston, MA 02116,",3.54
+"49 Melcher St,Boston, MA 02210,",3.6
+"33 Batterymarch St,Boston, MA 02110,",4.85
+"3 Battery Wharf,Boston, MA 02109,",4.97
+"120 Spring St,West Roxbury, MA 02132,",20.19
+"60 State St,Ste 33,Boston, MA 02109,",4.78
+"424 Cambridge St,Allston, MA 02134,",8.14
+"25 Charles St,Boston, MA 02114,",5.97
+"20 Custom House St,Boston, MA 02110,",4.85
+"340-350 Longwood Ave,Longwood Galleria,Boston, MA 02215,",4.78
+"100 Hanover St,Boston, MA 02108,",4.47
+"272 Newbury St,Boston, MA 02116,",7.02
+"100 Tremont St,Boston, MA 02108,",4.91
+"31 Harrison Ave,Unit A,Boston, MA 02111,",3.73
+"9 Fish Pier St E,Boston, MA 02210,",4.35
+"728 Commonwealth Ave,Boston, MA 02215,",7.95
 "284 Amory St,The Milky Way Lounge,Jamaica Plain, MA 02130,",5.34
+"288 Hanover St,Boston, MA 02113,",4.54
+"110 Huntington Ave,Boston, MA 02116,",4.04
 "361 Hanover St,Boston, MA 02113,",4.6
 "111 Salem St,Boston, MA 02113,",4.54
+"201 Stuart St,Boston, MA 02116,",4.04
+"84 Peterborough St,Boston, MA 02215,",7.83
+"95 Freeport St,Dorchester, MA 02122,",1.8
+"200 Berkeley St,Boston, MA 02116,",3.54
+"69 Berkeley St,Boston, MA 02116,",3.36
 "160 Massachusetts Ave,Boston, MA 02115,",4.16
 "1 Blackfan Cir,Boston, MA 02115,",4.72
+"90 Beach St,Boston, MA 02111,",3.36
+"28 State St,Boston, MA 02109,",4.54
 "436 Western Ave,Brighton, MA 02135,",8.64
+"301 Huntington Ave,Boston, MA 02115,",3.79
+"240 Commercial St,Boston, MA 02109,",4.78
+"57 Berkeley St,Boston, MA 02116,",3.29
+"530 Washington St,Dorchester, MA 02124,",2.8
+"26 Charles St,Boston, MA 02114,",5.97
+"14 Birch St,Roslindale, MA 02131,",6.71
+"70 Staniford St,Boston, MA 02114,",5.65
+"272 Boylston St,Boston, MA 02116,",6.46
+"571 Tremont St,Boston, MA 02118,",3.42
+"131 Tremont St,Boston, MA 02111,",5.03
+"1401 Washington St,Boston, MA 02118,",3.36
+"1 Chelsea St,Boston, MA 02129,",5.16
+"15 Union St,Boston, MA 02108,",4.54
+"276 Friend St,Boston, MA 02114,",5.72
 "1282 Boylston,Boston, MA 02215,",7.71
 "123 Stuart St,Boston, MA 02116,",3.67
 "961 Commonwealth Ave,Boston, MA 02215,",8.57
+"1310 Dorchester Ave,Dorchester, MA 02122,",1.93
+"1076 Hyde Park Ave,Hyde Park, MA 02136,",7.27
+"4 Avery St,Fl 4,Equinox Sports Club,Boston, MA 02111,",4.04
+"113 Brighton Ave,Allston, MA 02134,",8.33
+"324 A St,Boston, MA 02210,",3.54
+"200 Clarendon St,Boston, MA 02116,",3.73
+"491 Blue Hill Ave,Boston, MA 02121,",3.29
 "161 Blue Hill Ave,Roxbury, MA 02119,",2.49
+"884 Morton St,Boston, MA 02126,",4.72
+"389 Centre St,Jamaica Plain, MA 02130,",5.22
+"11 Corinth St,Roslindale, MA 02131,",6.77
+"957 Commonwealth Ave,Boston, MA 02215,",8.57
+"155 Seaport Blvd,Boston, MA 02210,",3.91
+"59 E Springfield St,Boston, MA 02118,",3.17
+"63 Beach St,Boston, MA 02111,",3.42
+"400 Soldiers Field Rd,Boston, MA 02134,",7.27
+"624 Blue Hill Ave,Dorchester, MA 02121,",3.67
+"3094 Washington St,Boston, MA 02119,",4.47
+"57 Canal St,Boston, MA 02114,",4.85
+"25 Temple Pl,Boston, MA 02111,",3.85
+"30 Benington St,Boston, MA 02128,",7.83
+"176 Boylston St,Boston, MA 02116,",3.85
+"133 Federal St,Boston, MA 02110,",3.67
+"283 Longwood Ave,Children's Hospital,Boston, MA 02115,",4.72
+"50 Congress St,Boston, MA 02109,",4.85
+"284 Congress St,Boston, MA 02210,",3.73
+"1080 Boylston St,Boston, MA 02115,",7.64
+"1132 Blue Hill Ave,Dorchester Center, MA 02124,",5.28
+"431 Brookline Ave,Boston, MA 02215,",8.7
+"Boston, MA 02210,",4.04
+"Boston, MA 02114,",5.47
+"441 Stuart St,Boston, MA 02116,",3.98
+"313 Congress St,Boston, MA 02210,",4.04
+"605 Centre St,Jamaica Plain, MA 02130,",5.9
+"123 Brighton Ave,Allston, MA 02134,",8.33
+"22 Kneeland St,Boston, MA 02111,",3.48
+"400 Tremont St,Boston, MA 02116,",3.36
+"112 Stoughton St,Boston, MA 02125,",1.55
+"1501 Dorchester Ave,Boston, MA 02122,",2.17
+"200 Faneuil Hall Marketplace,Boston, MA 02109,",4.54
+"300 Terminal C,East Boston, MA 02128,",7.02
+"1 Harborside Dr,Terminal C, Pier C,Boston, MA 02128,",6.46
+"168 W Brookline St,Roxbury, MA 02118,",3.91
+"1100 Boylston St,Boston, MA 02215,",7.58
 "28 Damrell St,Ste 107,Boston, MA 02127,",2.11
+"52 Temple Pl,Boston, MA 02111,",3.85
+"1375 Washington St,Boston, MA 02118,",3.23
+"100 Federal St,Fl 36,Boston, MA 02110,",4.85
+"139  Tremont St,Boston, MA 02116,",3.91
 "38 Brooks St,Boston, MA 02135,",11.5
+"1 Faneuil Hall Marketplace,Boston, MA 02455,",4.78
+"1198 Blue Hill Ave,Boston, MA 02126,",5.28
 "956 American Legion Hwy,Boston, MA 02131,",7.27
 "305 Huntington Ave,Boston, MA 02115,",3.79
+"7 Liberty Sq,Boston, MA 02109,",4.78
 "1 Stuart St,Boston, MA 02116,",3.54
+"345 W 1st St,Boston, MA 02127,",2.49
+"80 Arch St,Boston, MA 02110,",3.85
 "535 Columbia Rd,Boston, MA 02125,",2.73
+"682 Tremont St,Boston, MA 02118,",3.48
+"80 Atlantic Ave,Boston, MA 02110,",4.91
+"315 Huntington Ave,Boston, MA 02115,",3.79
+"42 Newmarket Sq,Roxbury, MA 02118,",2.17
+"132 Canal St,Boston, MA 02114,",4.78
+"1153 Commonwealth Ave,Allston, MA 02134,",8.51
+"Boston, MA 02111,",3.48
+"116 Newbury St,Boston, MA 02116,",3.85
+"131 State St,Boston, MA 02109,",4.66
+"40 Fay St,Boston, MA 02118,",2.92
+"350 Longwood Ave,Boston, MA 02115,",4.78
+"417 Washington St,Boston, MA 02108,",5.03
+"3710 Washington St,Jamaica Plain, MA 02130,",5.1
+"190 N Beacon St,Boston, MA 02135,",8.82
+"595 Commonwealth Ave,Fl 2,Boston, MA 02215,",7.58
+"2255 Dorchester Ave,Dorchester, MA 02124,",4.16
+"575 Boylston St,Boston, MA 02116,",4.16
+"241 Hanover St,Boston, MA 02113,",4.47
+"11 Board Alley,Boston, MA 02113,",6.21
 "256 Washington St,Brighton, MA 02135,",9.07
+"75 Francis St,Boston, MA 02115,",4.85
 "600 Washington St,Boston, MA 02135,",11.56
+"328 Washington St,Boston, MA 02135,",9.07
+"1597 Commonwealth Ave,Brighton, MA 02135,",9.07
 "218 Market St,Brighton, MA 02135,",9.01
+"20 Guest St,Boston, MA 02135,",8.95
+"225 William F McClellan,Boston, MA 02128,",7.46
+"200 Boylston St,Four Seasons Hotel Boston,Boston, MA 02116,",3.91
+"64 Broad St,Boston, MA 02109,",4.85
+"99 Broad St,Boston, MA 02110,",4.78
 "483 E Broadway,Boston, MA 02127,",2.17
+"258 W Broadway,Boston, MA 02127,",2.55
+"1638 Blue Hill Ave,Mattapan, MA 02126,",5.65
+"275 Emerson St,Boston, MA 02127,",2.67
+"1033 Commonwealth Ave,Boston, MA 02215,",8.7
+"7 School St,Boston, MA 02108,",4.97
+"211 Congress St,Boston, MA 02110,",3.79
+"375 Longwood Ave,Boston, MA 02215,",8.76
+"300 Summer St,Boston, MA 02210,",4.23
+"151 Brighton Ave,Allston, MA 02134,",8.39
+"3698 Washington St,Jamaica Plain, MA 02130,",5.03
+"50 Dalton St,Boston, MA 02115,",4.1
+"252 Friend St,Boston, MA 02114,",5.72
+"107 Merrimac St,Boston, MA 02114,",4.91
+"8 Park Plz,Boston, MA 02116,",3.79
+"100 William T Morrissey Blvd,Dorchester, MA 02125,",0.43
+"944 Bennington Street,East Boston, MA 02128,",8.33
+"1208 Dorchester Ave,Dorchester, MA 02125,",2.17
+"885 Cummins Hwy,Mattapan, MA 02126,",5.78
+"500 Terminal E,Boston Logan Int'l Airport,East Boston, MA 02128,",7.02
+"100 Washington Street,Dorchester, MA 02121,",3.11
+"1 Maverick Square,Boston, MA 02128,",7.95
+"280 West Broadway Street,South Boston, MA 02127,",2.61
+"1 HARBORSIDE DR,Terminal C,Boston, MA 02128,",6.46
+"128 Tremont Street,Boston, MA 02108,",4.97
+"210 Brighton Ave,Allston, MA 02134,",8.39
+"1610 Vfw Parkway,West Roxbury, MA 02132,",19.2
+"4594 Washington Street,Roslindale, MA 02131,",7.52
+"Main Food Court - Terminal E,Boston Logan Intl Airport,Boston, MA 02128,",7.02
 "1282 Hyde Park Ave,Hyde Park, MA 02136,",9.76
 "3492 Washington St,Jamaica Plain, MA 02130,",5.41
 "224 Columbia Rd,Dorchester, MA 02121,",2.73
+"145 Dartmouth St,Back Bay Station,Boston, MA 02116,",3.91
+"1357 Washington St,Boston, MA 02118,",3.23
+"1420 Tremont St,Roxbury Crossing, MA 02120,",4.16
+"160 Commonwealth Ave,Boston, MA 02116,",6.84
+"380 Warren St,Roxbury, MA 02119,",3.23
+"1346 Boylston St,Boston, MA 02215,",7.77
+"669 Boylston St,Boston, MA 02116,",6.9
+"215 Charles St,The Liberty Hotel,Boston, MA 02114,",5.78
+"254 Bennington St,Boston, MA 02128,",7.08
+"44 Maverick Sq,Boston, MA 02128,",7.89
+"1010 Massachusetts Ave,Boston, MA 02118,",2.42
+"26 Temple Pl,Boston, MA 02111,",3.85
+"300 Summer St Bsmt,Boston, MA 02210,",4.23
 "472 Commonwealth Ave,Boston, MA 02215,",7.64
+"8 City Hall Ave,Boston, MA 02108,",4.91
+"654 Centre St,Jamaica Plain, MA 02130,",5.97
+"125 Harvard Ave,Allston, MA 02134,",8.2
+"17 Meridian St,Boston, MA 02128,",7.64
+"62 Harrison Ave,Boston, MA 02111,",3.48
+"1175 Tremont St,Boston, MA 02120,",3.73
+"19 Arlington St,Boston, MA 02116,",6.34
+"25 Evans Way,Isabella Stewart Gardner Museum,Boston, MA 02115,",4.29
+"900 Beacon St,Boston, MA 02215,",7.89
+"383 Chestnut Hill Ave,Brighton, MA 02135,",10.07
+"234 Berkeley St,Boston, MA 02116,",3.67
+"87 L St,Boston, MA 02127,",2.49
+"362 Washington St,Brighton, MA 02135,",9.13
+"156 Cambridge St,Boston, MA 02114,",6.03
+"611 Dorchester Ave,South Boston, MA 02127,",1.8
 "672 E Broadway,South Boston, MA 02127,",2.42
+"141 S Market St,Boston, MA 02109,",4.78
+"60 School St,Boston, MA 02108,",4.85
+"44 Binney St,Boston, MA 02115,",4.78
+"Columbia Point,Boston, MA 02125,",0.81
+"75 Federal St,Boston, MA 02110,",3.73
+"279 Newbury St,Boston, MA 02116,",7.02
+"100 Morrissey Blvd,Boston, MA 02125,",0.62
+"279A Newbury St,Boston, MA 02116,",7.77
+"80 Bennington St,Boston, MA 02128,",7.52
+"50 Maverick Sq,Boston, MA 02128,",7.77
+"30 Charles St,Boston, MA 02114,",5.97
+"178 Salem St,Boston, MA 02113,",4.72
+"1047 Commonwealth Ave,Boston, MA 02215,",8.76
+"416 W  Broadway,Boston, MA 02127,",2.3
+"177 Huntington Ave,Boston, MA 02115,",3.91
+"1 Marina Park Dr,Boston, MA 02210,",4.1
+"298 Washington St,Boston, MA 02135,",9.01
+"560 Washington St,Boston, MA 02111,",3.67
+"10 Summer St,Boston, MA 02110,",3.85
+"368 Congress St,Boston, MA 02210,",3.91
+"1375 Boylston St,Boston, MA 02215,",7.89
+"296 Hanover St,Boston, MA 02113,",4.54
+"333 Massachusetts Ave,Boston, MA 02115,",3.54
+"129 Lake St,Brighton, MA 02135,",10.0
+"716 Columbus Ave,Boston, MA 02120,",3.73
+"39 Dalton St,Sheraton Boston Hotel,Boston, MA 02199,",3.98
+"240A Newbury St,Boston, MA 02116,",4.35
+"24 Fenway,Boston, MA 02215,",7.58
+"380 Washington St,Brighton, MA 02135,",9.2
+"720 Atlantic Ave,Boston, MA 02111,",3.54
 "283 Old Colony Ave,Boston, MA 02127,",1.8
 "800 Boylston St,Prudential,Boston, MA 02199,",4.23
+"1 Harborside Dr,Terminal C,Boston, MA 02128,",6.46
+"435 S Huntington Ave,Jamaica Plain, MA 02130,",5.53
+"346 Hanover St,Boston, MA 02113,",4.6
+"339 Meridian St,Boston, MA 02128,",8.45
+"1728 Dorchester Ave,Dorchester Center, MA 02124,",2.42
+"6 Hancock St,Boston, MA 02125,",2.67
+"122 Bowdoin St,Boston, MA 02108,",4.54
+"443 West Broadway,Boston, MA 02127,",2.24
 "672 Truman Hwy,Hyde Park, MA 02136,",9.13
 "304 Centre St,Jamaica Plain, MA 02130,",4.91
 "82 Westland Ave,Boston, MA 02115,",3.85
+"275 Tremont St,Boston, MA 02116,",3.73
+"559 Washington St,Dorchester, MA 02124,",2.86
+"131 Brighton Ave,Allston, MA 02134,",8.33
+"307 Hanover St,Boston, MA 02113,",4.54
+"86 Cottage St,Boston, MA 02128,",8.02
+"11 Beacon St,Boston, MA 02108,",4.54
+"703 Centre St,Boston, MA 02130,",5.78
+"1234 Soldiers Field Rd,Boston, MA 02135,",8.45
+"16 Bennington St,Boston, MA 02128,",7.83
 "115 Water St,Boston, MA 02109,",4.78
+"30 Gloucester St,Boston, MA 02115,",7.77
+"285 Hanover St,Boston, MA 02113,",4.47
+"62 Brookline Ave,Boston, MA 02215,",7.58
+"500 Boylston St,Boston, MA 02116,",6.71
+"75 State St Lbby D,Boston, MA 02109,",4.72
+"56 High St,Boston, MA 02110,",3.73
+"65 Causeway St,Boston, MA 02114,",5.65
+"1406 Hyde Park Ave,Hyde Park, MA 02136,",9.94
+"301 Adams St,Dorchester, MA 02122,",2.36
+"160 Milk St,Boston, MA 02109,",4.66
+"145 Dartmouth St,Boston, MA 02116,",3.91
+"491 Commonwealth Ave,Boston, MA 02215,",7.33
+"101 Arch St,Boston, MA 02108,",3.79
 "1502 Tremont St,Roxbury Crossing, MA 02120,",4.35
+"110 Huntington Avenue,Boston, MA 02116,",4.04
+"370 E Eagle St,Boston, MA 02128,",7.02
+"21 Beacon St,Boston, MA 02108,",4.47
+"775 Commonwealth Ave,BU Union Food Ct,Boston, MA 02215,",8.02
+"78 Arlington Ave,Charlestown, MA 02129,",6.59
 "277 Main St,Charlestown, MA 02129,",7.02
+"417 Washington St,Boston, MA 02110,",5.03
 "177 Allston St,Allston, MA 02134,",8.82
 "1740 Dorchester Ave,Dorchester Center, MA 02124,",2.49
+"429 Columbus Ave,Ste 1,Boston, MA 02116,",3.98
+"60 Long Wharf,Boston, MA 02110,",4.85
+"1456 Dorchester Ave,Dorchester, MA 02122,",2.05
+"699 Morrisey Blvd,Dorchester, MA 02122,",1.74
+"3 Lansdowne St,Boston, MA 02215,",7.77
+"84 Beacon St,Boston, MA 02108,",4.16
+"1 S Market St,Quincy Market,Boston, MA 02109,",4.41
+"154 Harvard Ave,Boston, MA 02134,",8.26
+"30 Massachusetts Ave,Boston, MA 02115,",7.83
+"Harrison Ave And E Concord St,Boston, MA 02118,",2.98
+"72 E Concord St,Boston, MA 02118,",2.86
+"100 E Newton St,Boston, MA 02118,",3.48
 "505 Massachusetts Ave,Boston, MA 02118,",3.36
+"21 Drydock Ave,Boston, MA 02210,",3.36
+"50 Forsyth St,Boston, MA 02115,",4.04
+"280 Washington St,Boston, MA 02108,",4.97
+"1482A Tremont St,Boston, MA 02120,",4.29
+"275 Shawmut Ave,Boston, MA 02118,",3.54
+"224 Amory St,Jamaica Plain, MA 02130,",5.22
+"658 Centre St,Boston, MA 02130,",5.9
+"2360 Washington St,Boston, MA 02119,",3.48
+"49 Warren St,Roxbury, MA 02119,",3.48
+"450 Harrison Ave,Boston, MA 02111,",2.98
+"1202 Blue Hill Ave,Boston, MA 02126,",5.28
+"23 Tyler St,Boston, MA 02111,",3.42
+"331 Hanover St,Boston, MA 02113,",4.54
+"60 Beach St,Boston, MA 02111,",3.48
+"241 Market St,Brighton, MA 02135,",9.07
+"9 Tyler St,Boston, MA 02111,",3.42
+"1202 Blue Hill Ave,Mattapan, MA 02126,",5.28
+"784 Adams St,Dorchester Center, MA 02124,",3.17
+"532 Washington St,Boston, MA 02124,",2.86
+"262 Harrison Ave,Boston, MA 02111,",3.67
+"79 River St,Mattapan, MA 02126,",4.54
+"90 Tyler St,Boston, MA 02111,",3.6
+"380 Chelsea St,Boston, MA 02128,",7.02
+"525 Washington St,Brighton, MA 02135,",11.81
+"83 Newmarket Sq,Roxbury, MA 02118,",2.3
+"73 Essex St,Boston, MA 02111,",3.54
+"1924 Beacon St,Brighton, MA 02135,",9.94
+"51 Boston Wharf Rd,Boston, MA 02210,",3.98
+"8 Park Plz,Theatre District,Boston, MA 02116,",3.79
+"553 Boylston St,Boston, MA 02116,",4.16
+"101 Summer St,Boston, MA 02110,",3.54
+"283 Washington St,Boston, MA 02108,",4.97
+"148 Brookline Ave,Boston, MA 02215,",7.77
 "1761 Centre St,West Roxbury, MA 02132,",8.14
+"1245 Adams St,Dorchester Center, MA 02124,",4.29
+"199 Bowdoin St,Dorchester, MA 02122,",2.61
+"334 Massachusetts Ave,Boston, MA 02115,",3.6
+"350 Longwood Ave,Longwood Galleria Food Court,Boston, MA 02115,",4.78
+"5 North Square,Boston, MA 02113,",4.54
 "734 Dudley St,Dorchester, MA 02125,",1.99
+"500 Harrison Ave,Boston, MA 02118,",3.04
+"1310 Boylston St,Boston, MA 02215,",7.71
+"221 Longwood Ave,Boston, MA 02115,",4.54
+"142 Berkeley St,Boston, MA 02116,",3.48
+"65 Exeter St,Boston, MA 02116,",6.9
+"66 Boylston St,Jamaica Plain, MA 02130,",5.28
+"672 Centre St,Jamaica Plain, MA 02130,",5.84
+"1 CIty Hall Plz,Boston, MA 02108,",4.54
+"8 - 10 Park Plz,Boston, MA 02116,",3.73
+"10 Boston Wharf Rd,Boston, MA 02210,",3.91
+"80 Beverly St,Boston, MA 02114,",4.72
+"1960 Beacon St,Brighton, MA 02135,",10.07
+"21 Merchants Row,Boston, MA 02109,",4.72
+"74 Kneeland St,Boston, MA 02111,",3.36
+"160 Federal St,Boston, MA 02110,",3.67
+"27 School St,Boston, MA 02108,",4.91
+"227 Hanover St,Boston, MA 02113,",4.47
+"100 City Hall Plz,Boston, MA 02108,",4.91
+"329 Columbus Ave,Boston, MA 02116,",3.73
+"1638 Washington St,Boston, MA 02118,",3.17
+"45 Francis St,Boston, MA 02115,",4.85
 "50 Queensberry St,Boston, MA 02215,",8.2
 "1844 Centre St,West Roxbury, MA 02132,",8.33
+"138 Portland St,Boston, MA 02114,",4.85
+"77 Fulton St,Boston, MA 02109,",4.72
+"329 Huntington Ave,Boston, MA 02115,",3.85
+"8 Seafood Way,Boston, MA 02210,",4.54
+"253 Shawmut Ave,Boston, MA 02118,",3.6
+"40 West 3rd St,Boston, MA 02127,",2.55
+"172 Brighton Ave,Allston, MA 02134,",8.45
+"87 Prince St,Boston, MA 02113,",4.72
+"Fax 502 Maschsts Ave,Boston, MA 02108,",3.29
+"421 Marlborough St,Boston, MA 02115,",7.52
+"51 Massachusetts Ave,Boston, MA 02115,",7.58
+"500 Rutherford Ave,Charlestown, MA 02129,",6.65
+"2030 Centre St,West Roxbury, MA 02132,",8.76
+"396 Market St,Brighton, MA 02135,",9.38
+"2 Seaport Ln,Boston, MA 02210,",4.16
+"1 Harborside Dr,Boston, MA 02128,",6.46
+"1 Harborside Dr,Boston Logan International Airport, Terminal B,Boston, MA 02128,",6.77
+"125 High St,Boston, MA 02110,",4.91
+"14 Milk St,Boston, MA 02108,",3.85
+"2 S Station,Ste 182,Boston, MA 02110,",3.54
+"500 Rutherford Ave,Boston, MA 02129,",6.65
+"723 Centre St,Jamaica Plain, MA 02130,",5.78
+"838 Blue Hill Ave,Dorchester Center, MA 02124,",3.85
+"3 Pemberton Square,Fl 2,Suffolk County Court House,Boston, MA 02108,",4.97
+"499B Washington St,Boston, MA 02111,",3.79
+"401 Park Dr,Boston, MA 02215,",8.39
+"145 Shirley St,Roxbury, MA 02119,",2.49
+"75 Kneeland St,Boston, MA 02111,",3.36
 "2201 Commonwealth Ave,Brighton, MA 02135,",10.25
-"800 Boylston St,Boston, MA 02199,",4.23
 "100 Legends Way,Boston Garden,Boston, MA 02114,",5.65
+"714 Commonwealth Ave,Boston, MA 02215,",7.95
 "1514 Tremont St,Boston, MA 02120,",4.35
+"998 Blue Hill Ave,Dorchester Center, MA 02124,",5.59
+"344 Warren St,Roxbury, MA 02119,",2.86
+"78 Salem St,Boston, MA 02113,",4.54
 "107 State St,Boston, MA 02109,",4.72
+"20 Linden St,Allston, MA 02134,",8.26
+"24 Orleans St,Boston, MA 02128,",8.02
+"5 McBride St,Jamaica Plain, MA 02130,",5.41
+"1 Harborside Dr,Terminal C,Boston, MA 02228,",6.46
+"1 Harborside Dr,Boston Logan International Airport Terminal A,Boston, MA 02228,",6.46
+"304 Stuart St,Boston, MA 02116,",3.6
+"40 Berkeley St,Boston, MA 02116,",3.29
 "309 D St,Boston, MA 02127,",2.42
+"3141 Washington St,Jamaica Plain, MA 02130,",4.54
+"875 William T Morrissey Blvd,Dorchester, MA 02122,",1.37
+"850 Harrison Ave,Boston, MA 02118,",2.86
+"50 Franklin St,Boston, MA 02110,",3.79
 "1433 Dorchester Ave,Fields Corner,Dorchester, MA 02122,",1.99
+"187 Devonshire St,Boston, MA 02110,",4.78
+"182 Sumner St,East Boston, MA 02128,",7.77
+"76 Salem St,Boston, MA 02113,",4.47
+"818 Harrison Ave,Boston, MA 02118,",2.92
+"50 Franklin Street Side,Boston, MA 02110,",3.79
+"563 Massachusetts Ave,Boston, MA 02118,",3.48
+"120 Boston St,Dorchester, MA 02125,",1.68
+"820 Morrissey Blvd,Boston, MA 02122,",2.05
 "474 Saratoga St,Boston, MA 02128,",6.96
+"Boston, MA 02116,",6.4
+"Park Street T Station Boston Common,Tremont St and Park St,Boston, MA 02108,",4.78
+"220 Dorchester Ave,Boston, MA 02127,",2.36
+"95 Summer St,Boston, MA 02110,",3.6
+"130 N Beacon St,Boston, MA 02135,",8.64
+"604 Columbus Ave,Boston, MA 02118,",3.54
+"180 Commonwealth Ave,Boston, MA 02116,",6.77
+"5 Henshaw St,Brighton, MA 02135,",8.95
+"160 Chestnut Hill Ave,Boston, MA 02135,",9.57
+"75 Arlington St,Boston, MA 02116,",3.98
+"1 Harborside Dr,Boston, MA,",6.46
+"722 Shawmut Ave,Roxbury, MA 02119,",3.36
+"Charlestown Navy Yard,Bldg 10,Boston, MA 02129,",5.72
+"477 Cambridge St,Allston, MA 02134,",8.2
+"250 Northern Ave,Ste 200,Boston, MA 02210,",4.23
+"888 Boylston St,Ste 053,Boston, MA 02199,",4.16
+"754 South St,Roslindale, MA 02131,",6.65
+"85 Arch St,Boston, MA 02110,",3.79
+"149 Stoughton St,Boston, MA 02125,",1.49
+"239 Newbury St,Boston, MA 02116,",6.96
+"100 Chandler St,Boston, MA 02116,",3.48
+"35 Temple Pl,Boston, MA 02111,",3.85
+"215 Essex St,Boston, MA 02111,",3.54
 "2040 Centre St,West Roxbury, MA 02132,",8.82
+"371 Commonwealth Ave,Boston, MA 02115,",7.77
+"332 Washington St,Brighton, MA 02135,",9.07
+"234 Clarendon St,Boston, MA 02116,",6.52
+"254 Faneuil Hall Market Pl,Boston, MA 02109,",4.78
+"557 Boylston St,Boston, MA 02116,",4.16
+"25 Thomson Pl,Boston, MA 02210,",4.04
+"277 Washington St,Boston, MA 02108,",4.97
+"955 Boylston St,Boston, MA 02115,",4.16
 "1750 Dorchester Ave,Dorchester Center, MA 02124,",2.49
 "1 Harborside Dr,Terminal E,Boston, MA 02128,",7.02
+"88 Harrison Ave,Boston, MA 02111,",3.54
+"141 Salem St,Boston, MA 02113,",4.72
 "222 Newbury St,Boston, MA 02116,",6.9
+"3 Blackfan Cir,Boston, MA 02111,",4.66
+"1 Central Wharf,Boston, MA 02110,",4.72
+"221 Hanover St,Boston, MA 02113,",4.47
+"72 Brighton Ave,Boston, MA 02134,",8.33
+"54 Salem St,Boston, MA 02113,",4.47
 "464 Washington St,Brighton, MA 02135,",9.44
 "1144 Saratoga St,Boston, MA 02128,",8.7
 "64 Staniford St,Boston, MA 02114,",5.72
@@ -80,94 +657,810 @@
 "695 Truman Hwy,Hyde Park, MA 02136,",9.13
 "4640 Washington St,Roslindale, MA 02131,",11.93
 "1672 Blue Hill Ave,Mattapan, MA 02126,",7.52
+"980 Saratoga St,Boston, MA 02128,",8.33
 "367 Neponset Ave,Boston, MA 02122,",2.49
-"220 Dorchester Ave,Boston, MA 02127,",2.36
+"50 Gainsborough St,Boston, MA 02115,",3.79
+"1459 Dorchester Ave,Boston, MA 02122,",2.05
+"86 Harrison Ave,Boston, MA 02111,",3.54
+"2 Bowdoin St,Dorchester, MA 02124,",2.86
+"1 Federal St,Downtown Club,Boston, MA 02110,",3.79
+"811 Massachusetts Ave,Boston, MA 02118,",2.73
+"11 Melnea Cass Blvd,Roxbury, MA 02119,",2.73
+"400 Longwood Ave,Boston, MA 02115,",8.76
+"4198 Washington St,Roslindale, MA 02131,",6.59
+"348 Congress St,Boston, MA 02228,",3.98
+"7 Drydock Ave,Boston, MA 02210,",3.11
+"7 Stoughton St,Dorchester, MA 02125,",1.93
 "289 Causeway St,Boston, MA 02114,",4.78
+"15 Warren St,Roxbury, MA 02119,",3.48
 "152 Dudley St,Roxbury, MA 02119,",3.42
+"695 Washington St,Boston, MA 02111,",3.54
+"40-44 Harrison Ave,Boston, MA 02111,",3.73
+"137 Harvard Ave,Allston, MA 02134,",8.2
+"179 Massachusetts Ave,Boston, MA 02115,",3.85
+"Boston-Logan International Airport,Terminal E,Jeffries Point / Airport, MA 02128,",7.02
+"108 Blackstone St,Boston, MA 02109,",4.47
+"65 Meridian St,Boston, MA 02128,",7.64
+"1918 Beacon St,Brighton, MA 02135,",9.94
+"1B Charles St,Boston Common,Boston Common,Boston, MA 02114,",2.11
+"800 Boylston St,Unit 107,Boston, MA 02199,",4.1
+"75 Meridian St,Boston, MA 02128,",7.64
+"528 Commonwealth Ave,Boston, MA 02215,",7.52
+"23 Beach St,Boston, MA 02111,",3.54
+"21 Beach St,Boston, MA 02111,",3.54
+"55 Fruit St,Boston, MA 02228,",5.9
+"166 Brighton Ave,Brighton, MA 02135,",8.45
+"122 Belvidere St,Boston, MA 02199,",3.91
+"1127 Harrison Ave,Roxbury, MA 02119,",3.23
+"37 Poplar St,Roslindale, MA 02131,",6.71
 "3080 Washington St,Roxbury, MA 02119,",4.41
+"1 Faneuil Hall Market,Boston, MA 02109,",4.41
+"725 Commonwealth Ave,Boston, MA 02215,",7.83
+"1782 Dorchester Ave,Dorchester Center, MA 02124,",2.55
+"472 Shawmut Ave,Boston, MA 02118,",3.29
+"122 Seaver St,Dorchester, MA 02121,",3.85
+"3371 Washington St,Jamaica Plain, MA 02130,",4.91
+"170 Blue Hill Ave,Boston, MA 02125,",2.55
+"15 Central Sq,Boston, MA 02128,",7.83
+"972 Saratoga St,Boston, MA 02128,",8.39
+"221 Dudley St,Roxbury, MA 02119,",3.29
+"416 Centre St,Jamaica Plain, MA 02130,",5.47
+"215 Border St,Boston, MA 02128,",7.89
+"290 Bennington St,Boston, MA 02128,",7.08
+"2306 Washington St,Roxbury, MA 02119,",3.48
+"2135 Faneuil Hall Market Pl,Boston, MA 02109,",4.41
+"2197 Commonwealth Ave,Brighton, MA 02135,",10.25
+"92 Peterborough St,Boston, MA 02215,",7.83
+"54 Bennington St,Boston, MA 02128,",7.58
+"422 Geneva Ave,Boston, MA 02122,",2.49
+"309 Bennington St,Boston, MA 02128,",7.21
+"226 Sumner St,Boston, MA 02128,",7.95
+"264 Hyde Park Ave,Jamaica Plain, MA 02130,",5.9
+"147 E Berkeley St,Boston, MA 02118,",2.92
+"77 Avenue Louis Pasteur,Boston, MA 02115,",4.6
+"424 Beacon St,Boston, MA 02115,",6.84
+"161 Devonshire St,Boston, MA 02110,",3.79
+"750 Adams St,Dorchester, MA 02122,",2.8
+"6 Beacon St,Boston, MA 02108,",4.91
+"690 Washington St,Boston, MA 02111,",3.54
+"618 Washington St,Brighton, MA 02135,",11.5
+"265 Massachusetts Ave,Boston, MA 02115,",3.73
+"1721 Washington St,Boston, MA 02118,",3.04
 "69 Salem St,Boston, MA 02113,",4.47
+"344 Washington St,Brighton, MA 02135,",9.07
+"33 Broad St,Boston, MA 02109,",4.72
+"700 Harrison Ave,Boston, MA 02118,",3.42
+"134 K St,Boston, MA 02127,",2.55
+"377 Centre St,Boston, MA 02130,",5.22
+"808 Dorchester Ave,Dorchester, MA 02125,",1.43
+"1321 Boylston St,Boston, MA 02215,",7.77
+"154 Green St,Boston, MA 02130,",5.59
+"422 Geneva Ave,Dorchester, MA 02122,",2.49
+"3346 Washington St,Jamaica Plain, MA 02130,",4.85
+"2 McCraw St,Roslindale, MA 02131,",8.2
+"186 Tremont St,Boston, MA 02116,",4.04
+"42 Yawkey Way,Boston, MA 02215,",7.83
 "5268 Washington St,West Roxbury, MA 02132,",18.95
-"1 Harborside Dr,Boston Logan International Airport,Boston, MA 02128,",5.65
+"25 West St,Boston, MA 02111,",3.79
+"120 Blackstone St,Boston, MA 02108,",4.47
+"260 Washington St,Boston, MA 02108,",4.97
+"62 Summer St,Boston, MA 02110,",3.73
+"144 Tremont St,Boston, MA 02110,",3.91
+"554 Columbia Rd,Boston, MA 02125,",1.93
+"15 Harvard Ave,Hyde Park, MA 02136,",9.44
+"765 Morton St,Boston, MA 02126,",5.03
+"1158 River St,Boston, MA 02136,",9.44
+"451 D St,Boston, MA 02210,",3.73
+"51 Roxbury St,Roxbury, MA 02119,",3.6
+"118 Dorchester St,Boston, MA 02127,",2.11
+"130 Marlborough St,Boston, MA 02116,",6.71
 "280 Cambridge St,Boston, MA 02114,",5.84
+"1926 Beacon St,Boston, MA 02135,",9.94
+"645 Beacon St,Boston, MA 02215,",7.95
+"96 Brookline Ave,Boston, MA 02215,",7.64
+"205 Berkeley St,Boston, MA 02116,",3.6
+"105 Beach St,Boston, MA 02111,",3.54
 "67 Main St,Charlestown, MA 02129,",6.34
 "42 Charles St,Boston, MA 02114,",5.97
+"283 Causeway St,Boston, MA 02114,",4.78
+"142 Bowdoin St,Boston, MA 02108,",4.47
+"Boston, MA 02127,",2.67
+"89 Broad St,Boston, MA 02110,",4.85
+"62 Boylston St,Boston, MA 02116,",3.98
+"636 Beacon St,Boston, MA 02215,",7.33
+"354 Chestnut Hill Ave,Brighton, MA 02135,",9.94
+"277 Cambridge St,Boston, MA 02114,",5.22
+"107 Merrimac St,The Boxer Boston,Boston, MA 02114,",4.91
+"61 Chatham St,Boston, MA 02109,",4.85
+"240 Cambridge St,Boston, MA 02114,",5.9
+"55 South St,Jamaica Plain, MA 02130,",5.53
 "2 Tremont St,Brighton, MA 02135,",11.5
+"90 Peterborough St,Boston, MA 02215,",7.83
+"170 Brighton Ave,Allston, MA 02134,",8.45
+"33 Fish Pier St E,Boston, MA 02210,",4.41
+"200 Faneuil Hall Market,Boston, MA 02109,",4.41
+"27 Harbor Point Blvd,Dorchester, MA 02125,",0.62
+"1223 Commonwealth Ave,Boston, MA 02134,",8.33
+"58 Summer St,Boston, MA 02110,",3.79
+"535 Columbus Ave,Boston, MA 02118,",3.6
+"58 Beach St,Boston, MA 02111,",3.48
 "616 Gallivan Blvd,Boston, MA 02124,",2.92
+"510 Atlantic Ave,Boston, MA 02210,",3.79
+"469 Blue Hill Ave,Dorchester, MA 02121,",3.23
+"663 Morton St,Mattapan, MA 02126,",5.28
+"746 Huntington Ave,Boston, MA 02115,",4.72
+"950 American Legion Hwy,Roslindale, MA 02131,",7.15
+"1619 Tremont St,Roxbury Crossing, MA 02120,",4.6
 "76 Guest St,Brighton, MA 02135,",9.01
+"217 Stuart St,Boston, MA 02116,",4.04
+"55 Hallet St,Boston, MA 02124,",2.8
 "16 Derne St,Boston, MA 02114,",5.1
+"1595 Washington St,Boston, MA 02118,",3.17
+"12 Farnsworth St,Boston, MA 02210,",4.04
+"30 Dalton St,Boston, MA 02115,",4.04
+"131 Clarendon St,Boston, MA 02116,",3.85
+"200 Dartmouth St,Boston, MA 02116,",4.04
+"24 W Howell St,Dorchester, MA 02125,",1.8
+"145 Harrison Ave,Sackler Bld,Boston, MA 02111,",3.54
+"150 S Huntington Ave,Fl 3,Jamaica Plain, MA 02130,",5.47
+"651 Warren St,Boston, MA 02121,",3.29
+"387 Centre St,Jamaica Plain, MA 02130,",5.22
+"1421 Washington St,Boston, MA 02118,",3.36
+"7 Channel St,Boston, MA 02210,",4.23
+"33 N Sq,Boston, MA 02113,",4.47
+"3696 Washington St,Jamaica Plain, MA 02130,",5.03
 "3722 Washington St,Jamaica Plain, MA 02130,",5.1
+"27 Corinth St,Roslindale, MA 02131,",6.84
+"2805 Washington St,Boston, MA 02119,",4.16
+"40 Dalton St,Boston, MA 02115,",4.04
 "5 Bowdoin St,Dorchester, MA 02124,",2.86
+"75 Frederick St,Boston, MA 02127,",1.93
+"28 W Broadway,Boston, MA 02127,",2.55
+"323 Washington St,Boston, MA 02108,",4.97
+"9 Fan Pier Blvd,Boston, MA 02210,",4.16
+"278 Shawmut Ave,Boston, MA 02118,",3.54
+"560 Tremont St,Boston, MA 02118,",3.36
+"136 Beacon St,Boston, MA 02116,",6.21
+"795 Washington St,Tufts Medical Center, North Building, G/F,Boston, MA 02111,",3.6
+"1 Harborside Dr,Logan International Airport Terminal A,Boston, MA 02128,",5.65
+"360 R Bennington St,East Boston, MA 02128,",6.9
+"401 W Broadway,Boston, MA 02127,",2.24
+"152 Chestnut Hill Ave,Brighton, MA 02135,",9.57
+"100 High St,Boston, MA 02110,",3.67
+"43 Northern Ave,Boston, MA 02210,",4.16
+"508 Park Dr,Boston, MA 02215,",7.95
+"225 Franklin St,Boston, MA 02110,",4.91
+"25-27 Tyler St,Boston, MA 02111,",3.42
 "289 Hanover St,Boston, MA 02113,",4.54
+"11 P St,South Boston, MA 02127,",3.23
+"710 Centre St,Jamaica Plain, MA 02130,",5.78
+"Terminal A,Boston, MA 02128,",6.52
 "82 Lansdowne St,Boston, MA 02215,",7.58
+"465 Huntington Ave,Courtyard Level,Boston, MA 02115,",4.16
+"96 Blackstone St,Boston, MA 02109,",4.54
+"133 Harvard Ave,Allston, MA 02134,",8.2
+"560 Harrison Ave,Boston, MA 02118,",3.29
+"86 Bedford St,Boston, MA 02111,",3.6
+"15 Washington St,Brighton, MA 02135,",9.26
+"15 Westland Ave,Boston, MA 02115,",3.73
+"181 Cambridge St,Boston, MA 02114,",6.03
+"232 Tremont St,Boston, MA 02116,",3.6
+"100 Hanover St,Boston Public Market,Boston, MA 02108,",4.6
+"18 Tremont St,Ste 220,Boston, MA 02108,",4.78
+"120 Savin Hill Ave,Boston, MA 02125,",0.99
+"431 Columbus Ave,Boston, MA 02116,",3.98
+"355 Hanover St,Boston, MA 02113,",4.6
+"1 Franklin Park Rd,Boston, MA 02121,",3.79
+"1625 Tremont St,Roxbury Crossing, MA 02120,",4.6
+"250 Huntington Ave,Boston, MA 02115,",3.79
+"532 Tremont St,Boston, MA 02116,",3.29
+"Logan International Airport,Gate C29,Boston, MA 02128,",6.77
+"401 Park Dr,Time Out Market,Boston, MA 02215,",8.39
+"1 Fish Pier Rd,Boston, MA 02210,",4.29
+"4403 Washington St,Roslindale, MA 02131,",7.08
+"1614 Blue Hill Ave,Mattapan, MA 02126,",5.72
+"14 Tyler St,Boston, MA 02111,",3.42
+"1495 Dorchester Ave,Boston, MA 02122,",2.17
+"333 Centre St,Jamaica Plain, MA 02130,",4.97
+"25 Chauncy St,Boston, MA 02110,",3.67
 "1002 Tremont St,Roxbury Crossing, MA 02120,",3.67
-"100 City Hall Plz,Boston, MA 02108,",4.91
+"28 Kingston St,Boston, MA 02111,",3.67
+"55 Beach St,Boston, MA 02111,",3.48
+"52 Beach St,Boston, MA 02111,",3.48
+"1 Faneuil Hall,Boston, MA 02109,",4.78
+"91 Summer St,Boston, MA 02110,",3.6
+"170 Milk St,Boston, MA 02109,",4.85
+"692 Washington St,Boston, MA 02111,",3.54
+"229 Bunker Hill St,Boston, MA 02129,",7.02
+"1 N Beacon St,Allston, MA 02134,",8.26
+"225 Newbury St,Boston, MA 02116,",6.9
+"15 Hudson St,Boston, MA 02111,",3.42
+"390 Chelsea St,Boston, MA 02128,",7.02
+"48 Winter St,Boston, MA 02108,",4.97
+"101 Federal St,Boston, MA 02110,",3.73
+"5204 Washington St,West Roxbury, MA 02132,",19.08
 "1132 Blue Hill Ave,Boston, MA 02124,",5.28
+"583 Washington St,Boston, MA 02135,",11.68
+"45 Newbury St,Ste 205,Boston, MA 02116,",6.46
+"3615 Washington St,Boston, MA 02130,",5.1
+"536 Centre St,Jamaica Plain, MA 02130,",5.72
+"35 W Milton St,Hyde Park, MA 02136,",10.63
+"50 Terminal St,Charlestown, MA 02129,",7.27
+"255 St Botolph St,Boston, MA 02115,",3.6
+"873 South St,Roslindale, MA 02131,",7.52
 "435 Faneuil St,Brighton, MA 02135,",11.62
+"311 Huntington Ave,Boston, MA 02115,",3.79
+"161 Berkeley St,Boston, MA 02116,",3.54
+"705 Massachusetts Ave,Boston, MA 02118,",3.23
+"426-498 Stuart St,Corner of Trinity,Boston, MA 02116,",3.85
+"37 Bowdoin St,Boston, MA 02114,",5.03
 "661 Warren St,Boston, MA 02121,",3.29
+"4014 Washington St,Roslindale, MA 02131,",6.46
+"110 Causeway St,Boston, MA 02114,",4.85
+"88 Peterborough St,Boston, MA 02215,",7.83
+"166 Brighton Ave,Allston, MA 02134,",8.45
+"175 Massachusetts Ave,Boston, MA 02115,",3.85
+"185 Franklin St,Boston, MA 02110,",3.91
+"310 Northern Ave,Boston, MA 02210,",4.23
+"12 Dade St,Roxbury, MA 02119,",3.29
 "115 Causeway St,Boston, MA 02114,",5.72
+"168 Harvard Ave,Allston, MA 02134,",8.26
+"377 Washington St,Brighton, MA 02135,",9.2
+"693 Washington St,Boston, MA 02116,",3.54
+"130 Brighton Ave,Boston, MA 02134,",8.2
+"239 Meridian St,East Boston, MA 02128,",7.89
+"296 State St,Boston, MA 02109,",4.78
+"1 Harborside Dr,East Boston, MA 02128,",6.46
+"101 Harborside Dr,Boston, MA 02128,",6.52
+"22 -24 Clinton Street,Boston, MA 02109,",4.54
+"1099 Dorchester Ave,Dorchester, MA 02125,",1.24
+"100 Logan Airport Rd,Terminal A,East Boston, MA 02128,",6.52
+"1 Harborside Dr,Boston Logan International Airport - Terminal A,Boston, MA 02128,",5.65
+"1420 Centre St,Roslindale, MA 02131,",7.21
+"1430 Commonwealth Ave,Brighton, MA 02135,",9.2
+"98 Blackstone St,Boston, MA 02109,",4.54
+"316 Cambridge St,Boston, MA 02114,",5.78
+"88 Blackstone St,Boston, MA 02109,",4.54
 "106 Blackstone St,Boston, MA 02109,",4.54
+"130 Dartmouth St,Boston, MA 02116,",4.04
+"88 Beach St,Boston, MA 02111,",3.36
+"50 Congress St,Ste 525,Boston, MA 02109,",4.66
+"25 Union St,Boston, MA 02108,",4.54
+"11 Temple Pl,Boston, MA 02111,",3.85
+"450 Washington St,Boston, MA 02135,",9.38
+"535 Albany St,Fl 1,Boston, MA 02118,",3.17
+"1487 Dorchester Ave,Dorchester, MA 02122,",2.11
+"10 Beacon St,Boston, MA 02108,",4.47
+"1735 Centre St,West Roxbury, MA 02132,",8.08
+"231 Harrison Ave,Boston, MA 02111,",3.67
+"1271 Boylston St,Boston, MA 02215,",7.71
+"125 Summer St,Boston, MA 02110,",3.48
+"135 Pearl St,Boston, MA 02110,",3.85
+"1269 Massachusetts Ave,Boston, MA 02125,",1.62
+"1448 Dorchester Ave,Boston, MA 02122,",2.05
+"107-109 Savin Hill Ave,Boston, MA 02125,",1.06
+"888 South St,Roslindale, MA 02131,",7.52
+"65 Chatham St,Boston, MA 02109,",4.85
+"889A Dorchester Ave,Dorchester, MA 02125,",1.37
+"79 Harrison Ave,Boston, MA 02111,",3.54
+"5 Maverick Sq,Boston, MA 02128,",7.83
+"308 Congress St,Boston, MA 02210,",4.04
+"1283 Dorchester Ave,Dorchester, MA 02122,",1.99
+"1277 Commonwealth Ave,Boston, MA 02134,",8.45
+"51 Sleeper St,Boston, MA 02210,",4.16
+"529 Washington St,Brighton, MA 02135,",11.81
+"42 Beach St,Ste B1,Boston, MA 02111,",3.73
+"70 Beach St,Boston, MA 02111,",3.42
+"140 Clarendon Street Ofc,Boston, MA 02116,",3.79
+"A-3 Km 334,Boston, MA 02128,",5.72
+"60 State St,Boston, MA 02109,",4.78
+"15 Lansdowne St,Boston, MA 02215,",7.71
+"592 Tremont St,Boston, MA 02118,",3.42
+"542 Columbus Ave,Boston, MA 02118,",3.48
+"25 Massachusetts Ave,Boston, MA 02115,",7.58
+"326 Cambridge St,Boston, MA 02114,",5.78
+"736 Blue Hill Ave,Dorchester, MA 02121,",3.98
+"19 Staniford St,Boston, MA 02114,",5.78
+"150 Canal St,Boston, MA 02114,",4.78
 "4590 Washington St,Roslindale, MA 02131,",7.46
+"1850 Soldiers Field Rd,Brighton, MA 02135,",9.38
 "738 Huntington Ave,Boston, MA 02115,",4.72
+"14 Westland Ave,Boston, MA 02115,",3.73
 "484 A Centre St,Jamaica Plain, MA 02130,",5.59
+"21 Fish Pier St E,Boston, MA 02210,",4.41
+"522 Dudley St,Roxbury, MA 02119,",2.17
 "268 Centre St,Jamaica Plain, MA 02130,",4.78
+"702 Washington St,Boston, MA 02111,",3.48
+"178 Border St,Boston, MA 02128,",7.95
+"50 Corinth St,Roslindale, MA 02131,",6.84
 "1232 Commonwealth Ave,Allston, MA 02134,",8.7
+"484 Commonwealth Ave,Boston, MA 02215,",7.58
+"125 Western Ave,Boston, MA 02163,",7.71
 "136 Harvard Ave,Allston, MA 02134,",8.2
+"765 Morton St,Mattapan, MA 02126,",5.03
+"8 Kneeland St,Boston, MA 02111,",3.48
+"855 Washington St,Dorchester, MA 02124,",4.1
+"164 Brighton Ave,Allston, MA 02134,",8.51
+"500 Commonwealth Ave,Boston, MA 02215,",7.52
+"183 Washington St,Dorchester, MA 02121,",3.23
+"1 Brighton Ave,Ste 16,Allston, MA 02134,",8.76
+"269 Newbury St,Boston, MA 02116,",7.02
 "336 Sumner St,Boston, MA 02128,",8.08
 "172 South St,Jamaica Plain, MA 02130,",5.22
+"1130 Dorchester Ave,Dorchester, MA 02125,",1.3
+"4432 Washington St,Roslindale, MA 02131,",7.15
+"1106 Boylston St,Boston, MA 02215,",7.58
+"117 E Berkeley St,Boston, MA 02118,",2.98
+"3510 Washington St,Jamaica Plain, MA 02130,",5.34
+"1618 Tremont St,One Brigham Cir,Mission Hill, MA 02120,",4.6
+"659 Center St,Jamaica Plain, MA 02130,",5.9
+"482 Washington St,Boston, MA 02124,",2.92
+"730 Centre St,Jamaica Plain, MA 02130,",5.72
+"536 Centre St,Boston, MA 02130,",5.72
+"18-20 Tyler St,Boston, MA 02111,",3.42
+"212 Stuart St,Boston, MA 02116,",4.04
+"1651 Washington St,Boston, MA 02118,",3.11
+"36 Northampton St,Roxbury, MA 02118,",2.92
+"225 Centre St,Boston, MA 02130,",4.66
 "775 Centre St,Jamaica Plain, MA 02130,",5.65
+"440 Atlantic Ave,Boston, MA 02210,",3.91
+"21 Dry Dock Ave,Boston, MA 02210,",3.36
+"111 State St,Boston, MA 02109,",4.72
+"1 Blackfan Cir,Karp Family Research Labs,Boston, MA 02115,",4.72
+"1 Lincoln St,Boston, MA 02163,",3.48
+"144 South St,Jamaica Plain, MA 02130,",5.34
+"4 S Market St,Boston, MA 02109,",4.41
 "320 Medford St,Charlestown, MA 02129,",7.02
+"387 Chelsea St,Boston, MA 02128,",7.02
+"371 Washington St,Brighton, MA 02135,",9.2
+"48 Corinth St,Roslindale, MA 02131,",6.84
+"413 D St,Boston, MA 02210,",3.6
+"60 Valenti Way,Boston, MA 02114,",4.72
+"12 Charles St S,Ste D2-B,Boston, MA 02116,",3.73
+"21 Temple Pl,Boston, MA 02111,",3.85
+"103 Brighton Ave,Allston, MA 02134,",8.26
+"320 Spring St W Roxbury,West Roxbury, MA 02132,",19.7
+"181 Newbury St,Boston, MA 02116,",4.04
 "140 Dudley St,Boston, MA 02119,",3.42
+"300 Terminal C Rd,Gate C28,Boston, MA 02128,",6.77
 "1917 Dorchester Ave,Dorchester Center, MA 02124,",2.98
+"168 Spring St,West Roxbury, MA 02132,",20.07
+"125 Newbury St,Boston, MA 02116,",3.91
+"177 Harrison Ave,Boston, MA 02111,",3.54
+"258 K St,South Boston, MA 02127,",2.42
 "1200 Blue Hill Ave,Mattapan, MA 02126,",5.28
 "8 S Huntington Ave,Jamaica Plain, MA 02130,",5.47
+"44 Batterymarch St,Boston, MA 02109,",4.85
+"29 Food Mart Rd,Boston, MA 02118,",2.36
+"2 Oliver St,Boston, MA 02109,",3.98
+"45 Milk Street Bsmt,Boston, MA 02109,",3.79
+"502 Massachusetts Ave,Boston, MA 02118,",3.29
+"27 Northern Ave,Boston, MA 02210,",4.1
+"501B Washington St,Dorchester, MA 02124,",2.86
+"16 Tyler St,Boston, MA 02111,",3.42
+"315 Shawmut Ave,Boston, MA 02118,",3.48
+"625 American Legion Hwy,Roslindale, MA 02131,",5.22
+"695 Columbia Rd,Dorchester, MA 02125,",1.68
+"5318 Washington St,West Roxbury, MA 02132,",18.83
+"30 N Beacon St,Allston, MA 02134,",8.33
+"465 Washington St,Dorchester, MA 02124,",2.86
+"256 Marginal St,Bldg 16,Boston, MA 02128,",8.39
+"58 Harvard Ave,Allston, MA 02134,",8.08
+"151 Hanover St,Boston, MA 02109,",4.47
+"150 State St,Boston, MA 02109,",4.66
+"2257 Dorchester Ave,Boston, MA 02124,",4.16
+"279 Newbury St,Ste 2,Boston, MA 02116,",7.02
+"578 Tremont St,Boston, MA 02118,",3.42
+"1 Harrison Ave,Boston, MA 02111,",3.67
+"1410 Centre St,Roslindale, MA 02131,",7.21
 "84 Bennington St,East Boston, MA 02128,",7.46
+"1 S Market St,Faneuil Hall Marketplace,Boston, MA 02109,",4.41
+"1127 Harrison Ave,Boston, MA 02119,",3.23
+"360 Huntington Ave,Boston, MA 02115,",3.85
+"236 Faneuil St,Brighton, MA 02135,",9.69
+"51 Austin St,Charlestown, MA 02129,",6.21
+"348 Harrison Ave,Boston, MA 02118,",3.11
+"160 Brighton Ave,Boston, MA 02134,",8.45
+"81 Harvard Ave,Allston, MA 02134,",8.08
+"1229 Dorchester Ave,Dorchester, MA 02125,",2.05
+"145 Charles St,Boston, MA 02114,",5.72
+"25 Kingston St,Boston, MA 02111,",3.67
 "106 Bunker Hill St,Charlestown, MA 02129,",7.33
+"148-152 Brighton Ave,Boston, MA 02134,",8.51
+"130 Guest St,Brighton, MA 02135,",9.13
+"65 Atlantic Ave,Boston, MA 02109,",4.66
+"122 Harvard Ave,Allston, MA 02134,",8.2
+"16 North St,Boston, MA 02109,",4.47
 "108 L St,Boston, MA 02127,",2.49
+"195 L St,Boston, MA 02130,",2.24
+"128 Harvard St,Dorchester Center, MA 02124,",3.36
+"104 Salem St,Boston, MA 02113,",4.54
+"59 Meridian St,Boston, MA 02128,",7.64
+"1 Harborside Dr,Terminal A,Boston, MA 02128,",6.46
 "15 N Beacon St,Allston, MA 02134,",8.26
+"473 River St,Mattapan, MA 02126,",5.59
+"192 Sumner St,Boston, MA 02128,",8.02
+"271 Meridian St,Boston, MA 02128,",7.89
+"1620 Commonwealth Ave,Boston, MA 02135,",9.63
+"259 Bennington St,Boston, MA 02128,",7.15
+"156 Blue Hill Ave,Roxbury, MA 02119,",2.49
+"381 Blue Hill Ave,Dorchester, MA 02121,",3.04
 "112 Salem St,Boston, MA 02113,",4.6
 "240 Hanover St,Boston, MA 02113,",4.47
+"150 Meridian St,East Boston, MA 02128,",7.89
+"342 Cummins Hwy,Roslindale, MA 02131,",7.21
 "190 Brighton Ave,Allston, MA 02134,",8.45
+"299 Hancock St,Boston, MA 02125,",2.05
+"800 Boylston St,Eataly Boston,Boston, MA 02115,",3.98
+"800 Boylston St,Fl 2 Inside Eataly,Boston, MA 02199,",4.23
+"40 Maverick Sq,Boston, MA 02128,",7.77
+"30 Fleet St,Boston, MA 02113,",4.6
+"636 Hyde Park Ave,Roslindale, MA 02131,",5.9
+"19 Bennington St,East Boston, MA 02128,",7.83
+"261 Newbury St,Boston, MA 02116,",6.96
+"792 Washington St,Boston, MA 02124,",3.54
+"140 Tremont St,Boston, MA 02111,",5.03
+"777 Morrissey Blvd,Dorchester, MA 02122,",1.74
 "445 W Broadway,Boston, MA 02127,",2.24
+"772 Adams St,Boston, MA 02122,",2.8
 "1286 Blue Hill Ave,Mattapan, MA 02126,",5.65
+"38 Batterymarch St,Boston, MA 02110,",4.85
+"182 Brighton Ave,Boston, MA 02134,",8.45
+"600 D St,Boston, MA 02210,",4.1
+"1231 River St,Boston, MA 02136,",9.44
+"4337 Washington St,Roslindale, MA 02131,",6.96
+"6 Maple St,Hyde Park, MA 02136,",9.44
+"60 School St,Omni Parker House,Boston, MA 02108,",4.85
+"2195 Commonwealth Ave,Boston, MA 02135,",10.25
+"302 Centre St,Jamaica Plain, MA 02130,",4.91
+"88 Chelsea St,East Boston, MA 02128,",7.58
+"737 Huntington Ave,Boston, MA 02115,",4.66
 "1744 Washington St,Boston, MA 02118,",3.04
 "1746 Washington St,Boston, MA 02118,",3.04
+"132 Babson St,Mattapan, MA 02126,",5.65
+"137 Brighton Ave,Allston, MA 02134,",8.02
+"21 Broad St,Boston, MA 02109,",4.72
+"475 W Broadway,Boston, MA 02127,",2.17
+"558 Washington St,Boston, MA 02111,",3.73
+"Quincy Market Building,Faneuil Hall Marketplace, Quincy Market Building,Boston, MA 02109,",4.41
+"270 Northern Ave,Boston, MA 02210,",4.29
+"10 City Square,Charlestown, MA 02129,",6.46
+"100 Huntington Ave,Copley Place,Boston, MA 02116,",4.04
+"1 Harborside Dr,Terminal B,Boston, MA 02128,",6.96
+"255 State St,Boston, MA 02109,",4.72
+"1 Harborside Dr,Logan Airport Terminal A,Boston, MA 02128,",6.52
+"225 Northern Ave,Boston, MA 02210,",4.23
+"20 Hudson St,Boston, MA 02111,",3.36
+"1296 Blue Hill Ave,Mattapan, MA 02126,",5.59
+"313 Meridian St,Boston, MA 02128,",8.51
+"1195 Blue Hill Ave,Mattapan, MA 02126,",4.23
+"129 South St,Boston, MA 02111,",3.48
+"1 Federal St,Boston, MA 02110,",3.85
+"323 Washington St,Boston, MA 02121,",2.92
+"431 Boylston St,Boston, MA 02116,",3.67
+"1528 Tremont St,Boston, MA 02120,",4.41
+"190 North St,Boston, MA 02113,",4.47
+"8 Lincoln St,Boston, MA 02135,",8.7
+"425 W Broadway,Boston, MA 02127,",2.24
+"903 Boylston St,Boston, MA 02115,",4.16
+"112 Stoughton,Boston, MA 02125,",1.55
+"368 W Broadway,Boston, MA 02127,",2.3
+"991 Bennington St,Boston, MA 02128,",8.02
+"170 Harvard Ave,Allston, MA 02134,",8.26
 "628 American Legion Hwy,Roslindale, MA 02131,",5.28
+"669 Centre St,Boston, MA 02130,",5.84
+"1184 Hyde Park Ave,Boston, MA 02136,",9.69
 "389 Washington St,Brighton, MA 02135,",9.2
 "1114 Boylston St,Boston, MA 02215,",7.58
+"537 Columbus Ave,Boston, MA 02118,",3.48
+"254 Newbury St,Boston, MA 02116,",6.96
+"149 P St,Boston, MA 02127,",2.86
 "352 Hanover St,Boston, MA 02113,",4.6
+"412 W Broadway,Boston, MA 02127,",2.24
+"116 Salem St,Boston, MA 02113,",4.6
+"22 Liberty Dr,Boston, MA 02210,",4.23
+"271 Dartmouth St,Boston, MA 02116,",4.16
+"158 Bennington St,Boston, MA 02128,",7.33
+"479 Cambridge St,Allston, MA 02134,",8.2
+"1560 Vfw Pkwy,West Roxbury, MA 02132,",19.26
+"342 Longwood Ave,Boston, MA 02115,",4.78
+"775 Commonwealth Ave,Boston University,Boston, MA 02215,",8.02
+"1 Lansdowne St,Boston, MA 02115,",7.77
+"366 Washington St,Brighton, MA 02135,",9.13
+"1743 Centre St,West Roxbury, MA 02132,",8.08
+"5272 Washington St,West Roxbury, MA 02132,",18.95
+"13 Meridian St,Boston, MA 02128,",7.64
+"82 Bennington St,Boston, MA 02128,",7.52
+"2269 Dorchester Ave,Boston, MA 02124,",4.16
+"2 Knapp St,Boston, MA 02111,",3.54
+"116 Huntington Ave,Boston, MA 02116,",3.98
+"226 Hanover St,Boston, MA 02113,",4.47
+"415 Hanover St,Boston, MA 02113,",4.66
+"3096 Washington St,Roxbury, MA 02119,",4.47
+"1107 Dorchester Ave,Dorchester, MA 02125,",1.24
+"10 Tyler St,Boston, MA 02111,",3.42
+"71 Broad St,Boston, MA 02109,",4.85
+"100 Terminal St,Charlestown, MA 02129,",7.77
+"12 Harborside Dr,Terminal A,Boston, MA 02128,",6.84
+"355 Congress St,Boston, MA 02210,",3.98
+"13 Granite Ave,Dorchester, MA 02124,",3.17
+"75 Exeter Street,Boston, MA 02116,",6.9
+"290 Washington St,Boston, MA 02108,",3.85
+"53 Northern Ave,Boston, MA 02210,",4.16
+"246 W Broadway,Boston, MA 02127,",2.55
+"421 Cambridge St,Boston, MA 02134,",8.02
+"945 Saratoga St,Boston, MA 02128,",8.26
+"Musuem Of Fine Art,Boston, MA 02115,",4.1
+"1250 Massachusetts Ave,Boston, MA 02125,",1.68
+"224 Lewis Wharf,Boston, MA 02110,",4.78
+"130 Jersey St,Boston, MA 02215,",7.89
+"351 Washington St,Brighton, MA 02135,",9.07
+"720 Harrison Ave,Boston, MA 02118,",3.17
+"55 Fruit St,Massachusetts General Hospital,Boston, MA 02114,",5.9
+"782 Tremont St,Boston, MA 02118,",3.36
+"1 Faneuil Hall Marketplace,Quincy Market Building,Boston, MA 02109,",4.41
+"31 Germania St,Boston, MA 02130,",4.78
+"272 Cambridge St,Boston, MA 02114,",5.84
+"1336 Blue Hill Ave,# A,Mattapan, MA 02126,",5.53
+"4 Columbus Ave,Boston, MA 02116,",4.04
+"1512 Dorchester Ave,Dorchester, MA 02122,",2.17
+"133 Guest St,Boston, MA 02135,",8.7
+"155 Brighton Ave,Allston, MA 02134,",8.39
+"129 Brighton Ave,Boston, MA 02134,",8.33
+"764 Huntington Ave,Boston, MA 02115,",4.72
+"3 North Sq,Boston, MA 02113,",4.54
+"32 Oxford St,Boston, MA 02111,",3.48
+"68 Aguadilla St,Boston, MA 02118,",3.79
+"633 Hyde Park Ave,Roslindale, MA 02131,",5.97
 "7 Ellery St,Boston, MA 02127,",1.93
+"147 Endicott St,Boston, MA 02113,",4.6
+"264 Hyde Park Ave,Boston, MA 02130,",5.9
+"32-34 Fish Pier,Boston, MA 02108,",4.47
+"700 Boylston St,Boston, MA 02116,",6.9
+"223 Hanover St,Boston, MA 02113,",4.47
+"226 Tremont St,Boston, MA 02116,",4.04
+"10 Post Office Square,Boston, MA 02109,",4.78
+"1245 Vfw Pkwy,West Roxbury, MA 02132,",20.88
+"1906 Centre St,West Roxbury, MA 02132,",8.45
 "197 Humboldt Ave,Dorchester, MA 02121,",3.6
+"347 Chelsea St,Boston, MA 02128,",7.08
+"28 Warren St,Roxbury, MA 02119,",3.48
+"39 Dalton St,Boston, MA 02199,",3.98
+"20 Maverick Square,East Boston, MA 02128,",8.02
+"1 Harborside Dr,Terminal A Gate A9,Boston, MA 02128,",6.46
+"10 Bosworth St,Boston, MA 02108,",4.97
+"51 Province St,Boston, MA 02108,",4.97
+"223 Grove St,West Roxbury, MA 02132,",19.14
+"439 Tremont St,Boston, MA 02116,",3.29
+"625 Huntington Ave,MassArt Kennedy Bldg,Boston, MA 02118,",4.35
 "61 Columbia Rd,Dorchester, MA 02121,",3.54
+"207 Endicott St,Boston, MA 02113,",4.72
 "45 Province St,Boston, MA 02108,",4.97
+"650 Atlantic Ave,Boston, MA 02210,",3.54
+"25 Fan Pier Blvd,Boston, MA 02210,",4.29
 "1631 Blue Hill Ave,Boston, MA 02126,",5.78
+"154 Maverick St,Maverick Marketplace,Boston, MA 02128,",7.83
+"745 Boylston St,Boston, MA 02116,",4.16
+"151 Milk St,Boston, MA 02109,",4.78
+"304 Dudley St,Boston, MA 02119,",2.67
+"203 Adams St,Dorchester, MA 02122,",2.24
+"515 Gallivan Blvd,Dorchester, MA 02124,",2.92
+"178 Border St,East Boston, MA 02128,",7.95
+"605 Washington St,Dorchester, MA 02124,",2.98
+"1312 Hyde Park Ave,Hyde Park, MA 02136,",9.76
+"1750 Soldiers Fld Rd,Brighton, MA 02135,",10.19
+"3064 Washington St,Roxbury, MA 02119,",4.35
+"301 Warren St,Roxbury, MA 02119,",2.8
+"1513 Dorche Ster Ave,Dorchester, MA 02122,",2.36
+"1650 Vfw Pkwy,West Roxbury, MA 02132,",19.14
+"718 American Lgn Hwy,Roslindale, MA 02131,",7.39
+"340 Longwood Ave,Boston, MA 02115,",8.64
+"Logan Airport Terminal B Pier A,Boston, MA 02128,",6.96
+"360 Western Ave,Brighton, MA 02135,",8.45
+"329 Washington St,Boston, MA 02108,",4.97
+"870 Massachusetts Ave,Boston, MA 02118,",2.36
+"146 Tremont St,Boston, MA 02111,",3.91
+"540 Commonwealth Ave,Boston, MA 02215,",7.46
+"1223 Commonwealth Ave,Allston, MA 02134,",8.33
+"754 E Broadway,Ste 2,Boston, MA 02127,",2.61
 "479 W Broadway,South Boston, MA 02127,",2.17
+"911 Boylston St,Boston, MA 02115,",4.16
+"109 Savin Hill Ave,Dorchester, MA 02125,",1.06
+"281 Franklin St,Boston, MA 02110,",4.85
+"653 Oneill Trl,Boston, MA 02135,",9.13
+"36 N Market St,Faneuil Hall Matketplace,Boston, MA 02139,",4.54
+"329 Sumner St,Boston, MA 02128,",8.08
+"506 Park Dr,Boston, MA 02215,",7.89
+"36 Beach St,Boston, MA 02111,",3.54
+"1045 Saratoga St,Boston, MA 02128,",8.39
+"354 Congress St,Boston, MA 02210,",3.98
+"121 Meridian St,East Boston, MA 02128,",7.95
 "45 Transportation Way,Logan Airport,East Boston, MA 02128,",6.4
+"279 Dartmouth St,Boston, MA 02116,",4.16
+"332 Congress St,Boston, MA 02210,",4.04
+"584 Tremont St,Boston, MA 02118,",3.42
+"7 Ocean View Dr,Boston, MA 02125,",0.75
+"300 Fenway,Boston, MA 02115,",8.51
+"7 N Market St,Boston, MA 02109,",4.54
+"964 Saratoga St,Boston, MA 02128,",8.2
+"333 Border St,Boston, MA 02128,",8.45
+"45 Meridian St,Boston, MA 02128,",7.64
+"381 Centre St,Jamaica Plain, MA 02130,",5.22
+"510 Atlantic Ave,InterContinental Boston,Boston, MA 02210,",3.79
+"155 Milk St,Boston, MA 02109,",4.85
+"1 S Market St,Boston, MA 02109,",4.78
+"12 Church St,Boston, MA 02116,",4.16
+"190 High St,Boston, MA 02110,",3.91
+"1714 Washington St,Boston, MA 02118,",3.04
 "60 Washington St,Brighton, MA 02135,",9.57
 "978 Saratoga St,Boston, MA 02128,",8.33
+"50 Milk St,Boston, MA 02109,",4.72
+"1508 Tremont St,Boston, MA 02120,",4.35
+"61 Bayswater St,east boston, MA 02128,",8.51
+"432 Geneva Ave,Boston, MA 02122,",2.42
 "200 L St,Boston, MA 02127,",2.3
+"1095 Commonwealth Ave,Ste 207,Hong Kong Supermarket,Boston, MA 02215,",8.51
+"1625 Tremont St,Boston, MA 02120,",4.6
+"223 Columbus Ave,Boston, MA 02116,",3.54
+"547 Washington St,Brighton, MA 02135,",11.74
+"27 Columbus Ave,Boston, MA 02116,",3.91
+"127 South St,Boston, MA 02111,",3.48
+"220 Clarendon St,Boston, MA 02116,",6.59
+"7 N Beacon St,Allston, MA 02134,",8.26
+"263 Hanover St,Boston, MA 02113,",4.47
+"674 E Broadway,Boston, MA 02127,",2.42
 "789 Adams St,Dorchester, MA 02124,",3.17
+"165 William J Day Blvd,Boston, MA 02125,",1.3
+"16 Preble St,Boston, MA 02127,",1.74
+"11 Leon St,Ryder Hall,Boston, MA 02115,",3.85
 "130 Salem St,Boston, MA 02113,",4.6
+"67 Prince St,Boston, MA 02113,",4.66
+"141 Richmond St,Boston, MA 02109,",4.47
+"748 Huntington Ave,Boston, MA 02115,",4.72
+"63 Stuart St,Boston, MA 02116,",3.6
+"251 Main St,Boston, MA 02129,",7.08
+"154 Chestnut Hill Ave,Brighton, MA 02135,",9.57
+"110 Brighton Ave,Boston, MA 02134,",8.26
+"19 Edinboro St,Boston, MA 02111,",3.73
+"152 Dorchester Ave,Boston, MA 02127,",2.42
+"15 Beacon St,Boston, MA 02108,",4.47
 "898 Morton St,Mattapan, MA 02126,",4.66
+"1746 Washington St,Roxbury, MA 02118,",3.04
+"77 Broad St,Boston, MA 02109,",4.85
+"307 Cambridge St,Boston, MA 02114,",5.28
+"30 Channel Center St,Boston, MA 02210,",3.29
+"389 Neponset Ave,Dorchester, MA 02122,",2.49
+"75 W Broadway,Boston, MA 02127,",2.49
+"251 Massachusetts Ave,Boston, MA 02115,",3.73
+"570 Tremont St,Boston, MA 02118,",3.42
+"396 Hanover St,Boston, MA 02113,",4.66
+"455 E 1st,South Boston, MA 02127,",2.36
+"3 Beach St,Fl 2,Boston, MA 02111,",3.54
+"1145 Washington St,Boston, MA 02118,",2.98
 "203 Bowdoin St,Dorchester, MA 02122,",2.61
+"90-92 Harvard Ave,Allston, MA 02134,",8.14
+"1443 Tremont St,Roxbury Crossing, MA 02120,",4.23
+"354 Newbury St,Boston, MA 02115,",7.95
+"100 Arlington St,Boston, MA 02116,",3.98
+"295 Bennington St,East Boston, MA 02128,",7.21
+"1233 Bennington St,Boston, MA 02128,",9.07
+"4195 Washington St,Roslindale, MA 02131,",6.65
 "1312 Commonwealth Ave,Allston, MA 02134,",8.82
+"830 Blue Hill Ave,Boston, MA 02124,",3.85
+"75 Francis St,Brigham and Women's Hospital-Shapiro Cardiovascular Center,Boston, MA 02115,",4.85
+"445 Columbia Rd,Dorchester, MA 02125,",2.73
 "520 Atlantic Ave,Boston, MA 02210,",3.79
+"96 Peterborough St,Boston, MA 02215,",7.83
+"400 Neponset Ave,Boston, MA 02122,",2.42
+"63 Salem St,Boston, MA 02113,",4.47
+"465 Huntington Ave,Museum of Fine Arts,Boston, MA 02120,",4.23
+"419 Baker St,West Roxbury, MA 02132,",9.38
+"869 Harrison Ave,Boston, MA 02118,",2.92
+"128 Gerard St,Roxbury, MA 02119,",2.36
+"746 Dudley St,Dorchester, MA 02125,",1.99
+"66 Beach St,Boston, MA 02111,",3.42
+"14 Tremont St,Brighton, MA 02135,",11.5
+"5 Hudson St,Boston, MA 02111,",3.42
 "850 Massachusetts Ave,Boston, MA 02118,",2.42
+"985 Bennington St,Boston, MA 02128,",8.02
+"696 Washington St,Boston, MA 02111,",3.54
+"297 Main St,Charlestown, MA 02129,",7.02
+"106 Cambridge St,Boston, MA 02114,",5.84
+"66 Brighton Ave,Allston, MA 02134,",8.33
+"1251 River St,Hyde Park, MA 02136,",9.51
+"442 Blue Hill Ave,Dorchester, MA 02121,",3.17
 "67 Washington St,Brighton, MA 02135,",9.07
+"531 Columbia Rd,Dorchester, MA 02125,",2.17
 "433 Massachusetts Ave,Boston, MA 02118,",3.42
 "224 Tremont St,Boston, MA 02116,",4.04
+"10 Newbury St,Boston, MA 02228,",6.4
+"88 E Newton St,Fl 2,Boston, MA 02118,",3.48
+"657 Washington St,Boston, MA 02124,",3.04
+"1157 Dorchester Ave,Boston, MA 02125,",1.37
+"1155 Dorchester Ave,Boston, MA 02125,",1.37
+"105 Bowdoin Ave,Dorchester, MA 02121,",2.86
 "600 Hyde Park Ave,Roslindale, MA 02131,",5.9
 "1143 Blue Hill Ave,Dorchester Center, MA 02124,",4.1
+"417 Hanover St,Boston, MA 02113,",4.66
 "639 Tremont St,Boston, MA 02118,",3.67
+"1 Lovejoy Wharf,Ste 101,Boston, MA 02114,",4.85
+"63 Harvard Ave,Boston, MA 02134,",8.08
+"450 Washington St,Boston, MA 02111,",3.79
 "79 Charles St,Boston, MA 02114,",5.84
+"914 Morton St,Mattapan, MA 02126,",4.66
+"15 Fish Pier St E,Boston, MA 02210,",4.29
+"11 William E Mullins Way,Boston, MA 02118,",3.04
+"9 Park St,Boston, MA 02108,",5.1
 "449 Ruggles St,Boston, MA 02115,",4.04
-"1 Harborside Dr,Boston, MA 02128,",6.46
-"Boston, MA 02108,",3.98
+"707 Centre St,Jamaica Plain, MA 02130,",5.78
+"627 Commonwealth Ave,Boston, MA 02215,",7.64
+"400 Brookline Ave,Boston, MA 02215,",8.7
+"26 North Street,Boston, MA 02109,",4.41
+"99 Salem St,Boston, MA 02113,",4.54
+"5 N Sq,Boston, MA 02113,",4.54
+"229 North St,Boston, MA 02113,",4.54
+"716 Columbus Ave,Boston, MA 02228,",3.73
+"2805 Washington St,Roxbury, MA 02119,",4.16
+"475 Dudley St,Roxbury, MA 02119,",2.3
+"282 Cambridge St,Boston, MA 02114,",5.84
+"1100 Blue Hill Ave,Boston, MA 02124,",5.34
+"9 East St Pl,Boston, MA 02111,",3.48
+"1 Harborside Dr,Boston Logan International Airport, Terminal E,Boston, MA 02128,",7.02
+"10 Causeway St,Fl 2,Boston, MA 02114,",4.97
+"5 Fid Kennedy Ave,Boston, MA 02210,",4.35
+"138 St. James Ave,Boston, MA 02116,",3.98
+"321 A St Fort Point,Boston, MA 02210,",3.54
+"33 Hancock St,Boston, MA 02125,",2.61
+"340 Washington St,Dorchester, MA 02121,",2.86
 "1348 Boylston St,Boston, MA 02115,",7.83
-"700 Atlantic Ave,Boston, MA 02111,",3.54
+"35 Farragut Rd,Boston, MA 02127,",2.98
+"50 Park Plz,Boston Park Plaza,Boston, MA 02116,",3.91
+"5 Broad St,Boston, MA 02109,",4.72
+"10 Milk St,Boston, MA 02108,",3.85
+"1 3/4 Broad St,Boston, MA 02109,",4.66
+"1166 Washington St,Boston, MA 02118,",3.04
+"76 Brighton Ave,Boston, MA 02134,",8.33
+"78 Arlington Ave,Boston, MA 02129,",6.59
+"11B Allstate Rd,Dorchester, MA 02125,",2.05
 "655 E Broadway,Boston, MA 02127,",2.36
 "187 Wolcott Sq,Hyde Park, MA 02136,",10.0
+"260 Bowdoin St,Dorchester, MA 02122,",2.49
+"199 State St,Boston, MA 02109,",4.72
+"160 Norfolk St,Dorchester Center, MA 02124,",3.42
+"185 Harvard Ave,Boston, MA 02134,",8.26
+"76 Westmoreland St,Boston, MA 02124,",2.92
+"1391 Boylston St,Boston, MA 02215,",8.33
+"3704 Washington St,Jamaica Plain, MA 02130,",5.1
+"560 Washington St,Boston, MA 02124,",2.86
+"477 Shawmut Ave,Boston, MA 02118,",3.29
+"653 Boylston St,Boston, MA 02116,",6.9
+"1 Charles St S,Boston, MA 02116,",4.1
+"1583 Commonwealth Ave,Boston, MA 02135,",9.01
+"106 St Stephen St,Boston, MA 02115,",3.85
+"88 E Newton St,Boston, MA 02118,",3.48
+"1284 Blue Hill Ave,Mattapan, MA 02126,",5.65
+"208 Dudley St,Boston, MA 02119,",3.29
+"8 Park Plz,Spc D-6,Boston, MA 02116,",3.79
+"715 Boylston St,Boston, MA 02116,",6.84
+"1 Harborside Dr,American Airlines Terminal B,Boston, MA 02128,",6.77
+"695 Truman Hwy,Boston, MA 02136,",9.13
+"106 Dorchester St,Boston, MA 02127,",2.11
+"4252 Washington St,Boston, MA 02131,",6.71
+"264 Newbury St,Boston, MA 02116,",6.96
 "74 Summer St,Boston, MA 02110,",3.6
+"6 Hemenway St,Boston, MA 02215,",4.04
+"125 Harvard Ave,Boston, MA 02134,",8.2
+"33 Union St,Boston, MA 02108,",4.54
+"14 Parmenter St,Boston, MA 02113,",4.54
+"720 E Broadway,Boston, MA 02127,",2.49
+"228 Market St,Brighton, MA 02135,",9.01
+"115 Stuart St,Boston, MA 02116,",3.6
+"450 Boylston St,Boston, MA 02116,",6.71
+"200 High St,Boston, MA 02110,",3.91
+"8 Allstate Rd,Ste 3,Dorchester, MA 02125,",2.11
+"144 Charles St,Boston, MA 02114,",5.72
 "931 Dorchester Ave,Dorchester, MA 02125,",1.43
+"326 Hanover St,Boston, MA 02113,",4.6
 "1270 River Street,Hyde Park, MA 02136,",9.51
 "748 Gallivan Blvd,Dorchester, MA 02122,",2.61
 "522 River St,Mattapan, MA 02126,",5.65
@@ -176,15 +1469,64 @@
 "522 River St,Boston, MA 02126,",5.65
 "730 Blue Hill Ave,Dorchester, MA 02121,",3.98
 "394 Geneva Ave,Dorchester, MA 02122,",2.55
+"15 W St,Boston, MA 02111,",3.79
 "682 Huntington Ave,Boston, MA 02115,",4.66
+"361 Boylston St,Boston, MA 02116,",3.73
+"31 Saint James Ave,Ste 550,Boston, MA 02116,",3.98
+"230 Hanover St,Boston, MA 02113,",4.47
 "30 Rowes Wharf,Boston, MA 02110,",4.78
 "345 Congress St,Fort Point,Boston, MA 02210,",3.98
 "2254 Dorchester Ave,Dorchester Center, MA 02124,",4.16
+"15 Francis St,Fl 1,Peter Brent Bldg,Boston, MA 02115,",4.85
+"65 Salem St,Boston, MA 02113,",4.47
+"415 Western Ave,Brighton, MA 02135,",8.57
+"1096 Boylston St,Boston, MA 02215,",7.58
+"1334 Boylston St,Boston, MA 02215,",7.77
+"286 Newbury St,Boston, MA 02115,",7.77
+"1243 Commonwealth Ave,Allston, MA 02134,",8.39
+"44 Gainsborough St,Boston, MA 02115,",3.79
 "82 Water St,Boston, MA 02109,",4.72
+"107 Porter St,Boston, MA 02128,",7.46
+"4 Tyler St,Boston, MA 02111,",3.48
+"25 Tyler St,Boston, MA 02111,",3.42
+"377 Washington St,Boston, MA 02108,",5.03
+"160 Dudley St,Roxbury, MA 02119,",3.36
+"2 Prince St,Boston, MA 02113,",4.54
+"685 Washington St,Boston, MA 02111,",3.54
+"138 Saint James Ave,Boston, MA 02116,",3.98
+"170 Charles St,Boston, MA 02114,",5.72
+"456 Hyde Park Ave,Roslindale, MA 02131,",6.09
+"73 Broad St,Boston, MA 02109,",4.85
+"12 Channel St,Boston, MA 02210,",3.11
 "267 Bowdoin St,Boston, MA 02122,",2.49
+"480 Columbus Ave,Boston, MA 02118,",3.6
+"PO Box 269,47 Harvard Ave,Boston, MA 02134,",8.02
+"3 Faneuil Hall Market Pl,Boston, MA 02109,",4.78
+"2 South Sta,Boston, MA 02110,",3.54
+"Terminal A 1 Harborside Dr,East Boston, MA 02128,",6.46
+"1799 Commonwealth Ave,Boston, MA 02135,",9.76
+"198 Adams St,Dorchester, MA 02122,",2.24
+"177 Massachusetts Ave,Ste A,Boston, MA 02115,",3.85
+"468 Commonwealth Ave,Boston, MA 02215,",7.64
+"1370 Dorchester Ave,Dorchester, MA 02122,",1.93
+"1356 Dorchester Ave,Boston, MA 02122,",1.99
+"682 Washington St,Boston, MA 02111,",3.54
+"1856 Centre St,West Roxbury, MA 02132,",8.33
+"226 Newbury St,Boston, MA 02116,",6.9
+"744 Dudley St,Boston, MA 02125,",1.99
 "513 Tremont St,Boston, MA 02116,",3.29
+"257 N St,Boston, MA 02113,",4.6
+"27 Austin St,Whole Foods Market,Charlestown, MA 02129,",6.21
+"1 8th St,Pier 6,Charlestown, MA 02129,",5.97
+"23 Food Mart Rd,Roxbury, MA 02118,",2.3
+"378 Centre St,Jamaica Plain, MA 02130,",5.41
+"374 Congress St,Boston, MA 02210,",3.91
 "1920 Beacon St,Brighton, MA 02135,",9.94
-"301 Adams St,Dorchester, MA 02122,",2.36
+"888A Morton St,Mattapan, MA 02126,",4.72
+"473 Albany St,Boston, MA 02118,",3.04
+"6 Clearway St,Boston, MA 02115,",3.85
+"2 Ave De Lafayette,Boston, MA 02111,",3.73
+"102 Water St,Boston, MA 02109,",4.78
 "111 Brighton Ave,Allston, MA 02134,",8.33
 "145 Dartmouth St,Ste 1,Boston, MA 02116,",3.91
 "429 Faneuil St,Brighton, MA 02135,",11.62
@@ -192,115 +1534,808 @@
 "1696 Commonwealth Ave,Boston, MA 02135,",9.88
 "239 Meridian St,Boston, MA 02128,",7.89
 "851 Harrison Ave,Boston, MA 02118,",2.92
-"547 Washington St,Brighton, MA 02135,",11.74
 "618 Shawmut Ave,Roxbury, MA 02118,",3.29
 "260 W Broadway,Boston, MA 02127,",2.61
-"1 Faneuil Hall Mrkt Pl,Boston, MA 02109,",4.41
 "4515 Washington St,Roslindale, MA 02131,",7.27
+"433 Brookline Ave,Boston, MA 02215,",8.7
+"188 Border St,East Boston, MA 02128,",7.95
+"225 Bowdoin St,Dorchester, MA 02122,",2.55
+"69 Bennington St,Boston, MA 02128,",7.52
+"405 Chelsea St,Boston, MA 02128,",6.96
+"351 Hanover St,Boston, MA 02113,",4.6
 "426 Belgrade Ave,West Roxbury, MA 02132,",8.14
+"330 Martin Luther King Blvd,Roxbury, MA 02119,",3.04
+"360 Huntington Ave,Northeastern University,Boston, MA 02115,",3.54
+"710 American Legion Hwy,Roslindale, MA 02131,",5.47
+"74 Canal St,Boston, MA 02114,",4.85
+"338 Washington St,Brighton, MA 02135,",9.07
+"1723 Centre St,West Roxbury, MA 02132,",8.02
+"173 Portland St,Boston, MA 02114,",4.91
+"Ring Rd,Boston, MA 02199,",4.1
+"406 Stuart St,Boston, MA 02116,",3.79
+"263 Washington Street 263 Washington St,Boston, MA 02108,",4.97
+"1 Harborside Dr,Boston Logan Int'l Airport, Terminal C, Space No 48,Terminal C,East Boston, MA 02128,",5.65
+"263 Washington St,Boston, MA 02108,",4.97
+"One Federal St,Ste 100D,Boston, MA 02110,",3.79
+"154 Berkeley St,Boston, MA 02116,",3.54
+"220 Columbia Rd,Dorchester, MA 02121,",2.73
+"327 Newbury St,Boston, MA 02115,",7.89
+"924 Morton St,Boston, MA 02126,",4.66
+"417 Brookline Ave,Boston, MA 02215,",8.7
+"176 Federal St,Boston, MA 02110,",3.67
+"1 S Station,Ste 104A,Boston, MA 02110,",3.67
+"24 Fleet St,Boston, MA 02113,",4.6
 "11 Blue Hill Ave,Roxbury, MA 02119,",2.49
+"202 Humboldt Ave,Dorchester, MA 02121,",3.6
 "28 Myrtle St,Boston, MA 02114,",6.09
+"44 Province St,Boston, MA 02108,",4.97
+"2060 Centre St,West Roxbury, MA 02132,",8.89
+"11 Dorchester St,Boston, MA 02127,",2.3
+"170 Marion St,East Boston, MA 02128,",7.46
+"109 Brighton Ave,Allston, MA 02134,",8.33
+"16 Bennington St,East Boston, MA 02128,",7.83
 "735 Morrissey Blvd,Dorchester, MA 02122,",1.74
+"674 Centre St,Jamaica Plain, MA 02130,",5.84
+"660 Washington St,Boston, MA 02111,",3.6
+"545 Boylston St,Boston, MA 02116,",4.16
+"393 Huntington Ave,Ste 101,Boston, MA 02115,",3.98
+"101 Causeway St,Boston, MA 02114,",5.65
 "264 Hanover St,Boston, MA 02113,",4.47
+"50 Beach St,Boston, MA 02111,",3.48
+"254 S Market St,Boston, MA 02109,",4.41
+"313 Old Colony Ave,Boston, MA 02127,",1.86
+"770 Blue Hill Ave,Boston, MA 02121,",3.85
+"505 Washington St,Boston, MA 02111,",3.79
+"300 Terminal C,Fl 2 Food Court,Terminal C,Boston, MA 02128,",7.02
+"73 Salem St,Boston, MA 02113,",4.47
+"96 Guest St,Boston, MA 02135,",9.13
+"949 Commonwealth Ave,Boston, MA 02215,",8.57
+"487 Washington St,Boston, MA 02124,",2.92
+"411 Brookline Ave,Boston, MA 02215,",8.64
+"1 Beacon St,Boston, MA 02108,",4.85
+"380 Huntington Ave,Churchill Hall At Northeastern University,Boston, MA 02115,",4.1
+"655 Atlantic Ave,Boston, MA 02111,",3.6
+"51 Melcher St,Boston, MA 02210,",3.54
+"200 Stuart St,Boston, MA 02116,",4.1
+"1 City Hall Square,Fl 3,Boston, MA 02108,",4.91
+"1876 Centre St,West Roxbury, MA 02132,",8.39
+"350 Longwood Ave,Longwood Galleria,Boston, MA 02228,",4.78
+"659 Warren St,Boston, MA 02121,",3.29
+"39 Stanhope St,Boston, MA 02116,",3.6
 "580 Dorchester Ave,Boston, MA 02127,",1.8
+"1299 River St,Boston, MA 02136,",9.57
+"294 Newbury St,Boston, MA 02115,",7.83
+"1 Central Wharf,New England Aquarium,Boston, MA 02110,",4.72
+"6 New St,Boston, MA 02128,",8.02
 "686 Morton St,Boston, MA 02126,",5.22
 "11 Thacher St,Boston, MA 02113,",4.66
 "353 Cambridge St,Allston, MA 02134,",8.14
 "11 1/2 Thacher St,Boston, MA 02113,",4.66
 "1330 Boylston St,Boston, MA 02215,",7.77
 "226 Faneuil Marketplace,Boston, MA 02109,",9.69
+"563 Columbus Ave,Boston, MA 02118,",3.54
+"1004 Bennington St,Boston, MA 02128,",8.33
+"688 Columbia Rd,Dorchester, MA 02125,",1.62
+"266 Bowdoin St,Dorchester, MA 02122,",2.49
+"36 Central Sq,Boston, MA 02128,",7.83
+"1270 Boylston St,Boston, MA 02111,",7.64
+"150 Huntington Ave,Boston, MA 02115,",3.79
+"111 Blue Hill Ave,Boston, MA 02119,",2.49
+"775 Commonwealth Ave,Boston University George Sherman Union,Boston, MA 02215,",8.02
+"5 Bellevue St,West Roxbury, MA 02132,",8.57
+"175 N St,Boston, MA 02109,",4.47
+"1461 River St,Hyde Park, MA 02136,",10.0
+"11 Elkins St,Boston, MA 02127,",2.92
+"115 Salem St,Boston, MA 02113,",4.6
 "371 Hanover St,Boston, MA 02113,",4.6
+"18 Fairmount Ave,Hyde Park, MA 02136,",9.32
+"409 Chelsea St,East Boston, MA 02128,",6.96
+"258 Saratoga St,Boston, MA 02128,",7.27
+"119 Salem St,Boston, MA 02113,",4.6
+"250 Hanover St,Boston, MA 02113,",4.47
+"470 Atlantic Ave,Boston, MA 02210,",3.85
+"286 Hanover St,Boston, MA 02113,",4.54
 "1263 River St,Hyde Park, MA 02136,",9.51
 "73 River St,Mattapan, MA 02126,",4.54
+"1 Science Park,Boston, MA 02114,",5.53
 "347 Centre St,Jamaica Plain, MA 02130,",5.03
+"450 Commercial St,Boston, MA 02109,",4.78
 "568 Cambridge St,Allston, MA 02134,",8.39
+"225 Southampton St,Roxbury, MA 02118,",2.11
+"94 Peterborough St,Boston, MA 02215,",7.83
 "55 Causeway St,Boston, MA 02114,",5.59
 "4249 Washington St,Roslindale, MA 02131,",6.84
+"243 Faneuil St,Brighton, MA 02135,",9.69
+"134 W Broadway,Boston, MA 02127,",2.42
+"1245 Commonwealth Ave,Allston, MA 02134,",8.33
+"760 Washington St,Boston, MA 02111,",3.91
+"Quincy Market,Boston, MA 02108,",4.41
+"39 Poplar St,Roslindale, MA 02131,",6.71
 "4168 Washington St,Roslindale, MA 02131,",6.71
+"145 Meridian St,Boston, MA 02128,",7.89
 "10 Walk Hill St,Jamaica Plain, MA 02130,",5.72
+"1881 Center St,West Roxbury, MA 02132,",8.39
 "258 Dudley St,Roxbury, MA 02119,",3.23
+"485 Cambridge St,Allston, MA 02134,",8.2
 "198 Marion St,Boston, MA 02128,",7.58
+"4 Yawkey Way,Boston, MA 02215,",7.83
+"709 E Broadway,South Boston, MA 02127,",2.42
+"155 Portland St,Boston, MA 02115,",4.85
+"5 Tyler St,Boston, MA 02111,",3.42
 "146 - 148 Belgrade Ave,Roslindale, MA 02131,",7.08
 "85 Canal St,Boston, MA 02114,",4.91
+"45 School St,Boston, MA 02108,",4.91
+"168 Brighton Ave,Ste A,Allston, MA 02134,",8.45
+"92 Bedford St,Boston, MA 02111,",3.6
+"2 Copley Pl,Boston, MA 02116,",4.1
+"1265 Boylston St,Boston, MA 02215,",7.64
+"569 Columbus Ave,Boston, MA 02118,",3.54
 "1443 Commonwealth Ave,Brighton, MA 02135,",8.7
+"112 Stoughton St,Dorchester, MA 02125,",1.55
+"174 Brighton Ave,Allston, MA 02134,",8.45
+"1336 Blue Hill Ave,Mattapan, MA 02126,",5.53
+"1331 Dorchester Ave,Boston, MA 02122,",1.99
+"223 Adams St,Boston, MA 02122,",2.17
+"201 Massachusetts Ave,Boston, MA 02115,",3.85
+"305 Meridian St,Boston, MA 02128,",7.95
+"270 Adams St,Dorchester, MA 02122,",2.11
+"350 Longwood Ave,Boston, MA 02215,",4.78
+"42 Beach St,Ste 101,Boston, MA 02111,",3.48
+"57 Broad St,Boston, MA 02109,",4.78
+"31 Thacher St,Boston, MA 02113,",4.66
 "150 Tremont St,Boston, MA 02111,",3.85
 "51 Brookline Ave,Boston, MA 02215,",7.58
 "205 L St,Boston, MA 02127,",2.3
+"4 Kilmarnock St,Boston, MA 02215,",7.89
+"281 Dartmouth St,Boston, MA 02116,",4.16
+"206 S Market St,Boston, MA 02109,",4.78
+"Boston Logan International Airport,1 Harborside Dr, Ste 200 S,Boston, MA 02128,",5.65
+"44 Beach St,Boston, MA 02111,",3.48
 "662 Centre St,Jamaica Plain, MA 02130,",5.9
+"468 Harrison Ave,Boston, MA 02118,",2.98
+"567 Bennington St,East Boston, MA 02128,",7.21
 "356 Tremont St,Boston, MA 02116,",3.98
+"194 Blue Hill Ave,Roxbury, MA 02119,",2.61
+"2 Oliver St,Boston, MA 02110,",3.98
 "111 Chelsea St,Boston, MA 02128,",7.52
+"179 Washington St,Dorchester, MA 02121,",3.23
+"66 Hereford St,Boston, MA 02115,",7.89
 "606 Congress St,Boston, MA 02210,",4.1
-"1 Harborside Dr,East Boston, MA 02128,",6.46
+"417 Washington St,Corner Mall,Boston, MA 02108,",4.97
+"107 Faneuil Hall Mrkt Pl,Ste 114,Boston, MA 02109,",4.41
+"89 South St,Boston, MA 94103,",5.47
+"775 Harrison Ave,Boston, MA 02118,",3.04
+"Dewey Sq,Boston, MA 02116,",3.67
+"99A Cambridge St,Charlestown, MA 02129,",6.4
+"116 Savin Hill Ave,Dorchester, MA 02125,",0.99
+"180 Lincoln St,Boston, MA 02111,",3.36
 "200 Logan Airport,Terminal E,Boston, MA 02128,",7.02
 "256 Marginal St,Boston, MA 02128,",8.45
+"147 Pearl St,Boston, MA 02110,",3.85
+"25 School St,Boston, MA 02108,",4.91
+"88 Black Falcon Ave,Boston, MA 02210,",3.73
 "580 Commonwealth Ave,Boston, MA 02215,",7.71
 "319 Hanover St,Boston, MA 02113,",4.54
-"122 Seaver St,Dorchester, MA 02121,",3.85
+"58 Seaport Blvd,Ste 200,Boston, MA 02210,",4.16
+"1333 Dorchester Ave,Dorchester, MA 02122,",1.99
+"400 Soldiers Rd,Boston, MA 02134,",7.27
+"160 Seaport Blvd,Boston, MA 02210,",3.98
+"312 Northern Ave,South Boston, MA 02210,",4.29
+"367 E 8th St,Boston, MA 02127,",1.74
+"51 N St,Boston, MA 02127,",2.73
+"677 Huntington Ave,Boston, MA 02115,",4.47
+"100 Summer St,Boston, MA 02110,",3.54
+"97 Causeway St,Boston, MA 02114,",5.65
+"50 Gloucester St,Boston, MA 02115,",7.83
+"1102 Washington St,Boston, MA 02118,",3.04
+"1245 Commonwealth Ave,Boston, MA 02134,",8.33
+"166 Harvard Ave,Boston, MA 02134,",8.26
 "237 Newbury St,Boston, MA 02116,",6.9
+"10 High St,Boston, MA 02110,",3.6
+"750 Dudley St,Dorchester, MA 02125,",1.93
+"80 Brighton Ave,Allston, MA 02134,",8.33
+"234-236 Newbury St,Boston, MA 02116,",6.9
+"322 Washington St,Boston, MA 02108,",3.85
+"140 Boylston St,Boston, MA 02116,",3.91
+"19 Poplar St,Roslindale, MA 02131,",6.65
+"204 Harvard Ave,Allston, MA 02134,",8.39
+"1111 Dorchester Ave,Dorchester, MA 02125,",1.24
+"4197 Washington St,Roslindale, MA 02131,",6.71
+"26 Province St,Boston, MA 02108,",4.97
+"32 Bromfield St,Boston, MA 02108,",4.97
+"332 W Broadway,Boston, MA 02127,",2.36
+"173 Massachusetts Ave,Boston, MA 02135,",3.85
+"1 Pier 7,Charlestown, MA 02129,",5.9
+"9A Tyler St,Boston, MA 02111,",3.42
+"529 Main St,Boston, MA 02129,",6.71
+"520 Columbus Ave,Boston, MA 02118,",3.54
+"151 Pearl St,Boston, MA 02110,",3.85
+"39 Dalton St,The Sheraton Boston Hotel,Boston, MA 02199,",3.98
+"14 Bromfield St,Boston, MA 02108,",4.97
 "764 E 4th St,Boston, MA 02127,",2.61
+"1 Brighton Ave,Boston, MA 02134,",8.76
+"2387 Washington St,Roxbury, MA 02119,",3.54
+"69 Bromfield St,Boston, MA 02108,",5.03
+"1509 Blue Hill Ave,Mattapan, MA 02126,",5.65
+"679 Canterbury St,Roslindale, MA 02131,",6.15
+"692 Columbia Rd,Dorchester, MA 02125,",1.62
+"581 Washington St,Boston, MA 02111,",3.67
+"6 W Broadway,Boston, MA 02127,",2.55
+"81 L St,Boston, MA 02127,",2.49
+"005 Pleasure Crossing,Cambridge, MA 02114,",4.6
+"958 Tremont St,Roxbury Crossing, MA 02120,",3.48
+"109 High St,Boston, MA 02110,",3.73
+"495 Summer St,Boston, MA 02210,",3.79
+"416 Geneva Ave,Dorchester, MA 02122,",2.49
+"99 High St,Boston, MA 02110,",3.73
+"1430 Vfw Pkwy,West Roxbury, MA 02132,",19.64
+"914 Beacon St,Ste A,Boston, MA 02215,",7.89
+"710 Boylston St,Boston, MA 02116,",4.23
+"203 Green St,Jamaica Plain, MA 02130,",5.47
+"1894 Centre St,West Roxbury, MA 02132,",8.45
+"19 Union St,Boston, MA 02108,",4.54
+"22R Birch St,Roslindale, MA 02131,",6.71
+"100 City Sq,Charlestown, MA 02129,",5.34
+"282 Congress St,Boston, MA 02110,",4.29
+"1 Huntington Ave,Boston, MA 02116,",3.91
+"779 Centre St,Jamaica Plain, MA 02130,",5.65
+"1 Brighton Ave,Super88,Boston, MA 02134,",8.76
+"20 Bradston St,Boston, MA 02118,",2.61
+"429 W Broadway,Boston, MA 02127,",2.24
+"314 Shawmut Ave,Boston, MA 02118,",3.48
+"37 Clarendon St,Boston, MA 02116,",3.6
 "772 Tremont St,Boston, MA 02118,",3.29
+"412A Market St,Brighton, MA 02135,",9.44
+"600 Harrison Ave,Boston, MA 02118,",3.23
+"117 Western Ave,Boston, MA 02163,",7.71
+"47 Huntington Ave,Boston, MA 02116,",3.91
+"7 Beach St,Boston, MA 02111,",3.54
+"108 Brighton Ave,Allston, MA 02134,",8.26
+"200 Seaport Blvd,Commonwealth Pier,Boston, MA 02210,",4.29
+"600 Huntington Ave,Mission Hill, MA 02115,",4.16
+"348 Congress St,Boston, MA 02210,",3.98
+"304 Western Ave,Boston, MA 02135,",8.64
 "1159 Washington St,Dorchester, MA 02124,",4.23
+"241 Washington St,Boston, MA 02201,",4.97
+"15 Channel Ctr,Boston, MA 02210,",3.23
 "140 Norfolk St,Dorchester, MA 02124,",3.42
+"375 Blue Hill Ave,Dorchester, MA 02121,",3.04
+"1753 Centre St,Boston, MA 02132,",8.14
 "330 Belgrade Ave,Roslindale, MA 02131,",8.2
 "612 Blue Hill Ave,Dorchester, MA 02121,",3.73
+"255 State St,Long Wharf,Boston, MA 02109,",4.72
+"92 State St,Boston, MA 02109,",4.72
+"77 Dorchester St,Boston, MA 02127,",2.17
 "863 Washington St,Boston, MA 02124,",4.1
+"1525 Washington St,Boston, MA 02118,",3.48
+"1940 Beacon St,Brighton, MA 02135,",10.0
+"1 Harborside Dr,Terminal B Connector,Boston, MA 02128,",6.21
+"190 Newbury St,Boston, MA 02116,",4.04
+"34 Newmarket Sq,Roxbury, MA 02118,",2.11
+"1 Faneuil Hall Sq,Boston, MA 02109,",4.78
+"120 Harvard Ave,Allston, MA 02134,",8.2
+"120 Kingston St,Boston, MA 02111,",3.67
+"102 Waltham St,Boston, MA 02118,",3.36
+"135 Market St,Brighton, MA 02135,",8.95
+"48 Temple Pl,Boston, MA 02111,",3.85
 "Boston, MA 02110,",4.78
 "239 Dudley St,Roxbury, MA 02119,",3.23
+"90 Exeter St,Boston, MA 02116,",3.98
+"48 Harvard Ave,Allston, MA 02134,",8.02
+"379 Hanover St,Boston, MA 02113,",4.6
+"One Marina Park Dr,56 Northern Ave On GPS,Boston, MA 02210,",4.1
+"64 Arlington St,Boston, MA 02116,",3.98
+"197 8th St,Boston, MA 02129,",5.84
+"70 Tyler St,Boston, MA 02111,",3.6
+"31 Saint James Ave,Ste 110, Fl 1,Boston, MA 02116,",3.98
+"393 Massachusetts Ave,Space F-1,Boston, MA 02115,",3.79
+"1578 Tremont St,Unit 1,Boston, MA 02120,",4.54
+"981 Tremont St,Boston, MA 02116,",3.54
+"419 Washington St,Brighton, MA 02135,",9.26
+"138 Cambridge St,Boston, MA 02114,",6.03
+"904 Huntington Ave,Boston, MA 02115,",5.47
+"334 Massachusetts Ave,Symphony Plaza East,Boston, MA 02115,",3.6
+"1122 Boylston St,Boston, MA 02115,",7.58
+"162 Harvard Ave,Boston, MA 02134,",8.26
+"274 Franklin St,Boston, MA 02110,",4.85
+"205 Portland St,Boston, MA 02114,",4.91
+"230 Tremont St,Boston, MA 02116,",4.04
+"1576 Dorchester Ave,Dorchester, MA 02122,",2.36
+"13 William Kelly Sq,East Boston, MA 02128,",7.46
+"1866 Centre St,West Roxbury, MA 02132,",8.39
+"11 W Broadway,Unit 03,South Boston, MA 02127,",2.55
+"4238-4244 Washington St,Roslindale, MA 02131,",6.9
+"1281 Hyde Park Ave,Hyde Park, MA 02136,",9.76
+"260 Western Ave,Allston, MA 02134,",8.2
+"948 Bennington St,East Boston, MA 02128,",8.33
+"700 Albany St,Boston, MA 02118,",2.92
+"875 William Morrisey Blvd,Dorchester, MA 02122,",1.37
+"300 Longwood Avenue,Boston, MA 02115,",4.72
+"52 Queensberry St,Boston, MA 02215,",8.2
+"857 Dorchester Ave,Dorchester, MA 02125,",1.8
+"2 Tyler St,Boston, MA 02111,",3.48
+"2080 Day Blvd,Boston, MA 02127,",3.67
+"1585 Commonwealth Ave,Brighton, MA 02135,",9.01
+"170 Lincoln St,Boston, MA 02111,",3.36
 "870 Blue Hill Ave,Dorchester Center, MA 02124,",3.79
 "46 Washington St,Dorchester, MA 02121,",3.17
-"313 Old Colony Ave,Boston, MA 02127,",1.86
+"25 Harbor Shore Dr,Boston, MA 02210,",4.04
+"1000 Bennington St,Boston, MA 02128,",8.7
+"1033 Tremont St,Roxbury Crossing, MA 02120,",3.6
 "177 Massachusetts Ave,Boston, MA 02115,",3.85
-"Boston, MA 02127,",2.67
+"695 Atlantic Ave,Boston, MA 02111,",3.54
+"86 Peterborough St,Boston, MA 02215,",7.83
+"1562 Tremont St,Boston, MA 02120,",4.47
+"185 Dudley St,Roxbury, MA 02119,",3.36
+"1381 Boylston St,Boston, MA 02215,",7.89
+"2243 Dorchester Ave,Boston, MA 02124,",4.1
+"248 Newburry St,Boston, MA 02116,",6.96
+"187 Main St,Boston, MA 02129,",7.15
+"697 Centre St,Boston, MA 02130,",5.78
+"1 Nashua St,Boston, MA 02114,",5.59
+"168 Western Ave,Allston, MA 02134,",8.14
+"45 Gainsborough St,Boston, MA 02115,",3.73
+"1626 Tremont St,Boston, MA 02120,",4.97
+"40 Crescent Ave,Dorchester, MA 02125,",1.49
+"445 Hanover St,Boston, MA 02113,",4.72
+"88 Exeter St,Boston, MA 02116,",3.98
+"1560 Vfw Parkway,West Roxbury, MA 02132,",19.26
+"76 Summer Street,Boston, MA 02110,",3.6
+"244 Meridian St,East Boston, MA 02128,",7.89
+"65 Maverick Sq,Boston, MA 02128,",7.77
+"28-38 Trinity Pl,Trinity Place,Boston, MA 02116,",3.85
+"245 Meridian St,Boston, MA 02128,",7.89
+"34 Oxford St,Boston, MA 02111,",3.48
+"83 Main St,Charlestown, MA 02129,",6.28
+"415 Centre St,Boston, MA 02130,",5.53
+"860 Dorchester Ave,Ste A,Dorchester, MA 02125,",1.3
+"254 Brighton Ave,Allston, MA 02134,",8.26
+"291 Bennington St,Boston, MA 02128,",7.21
+"210 Hanover St,Boston, MA 02113,",4.47
 "2 Brighton Ave,Boston, MA 02134,",8.51
 "5200 Washington St,West Roxbury, MA 02132,",19.14
+"1612 Commonwealth Ave,Brighton, MA 02135,",9.69
+"189 Devonshire St,Boston, MA 02110,",4.85
+"38 Norfolk St,Dorchester Center, MA 02124,",3.11
+"10 Post Office Sq,Boston, MA 02109,",4.78
+"1301 Boylston St,Boston, MA 02215,",7.77
+"388 Blue Hill Ave,Dorchester, MA 02121,",3.23
+"194 Harvard Ave,Boston, MA 02134,",8.33
+"153 Belgrade Ave,Roslindale, MA 02131,",7.08
+"201 Washington St,Boston, MA 02108,",5.03
+"369 Huntington Ave,Boston, MA 02115,",3.98
+"399 Boylston St,Boston, MA 02116,",3.73
+"1352 Boylston St,Boston, MA 02215,",7.83
+"70 Charles St,Boston, MA 02114,",5.9
+"120 Beverly St,Boston, MA 02114,",4.85
+"108 Cambridge St,Charlestown, MA 02129,",6.46
+"161 Brighton Ave,Allston, MA 02134,",8.2
+"640 Atlantic Ave Train Terminal,Boston, MA 02110,",3.54
+"1 S Station,Boston, MA 02110,",3.67
 "1918 Dorchester Ave,Dorchester, MA 02124,",3.11
+"389 Maverick St,Boston, MA 02128,",8.57
+"45 Tomahawk Dr,Boston, MA 02128,",6.65
+"177 Tremont St,Boston, MA 02111,",4.04
+"289 Dorchester St,South Boston, MA 02127,",1.8
+"250 Northern Ave,Boston, MA 02210,",4.23
+"597 Centre St,Jamaica Plain, MA 02130,",5.9
+"100 Huntington Ave,Ste K006A,Boston, MA 02116,",4.04
+"3 Lewis St,Boston, MA 02110,",4.6
+"964 Saratoga St,East Boston, MA 02128,",8.2
+"571 Washington St,Boston, MA 02135,",11.68
+"32 W Broadway,Boston, MA 02127,",2.55
+"1110 Boylston St,Boston, MA 02215,",7.58
+"35 Westgate Rd,Boston, MA 02467,",9.44
+"79 Hancock St,Boston, MA 02125,",2.55
+"98 Salem St,Boston, MA 02113,",4.54
+"28 Porter St,Boston, MA 02128,",7.77
+"132 Newbury St,Boston, MA 02116,",3.91
+"270 Babcock St,Boston, MA 02215,",8.76
+"433 Faneuil St,Brighton, MA 02135,",11.62
+"184 Brighton Ave,Allston, MA 02134,",8.45
+"1745 Centre St,West Roxbury, MA 02132,",8.57
+"129 Jersey St,Boston, MA 02215,",7.89
+"1249 Commonwealth Ave,Boston, MA 02134,",8.39
 "856 Dorchester Ave,Dorchester, MA 02125,",1.3
+"50 Terminal St,Charlestown, MA 02139,",7.27
+"934 Dorchester Ave,Dorchester, MA 02125,",1.43
+"1116 Boylston St,Boston, MA 02215,",7.58
+"541 Tremont St,Boston, MA 02116,",3.29
+"107 Beverly St,Boston, MA 02114,",4.72
+"160 State St,Boston, MA 02109,",4.66
+"1505 Dorchester Ave,Dorchester, MA 02122,",2.17
+"3381 Washington St,Jamaica Plain, MA 02130,",4.91
+"2261 Dorchester Ave,Dorchester, MA 02124,",4.16
+"907 Boylston St,Boston, MA 02115,",4.16
+"33 Stanhope St,Boston, MA 02116,",3.54
+"270 Western Ave,Allston, MA 02134,",8.26
 "7 Moulton St,Boston, MA 02129,",7.46
 "726 E Broadway,Boston, MA 02127,",2.49
+"19-21 Jersey St,Boston, MA 02215,",7.83
+"552 Tremont St,Boston, MA 02118,",3.36
+"25 New Chardon St,Boston, MA 02114,",4.91
+"1295 Boylston St,Boston, MA 02215,",7.77
+"15 Arlington St,Boston, MA 02116,",6.28
+"850 Harrison Ave,Boston Medical Center,Boston, MA 02128,",2.86
+"115 Huntington Ave,Ste 181,Boston, MA 02199,",9.63
+"85 Bedford St,Boston, MA 02111,",3.67
 "356 Chestnut Hill Ave,Boston, MA 02135,",9.94
+"3 Winter Pl,Boston, MA 02108,",3.85
+"323 Hanover St,Boston, MA 02113,",4.54
+"5 Blossom St,Boston, MA 02114,",5.97
+"30 Washington St,Boston, MA 02143,",6.59
 "3712 Washington St,Jamaica Plain, MA 02130,",5.1
+"34 Harvard Ave,Allston, MA 02134,",8.02
+"1415 Washington St,Boston, MA 02118,",3.36
+"25 Drydock Ave,Boston, MA 02210,",3.48
+"333 Hanover St,Boston, MA 02113,",4.54
+"166 Canal St,Boston, MA 02114,",4.85
+"35 Stanhope St,Back Bay, MA 02116,",3.6
+"365 Centre St,Jamaica Plain, MA 02130,",5.16
+"100 Stuart St,Boston, MA 02116,",4.23
+"1395 Washington St,Boston, MA 02118,",3.36
+"57 Stuart St,Boston, MA 02116,",3.6
+"148 State St,Boston, MA 02109,",4.66
+"87 Glenville Ave,Allston, MA 02134,",8.51
+"1284 Massachusetts Ave,Dorchester, MA 02125,",1.62
+"11 Marshall St,Boston, MA 02108,",4.54
+"117 Western Ave,Harvard Business School,Boston, MA 02134,",7.71
+"137 Stuart St,Boston, MA 02116,",3.67
+"1 Constitution Pl,Charlestown, MA 02129,",5.34
+"85 Causeway St,Boston, MA 02114,",5.65
+"2 Perkins St,Jamaica Plain, MA 02130,",5.41
+"1033 Massachusetts Ave,Boston, MA 02118,",2.42
+"228 Cambridge St,Boston, MA 02114,",5.9
+"605 Centre St,Boston, MA 02130,",5.9
+"110 Dorchester St,Boston, MA 02127,",2.11
+"2 Center Plz,Boston, MA 02108,",4.91
+"104 South St,Boston, MA 02111,",3.48
+"9 Lansdowne St,Boston, MA 02215,",7.71
+"60 Franklin St,Boston, MA 02110,",3.73
+"724 Huntington Ave,Boston, MA 02120,",4.97
+"40 Court St,Boston, MA 02108,",4.72
+"349 Centre St,Jamaica Plain, MA 02130,",5.1
+"1 Faneuil Hall Sq,Ste 200,Boston, MA 02109,",4.78
+"79 Park Plz,Boston, MA 02116,",3.91
+"44 Charles St,Boston, MA 02114,",5.97
+"667 E Broadway,Boston, MA 02127,",2.36
+"27 Ellison Ave,Boston, MA 02126,",4.16
+"658 E Broadway,Boston, MA 02127,",2.36
+"147 Hanover St,Boston, MA 02108,",4.47
+"104 Faneuil Hall Market Pl,Boston, MA 02109,",4.78
 "736 Centre St,Jamaica Plain, MA 02130,",5.72
 "1882 Centre St,West Roxbury, MA 02132,",8.39
-"130 Dartmouth St,Boston, MA 02116,",4.04
+"9 Bowdoin St,Boston, MA 02114,",4.97
+"250 Franklin St,Boston, MA 02110,",4.91
+"49 Lansdowne St,Boston, MA 02215,",7.64
+"77 Charles St,Boston, MA 02114,",5.84
+"558 E 3rd St,Boston, MA 02127,",2.49
+"343 Congress St,Boston, MA 02210,",4.04
+"401 D St,Boston, MA 02210,",3.54
+"155 Southampton St,Boston, MA 02121,",2.24
+"196 Quincy St,Boston, MA 02121,",2.61
+"134 Smith St,Boston, MA 02120,",4.72
 "1885 Centre St,West Roxbury, MA 02132,",8.39
+"1277 River St,Hyde Park, MA 02136,",9.51
+"2 Pleasant St,Charlestown, MA 02129,",5.47
+"10 Westland Ave,Boston, MA 02115,",3.73
+"1 Union St,Boston, MA 02108,",4.47
+"127 Pearl St,Boston, MA 02110,",3.85
+"162 Salem St,Boston, MA 02113,",4.66
+"85 Newbury St,Boston, MA 02116,",3.79
+"236 Hanover St,Boston, MA 02113,",4.47
+"100 Peterborough St,Boston, MA 02215,",7.89
+"200 Atlantic Ave,Fl 1,Boston, MA 02110,",4.72
+"222 Berkeley St,Boston, MA 02116,",3.73
+"1363 Boylston St,Boston, MA 02215,",7.83
+"55 Boston Wharf Rd,Boston, MA 02210,",3.98
+"3706 Washington St,Jamaica Plain, MA 02130,",5.1
+"200 N Beacon St,Brighton, MA 02135,",9.01
+"24 Boston St,Boston, MA 02127,",1.86
+"53 Chelsea St,Boston, MA 02128,",5.28
+"1 Harborside Dr,Terminal B, Gates B-30 to B-36,Boston, MA 02128,",6.4
+"111 N Washington St,Boston, MA 02114,",4.66
+"4381 Washington St,Roslindale, MA 02131,",7.15
 "10 Fairmount Ave,Boston, MA 02136,",9.32
 "188 Baker St,West Roxbury, MA 02132,",20.07
+"257 Norfolk Ave,Boston, MA 02119,",1.99
 "1357 Blue Hill Ave,Mattapan, MA 02126,",5.47
+"800 Boylston St,Ste 52,Boston, MA 02199,",3.91
+"120 Meridian St,East Boston, MA 02128,",7.89
+"2 Carpenter Pkwy,Boston, MA 02127,",1.74
+"20B Tyler St,Boston, MA 02111,",3.42
+"1704 Washington St,Boston, MA 02118,",3.04
+"47 Charles St,Boston, MA 02114,",5.97
+"300 Centre St,Jamaica Plain, MA 02130,",4.85
+"3880 Washington St,Roslindale, MA 02131,",6.15
+"169 Brighton Ave,Allston, MA 02134,",8.2
+"643 River St,Mattapan, MA 02126,",5.97
+"540 Atlantic Ave,Boston, MA 02110,",3.73
+"280 Hanover St,Boston, MA 02113,",4.54
+"11 Parmenter St,Boston, MA 02113,",4.54
 "1590 Tremont St,Boston, MA 02120,",4.54
+"470 Centre St,Jamaica Plain, MA 02130,",5.59
+"233 Hanover St,Boston, MA 02113,",4.47
+"1616 Dorchester Ave,Dorchester, MA 02122,",2.3
+"338 Newbury St,Boston, MA 02115,",7.89
+"33A Boston Fish Pier,Boston, MA 02210,",4.29
+"77 Cummins Hwy,Roslindale, MA 02131,",6.34
+"26 Chandler St,Boston, MA 02116,",3.36
+"148 Bowdoin St,Dorchester, MA 02124,",2.8
+"107 S St,Boston, MA 02111,",3.48
+"22 Food Mart Rd,Roxbury, MA 02118,",2.3
+"295 Bennington St,Boston, MA 02128,",7.21
+"16 Brighton Ave,Allston, MA 02134,",8.45
+"1889 River St,Hyde Park, MA 02136,",11.0
+"559 Washington St,Brighton, MA 02135,",11.74
+"501 Cambridge St,Allston, MA 02134,",8.26
+"52 Gainsborough St,Boston, MA 02115,",3.79
+"1220 Adams St,Dorchester Center, MA 02124,",4.23
+"725 Boylston St,Boston, MA 02116,",4.23
+"184 High St,Boston, MA 02110,",3.91
+"346 Huntington Ave,Boston, MA 02115,",4.35
+"Logan International Airport,Terminal C,Boston, MA 02128,",6.77
+"370 Commonwealth Ave,Boston, MA 02215,",7.52
+"636 Beacon St,Kenmore Sq,Boston, MA 02215,",7.33
+"1 Faneuil Hall Marketplace,Boston, MA 02109,",4.78
 "69 Heath St,Jamaica Plain, MA 02130,",4.66
+"68 Warren St,Boston, MA 02119,",3.04
+"284 Amory St,Jamaica Plain, MA 02130,",5.34
+"224 Newbury St,Boston, MA 02116,",6.9
 "960 William T Morrissey Blvd,Boston, MA 02122,",2.17
+"529 Main St,Charlestown, MA 02129,",6.71
+"174 Harvard Ave,Allston, MA 02134,",8.26
+"8 Park St,Boston, MA 02108,",5.1
+"41 Union St,Boston, MA 02108,",4.54
 "1405 Washington St,Boston, MA 02118,",3.36
+"145 Harvard Ave,Allston, MA 02134,",8.2
 "712 Commonwealth Ave,Ste 2,Boston, MA 02215,",7.95
 "452 Huntington Ave,Boston, MA 02115,",4.23
-"Kenmore Square,645 Beacon St,Boston, MA 02215,",7.46
+"Kenmore Square,645 Beacon St,Boston, MA 02215,",7.95
 "566 Columbia Rd,Dorchester, MA 02125,",1.93
 "683 Tremont St,Boston, MA 02118,",3.48
 "20 Charles St,Boston, MA 02114,",5.97
+"42 Province St,Boston, MA 02108,",4.97
+"157 Sutherland Rd,Boston, MA 02135,",9.94
+"283 Main St,Charlestown, MA 02129,",7.02
+"1 Erie St,Dorchester, MA 02121,",3.23
+"57 W Dedham St,Boston, MA 02118,",3.48
+"20 Ericsson St,Boston, MA 02122,",2.86
+"1029 Commonwealth Ave,Boston, MA 02215,",8.7
+"1024 Massachusetts Ave,Boston, MA 02118,",2.36
+"133 Pearl St,Boston, MA 02110,",3.85
+"291 Devonshire St,Boston, MA 02110,",3.6
 "140 Clarendon St,Boston, MA 02116,",3.79
 "275 Washington St,Boston, MA 02201,",4.97
-"Boston Logan Int'l Airport 200,Terminal BA2-A15,East Boston, MA 02128,",6.71
+"289 Devonshire St,Boston, MA 02110,",3.6
+"150 Richmond St,Boston, MA 02109,",4.47
+"200 Terminal B,BA2-A15,Boston, MA 02359,",27.22
+"Boston Logan Int'l Airport 200,Terminal BA2-A15,East Boston, MA 02128,",6.59
 "300 Terminal Dr,Charlestown, MA 02129,",7.95
+"200 Terminal St,Charlestown, MA 02129,",7.95
+"121 Water St,Boston, MA 02109,",4.78
+"554 Dudley St,Dorchester, MA 02125,",2.11
 "56 L St,South Boston, MA 02127,",2.61
-"252 Friend St,Boston, MA 02114,",5.72
+"14 Corinth St,Roslindale, MA 02131,",6.77
+"1 Harborside Dr,Boston Logan International Airport - Terminal E,Boston, MA 02128,",7.02
+"143 Richmond St,Boston, MA 02109,",4.47
+"72 Broad St,Boston, MA 02110,",4.78
+"66 Staniford St,Boston, MA 02114,",5.72
+"5197 Washington St,West Roxbury, MA 02132,",19.2
+"401-403 D St,Aloft Boston Seaport District,Boston, MA 02210,",3.54
+"132 Brookline Ave,Boston, MA 02215,",7.77
+"Logan International Airport Terminal C,300 Terminal Dr,Boston, MA 02128,",7.02
+"99 Harrison Ave,Boston, MA 02111,",3.54
+"26 Oxford St,Boston, MA 02111,",3.48
+"90 N Washington St,Boston, MA 02113,",4.66
+"40 Broad St,Boston, MA 02109,",4.72
+"247 Newbury St,Boston, MA 02116,",6.96
+"71 Summer St,Boston, MA 02110,",3.79
+"157-A Massachusetts Avenue,Ste A,Boston, MA 02127,",3.91
+"551 Boylston Street,Boston, MA 02116,",4.16
+"530 American Legion Highway,Roslindale, MA 02131,",5.03
+"145 Tremont St,Boston, MA 02111,",3.91
+"1890 Centre St,West Roxbury, MA 02132,",8.45
 "1946 Centre St,West Roxbury, MA 02132,",8.57
+"1732 Centre St,West Roxbury, MA 02132,",8.26
+"1836 Centre St,West Roxbury, MA 02132,",8.33
+"647 Tremont St,Boston, MA 02118,",3.91
+"48 Winter St,Boston, MA 02111,",4.97
+"100 High St,Boston, MA 02109,",3.67
+"324 Newbury St,Boston, MA 02115,",7.89
+"3 Appleton St,Boston, MA 02116,",3.36
+"885 Boylston St,Boston, MA 02116,",4.16
+"116 Brighton Ave,Allston, MA 02134,",8.2
+"487 Cambridge St,Allston, MA 02134,",8.2
+"244 Newbury St,Boston, MA 02116,",6.96
 "415 Summer St,Boston Convention Ctr,Boston, MA 02210,",4.04
+"23 Hudson St,Boston, MA 02111,",3.36
+"325 Huntington Ave,Boston, MA 02115,",3.85
+"173 Border St,East Boston, MA 02128,",7.95
+"950 American Legion Hwy Ste 9,Roslindale, MA 02131,",7.15
+"10 Fairmount Ave,Hyde Park, MA 02136,",9.32
+"563 Washington St,Brighton, MA 02135,",11.74
+"388 Blue Hill Ave,Boston, MA 02121,",3.23
+"290 Washington St,Brighton, MA 02135,",9.01
+"821 Washington St,Boston, MA 02111,",3.67
+"23 S Huntington Ave,Jamaica Plain, MA 02130,",5.41
 "300 Terminal C,Pier B,Boston, MA 02128,",6.77
+"333 W 1st St,Boston, MA 02127,",2.49
 "58 Hemenway St,Boston, MA 02115,",3.91
 "9 Barnes Ave,Boston, MA 02128,",8.39
+"22 W Broadway,Boston, MA 02127,",2.49
+"400 Dorchester Ave,Boston, MA 02127,",2.17
+"420 West St,Hyde Park, MA 02136,",8.14
+"47 Huntington Ave,Copley Square Hotel,Boston, MA 02116,",3.91
+"657 Washington St,Boston, MA 02111,",3.6
+"417 Washington St,The Corner Food Court,Boston, MA 02110,",3.73
+"117 Chiswick Rd,Brighton, MA 02135,",9.76
+"196 Quincy St,Boston, MA 02128,",2.61
+"23 Drydock Ave,Boston, MA 02210,",3.42
+"126 Brookline Ave,Boston-Fenway, MA 02215,",7.71
+"2297 Dorchester Ave,Dorchester, MA 02124,",4.23
+"239 Grove St,Boston, MA 02132,",19.14
+"116 Washington St,Dorchester, MA 02121,",3.04
+"284 Centre St,Jamaica Plain, MA 02130,",4.85
+"53 Boston Wharf Rd,Boston, MA 02210,",3.98
+"5 N Beacon St,Allston, MA 02134,",8.26
+"772 Blue Hill Ave,Dorchester Center, MA 02124,",3.85
+"300A Centre St,Jamaica Plain, MA 02130,",4.85
+"1417 Centre St,West Roxbury, MA 02132,",7.21
+"665 Tremont St,Boston, MA 02118,",3.67
+"2 Winter Pl,Boston, MA 02108,",3.85
+"1238 River St,Hyde Park, MA 02136,",9.44
+"801 Massachusetts Ave,Boston, MA 02118,",2.8
+"21A Beacon St,Boston, MA 02108,",4.47
 "460 Centre St,Jamaica Plain, MA 02130,",5.53
+"1735-1741 Dorchester Ave,Boston, MA 02124,",2.49
+"102 Tremont St,Boston, MA 02108,",4.91
+"3 Center Plz,Boston, MA 02108,",4.97
+"92 State St,Merchants Row Entrance,Boston, MA 02109,",4.72
+"1 Dalton St,Fl 2,Boston, MA 02199,",4.04
+"221 Main St,Charlestown, MA 02129,",7.15
+"100 Van Ness St,Boston, MA 02215,",7.89
+"1282 Boylston St,Boston, MA 02215,",7.71
+"182 Brighton Ave,Allston, MA 02134,",8.45
+"326 Commercial St,Boston, MA 02109,",4.85
+"783 Tremont St,Boston, MA 02118,",3.29
+"87 Summer St,Boston, MA 02110,",3.6
+"47 Northern Ave,Boston, MA 02210,",4.16
+"372 Congress St,Boston, MA 02210,",3.91
+"800 Boylston St,Ste 17,Boston, MA 02199,",4.23
+"13 School St,Boston, MA 02108,",4.91
+"659 Boylston St,Boston, MA 02116,",6.9
+"1 S Market St,Quincy Market Bldg,Boston, MA 02109,",4.41
+"267 Washington St,Boston, MA 02111,",4.97
+"209 Columbus Ave,Boston, MA 02116,",3.48
+"1095 Commonwealth Ave,Ste 204,Boston, MA 02215,",8.76
+"358C Centre St,Jamaica Plain, MA 02130,",5.1
+"Summer Street & Washington Street,Boston, MA 02111,",3.85
+"1 International Pl,Boston, MA 02110,",4.85
+"Copley Plz,Boston, MA 02228,",4.1
+"50 Northern Ave,Boston, MA 02210,",4.16
+"Saint Mary's St & Commonwealth Ave,Boston, MA 02215,",7.89
+"Boston, MA 02101,",3.79
+"Comnwlth Pier,Boston, MA 02108,",4.29
+"Commonwealth Pier,Boston, MA 02210,",4.29
+"Charles St,Boston, MA 02114,",5.72
+"80 Brookline Ave,Boston, MA 02215,",7.64
+"83A Seaport Blvd,Boston, MA 02210,",4.16
+"Bolyston & Darthmouth,Boston, MA 02116,",4.1
+"1121 Harrison Ave,Boston, MA 02119,",3.23
+"Boston, MA 02128,",7.02
+"Purchase St High St,Boston, MA 02110,",4.78
+"Stuart And Trinity,Boston, MA 02116,",3.85
 "Pi Aly,Boston, MA 02108,",4.72
+"Boston, MA,",3.79
+"267 Franklin St,Boston, MA 02110,",4.85
+"75 Northern Ave,Boston, MA 02210,",4.1
+"728 Huntington Ave,Boston, MA 02115,",4.91
+"Boston, MA 02118,",3.48
+"667 Vfw Pkwy,Boston, MA 02467,",8.2
+"8 Fid Kennedy Ave,Boston, MA 02210,",4.47
 "817 Harrison Ave,Boston, MA 02118,",2.92
 "367 Centre St,Jamaica Plain, MA 02130,",5.16
+"3RD Ave,Boston, MA 02129,",5.84
+"400 Brookline Ave,The Longwood Galleria,Boston, MA 02215,",4.78
+"Boston, MA 02215,",7.71
 "902 S St,Roslindale, MA 02131,",7.52
+"1095 Commonwealth Ave,Boston, MA 02215,",8.76
+"Louis Pasteur Ave,Boston, MA 02115,",4.54
+"425 Summer St,Boston, MA 02210,",3.98
+"Boston City Hall,Boston, MA 02108,",4.54
+"178 Thorndike St,Brookline, MA 02446,",8.64
+"113 Dartmouth St,Boston, MA 02116,",3.79
 "171 Milk St,Boston, MA 02109,",4.85
+"Stuart St,Boston, MA 02116,",3.6
+"Charlestown, MA 02129,",7.02
+"Central Sq,Boston, MA,",7.95
 "1400 Tremont St,Roxbury Crossing Station - Space D,Roxbury Crossing, MA 02120,",4.1
 "1880 William J Day Blvd,Boston, MA 02127,",3.11
-"Boston, MA 02128,",7.02
+"637 River St,Mattapan, MA 02126,",5.97
+"22 Central Sq,Boston, MA 02128,",7.83
+"263 Huntington Ave,Boston, MA 02115,",4.16
+"Dorchester, MA,",2.36
+"Terminal B,Logan Airport,Boston, MA 02228,",6.59
+"Summer St & Federal St,Boston, MA 02111,",3.6
+"352 Harrison Ave,Ste B,Boston, MA 02118,",3.04
+"Tremont St,Boston, MA 02116,",3.91
+"339 Northern Ave,Boston, MA 02210,",4.35
+"City Hall Plz,Boston, MA 02108,",4.72
+"479 Blue Hill Ave,Dorchester, MA 02121,",3.29
+"181 Chestnut Hill Ave,Boston, MA 02135,",9.51
+"1002 Beacon St,Brookline, MA 02446,",7.95
+"736 Huntington Ave,Boston, MA 02115,",4.72
+"1098 Commonwealth Ave,Boston, MA 02215,",8.7
+"Boston, MA 02112,",4.78
+"Atlantic St,Boston, MA 02127,",2.49
+"1 Park Ln,Boston, MA 02210,",4.23
+"1095 Commonwealth Ave,Ste 212,Boston, MA 02215,",8.76
+"100 Atlantic Ave,Boston, MA 02110,",4.66
+"Franklin St And Washington St,Boston, MA 02228,",3.36
+"60 Seaport Blvd,Boston, MA 02210,",4.1
+"22 Central Sq,East Boston, MA 02128,",7.83
+"1592 Blue Hill Ave,Mattapan, MA 02126,",5.78
+"354 Harrison Ave,Boston, MA 02118,",3.04
+"253 Summer St,Boston, MA 02210,",3.6
+"Washington St,Boston, MA 02228,",3.36
+"2 S Station,Boston, MA 02110,",3.54
+"70 Rowes Wharf,Boston, MA 02110,",3.98
+"269 Huntington Ave,Boston, MA 02115,",4.16
+"130 Newmarket Sq,Roxbury, MA 02118,",2.24
+"211 Hanover St,Boston, MA 02113,",4.47
+"143 Washington St,Dorchester Center,Boston, MA 02121,",3.29
+"Newmarket Square,Boston, MA 02118,",2.24
+"46 Newmarket Sq,Boston, MA 02118,",2.24
+"140 Seaport Blvd,Boston, MA 02210,",3.91
+"60 Rowes Wharf,Boston, MA 02110,",4.04
+"197 N Harvard St,Allston, MA 02134,",8.2
+"70 Sleeper St,Envoy Hotel,Boston, MA 02211,",4.23
+"3 Franklin St,Boston, MA 02110,",3.79
+"120 Newmarket Sq,Boston, MA 02118,",2.24
+"289 Huntington Ave,Boston, MA 02115,",4.23
+"Exchange Pl,Boston, MA 02109,",4.85
+"625 Huntington Ave,Massachusetts College of Art - Kennedy Building,Boston, MA 02115,",4.35
 "735 Huntington Ave,Boston, MA 02115,",4.66
+"267 Huntington Ave,Boston, MA 02115,",4.16
+"1095 Commonwealth Ave,Boston, MA 02228,",8.76
 "Hyde Park, MA 02136,",9.94
 "1222 Arsenal St,c, MA 02135,",8.95
 "Boston, MA 02144,",11.06
+"507 Boylston St,Boston, MA 02116,",6.65
+"Jamaica Plain, MA,",5.9
+"One Financial Ctr,Boston, MA 02111,",3.54
+"Commonwealth Ave And St Marys St,Brookline, MA 02446,",7.89
+"1 Financial Ctr,Boston, MA 02111,",4.91
+"1096 Commonwealth Ave,Boston, MA 02134,",8.7
 "416 Tremont St,Boston, MA 02116,",3.36
+"383 Congress St,Boston, MA 02210,",3.73
+"492 Tremont St,Boston, MA 02116,",3.23
+"18 Airport Rd - Departure Level,Terminal C,Boston, MA 02128,",6.4
+"Harrison And Concord St,Boston, MA 02118,",2.98
+"Harrison Ave,Boston, MA 02118,",3.42
+"77 Seaport Blvd,Boston, MA 02210,",4.1
+"79 Meridian St,Boston, MA 02128,",7.71
+"0 Post Office Sq,Boston, MA 02109,",4.72
+"294 Congress St,Boston, MA 02210,",4.23
+"100 Northern Ave,Boston, MA 02210,",4.04
+"178 Kneeland St,Boston, MA 02111,",3.36
 "870 Blue Hill Ave,Dorchester, MA 02121,",3.79
+"1 Fish Pier St W,Boston, MA 02210,",4.29
+"399 Chestnut Hill Ave,Brookline, MA 02445,",10.07
+"973 Commonwealth Ave,Boston, MA 02215,",8.64
+"119 Seaport Blvd,Ste B,Boston, MA 02210,",4.1
+"71 1/2 Charles St,Boston, MA 02114,",5.9
+"109 Seaport Blvd,Boston, MA 02210,",4.1
+"1 International Pl,Ste 190,Boston, MA 02110,",4.85
+"2 Broad St,Boston, MA 02109,",4.72
+"984 Blue Hill Ave,Dorchester Center, MA 02124,",5.59
+"64 Seaport Blvd,Boston, MA 02210,",4.1
 "52 Summer St,Boston, MA 02110,",3.79
+"Vfw Pkwy,West Roxbury, MA 02132,",9.32
+"763 Centre St,Jamaica Plain, MA 02130,",5.72
+"1762 Paget Plz,Boston, MA 03051,",3.79
 "855 River St,Mattapan, MA 02126,",6.46
+"300 Northern Ave,Boston, MA 02210,",4.1
+"35 W Newton St,Boston, MA 02118,",3.6
+"107 Seaport Blvd,Boston, MA 02210,",4.1
