@@ -5,15 +5,12 @@ gm = googlemaps.Client(key="AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es")
 import math
 dists = dict()
 
-def main(tag=None, sort_method="location", ascending=None, data_list=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
+def main(tag=None, sort_method="location", ascending=None, data_list=None, user_address="100 Morrissey Blvd, Boston, MA 02125,") -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
 
     if data_list is None:
         # Load data to dictionary if not passed in
         df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
         data_list = df.to_dict("records")
-
-    # Set user address (Currently placeholder)
-    user_address = "100 Morrissey Blvd,Boston, MA 02125,"
 
     try:
         # If the latitudes and longitudes of restaurants have already been calculated, use the file
