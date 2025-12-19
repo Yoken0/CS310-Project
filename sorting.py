@@ -1,6 +1,9 @@
 import pandas as pd
 from typing import Any, Hashable
-import requests
+import googlemaps
+gm = googlemaps.Client(key="AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es")
+import math
+dists = dict()
 
 def main(tag=None, sort_method="location", ascending=None, data_list=None) -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
 
@@ -8,21 +11,25 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None) -> li
         # Load data to dictionary if not passed in
         df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
         data_list = df.to_dict("records")
-    # Address data: user address and distances of restaurants to user
 
+    # Set user address (Currently placeholder)
     user_address = "100 Morrissey Blvd,Boston, MA 02125,"
+
     try:
-        # If the distances between the user address and the restaurants have already been calculated, use the file
+        # If the latitudes and longitudes of restaurants have already been calculated, use the file
         filename = user_address.replace(" ", "")
         filename = filename.replace(",", "")
-        distdf = pd.read_csv(f"distances/{filename}.csv", index_col = 0)
-        dists = distdf.to_dict("split")
-        dists = dict(zip(dists["index"], dists["data"]))
-        for address in dists:
-            dists[address] = dists[address][0]
+        geodf = pd.read_csv(f"distances/{filename}.csv", index_col = 0)
+        geo = geodf.to_dict("split")
+        geo = dict(zip(geo["index"], geo["data"]))
+        for address in geo:
+            geo[address] = geo[address][0]
     except FileNotFoundError:
-        # Otherwise, use the API to calculate the distances, which will be saved to a file if location sort is called
-        dists = dict()
+        # Otherwise, use the API to calculate coordinates, which will be saved to a file if location sort is called
+        geo = dict()
+
+    # Add the coordinates of the user address
+    addGeo(user_address, geo)
 
     if tag is not None: #sort by tag based on what is passed in
         tag = str(tag).lower() #makes sure the tag is lowercase
@@ -30,7 +37,7 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None) -> li
 
     sort_method = str(sort_method).lower() #makes sure the sort method is a lowercase string
     if sort_method == "location": #use sort method based on what is passed in
-        data_list = sortLocation(data_list, dists, user_address, ascending)
+        data_list = sortLocation(data_list, geo, user_address, ascending)
     elif sort_method == "price":
         data_list = sortPrice(data_list, ascending)
     elif sort_method == "rating":
@@ -69,7 +76,7 @@ def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashab
     return to_ret
 
 # Returns list of restaurants sorted by their distance to the user's address; defaults to ascending order
-def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, ascending=True) -> list[dict[Hashable, Any]]:
+def sortLocation(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=True) -> list[dict[Hashable, Any]]:
     checknew = False
     to_ret = []
     # radix sort by distance, up to 3rd significant digit
@@ -77,16 +84,18 @@ def sortLocation(data_list: list[dict[Hashable, Any]], dists, user_address, asce
 
     # counting sort by first decimal place
     for restaurant in data_list[1:]:
-        if restaurant["restaurant_address"] not in dists.keys():
-            addDistance(user_address, restaurant, dists)
+        if restaurant["restaurant_address"] not in geo.keys():
+            addGeo(restaurant['restaurant_address'], geo)
             checknew = True
+        if restaurant["restaurant_address"] not in dists.keys():
+            addDistance(user_address, restaurant, geo)
         locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
 
-    # if distances have been changed or added for a user address, save it to a file
+    # if coordinates have been changed or added for a user address, save it to a file
     if checknew == True:
         filename = user_address.replace(" ", "")
         filename = filename.replace(",", "")
-        temp = pd.DataFrame.from_dict(dists, orient="index")
+        temp = pd.DataFrame.from_dict(geo, orient="index")
         temp.to_csv(f"distances/{filename}.csv")
 
     for digit in locations:
@@ -190,27 +199,27 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
     return to_ret
 
 
-# Helper function for sorting by location; adds a restaurant's distance to the user's address to the list of distances
-def addDistance(user_address, restaurant, dists):
-    # Google Place API call
-    response = requests.get("https://maps.googleapis.com/maps/api/distancematrix/json", {
-        'origins': user_address,
-        'destinations': restaurant["restaurant_address"],
-        'key': "AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es"
-    })
-    if response.status_code == 200:
-        if response.json().get('status') == 'OK':
-            # if the JSON response is valid, get the distance, convert it to miles, and add it to the list of distances
-            if response.json()['rows'][0]['elements'][0].get('status') == 'OK':
-                dist = response.json()['rows'][0]['elements'][0]['distance']['text']
-                dist = round((float(dist.split(" ")[0]) / 1.60934), 2)
-                dists[f"{restaurant["restaurant_address"]}"] = dist
-            else:
-                print("api request failed")
-        else:
-            print("api request failed")
-    else:
-        print("api request failed")
+def addDistance(user_address, restaurant, geo):
+    # direct distance calculation code
+    #dist = gm.distance_matrix(restaurant["restaurant_address"], user_address)['rows'][0]['elements'][0]['distance']['text']
+    #dist = round((float(dist.split(" ")[0]) / 1.60934), 2)
+
+    # Calculate the distance based on the two addresses' coordinates and add it to the dictionary of distances
+    lat1 = float(geo[user_address].split(" ")[0])
+    lat2 = float(geo[restaurant["restaurant_address"]].split(" ")[0])
+    lng1 = float(geo[user_address].split(" ")[1])
+    lng2 = float(geo[restaurant["restaurant_address"]].split(" ")[1])
+    dist = 7912 * math.asin(math.sqrt(math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lng2 - lng1) / 2) ** 2))
+
+    dists[f"{restaurant["restaurant_address"]}"] = dist
+
+
+def addGeo(address, geo):
+    # Get the latitudes and longitudes from the API and add them to the dictionary of coordinates
+    l = gm.geocode(address)
+    lat = math.radians(l[0]['geometry']['viewport']['northeast']['lat'])
+    lng = math.radians(l[0]['geometry']['viewport']['northeast']['lng'])
+    geo[address] = str(lat) + " " + str(lng)
 
 
 #This next function would only be called for testing from this file.
