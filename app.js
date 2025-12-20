@@ -9,6 +9,33 @@ const state = {
   markers: []
 }
 
+// we store user coordinates for distance sorting
+state.user = { lat: null, lon: null };
+
+//  the math formula: distance in kilometers
+function haversineKm(lat1, lon1, lat2, lon2){
+  const toRad = x => x * Math.PI / 180;
+  const R = 6371.0; // km
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
+function sortByDistance(items, user){
+  if(!user || user.lat == null || user.lon == null) return items;
+  const out = items.map(r => {
+    let d = Infinity;
+    if(r.lat != null && r.lon != null){
+      d = haversineKm(user.lat, user.lon, Number(r.lat), Number(r.lon));
+    }
+    return Object.assign({}, r, {distance_km: d});
+  });
+  out.sort((a,b) => (a.distance_km || Infinity) - (b.distance_km || Infinity));
+  return out;
+}
+
 function setLoading(on){
   const el = byId('loading');
   if(on) el.classList.remove('hidden'); else el.classList.add('hidden');
@@ -17,7 +44,7 @@ function setLoading(on){
 async function fetchResults(){
   setLoading(true);
 
-  // UI is tag-driven. Use the Tag field as primary input.
+  // UI is tag driven. Use the Tag field as primary input.
   const tag = byId('tag').value.trim();
   const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
   const ascending = byId('ascending') ? !!byId('ascending').checked : false;
@@ -40,6 +67,19 @@ async function fetchResults(){
     state.items = data;
     state.page = 1;
     buildTagSuggestions();
+    // if sorting by location and user coords known, do client-side distance sort
+    if(sort_method === 'location' && state.user.lat != null && state.user.lon != null){
+      state.items = sortByDistance(state.items, state.user);
+    }
+    // if ascending is explicitly requested for non-location sorts,then apply simple JS sort
+    if(sort_method !== 'location'){
+      if(sort_method === 'rating'){
+        state.items.sort((a,b)=> (ascending?1:-1) * ((a.rating||0) - (b.rating||0)));
+      }else if(sort_method === 'price'){
+        const val = v => v && typeof v === 'string' ? v.length : 999;
+        state.items.sort((a,b)=> (ascending?1:-1) * (val(a.price) - val(b.price)));
+      }
+    }
     renderPage(state.page);
   }catch(err){
     const container = byId('results');
@@ -51,7 +91,7 @@ async function fetchResults(){
 
 function renderResults(items){
   const container = byId('results');
-  // keep loading element, but clear other nodes
+  // keep loading element, but clear the other nodes
   const loading = byId('loading');
   container.innerHTML = '';
   container.appendChild(loading);
@@ -68,8 +108,6 @@ function renderResults(items){
     const tags = document.createElement('div'); tags.className = 'tags'; tags.textContent = (it.tags || []).join(', ');
     const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = `Rating: ${it.rating || 'N/A'}  •  Price: ${it.price || 'N/A'}  •  Reviews: ${it.review_count || 0}`;
     left.appendChild(h); left.appendChild(tags); left.appendChild(meta);
-
-    // recommendation badges removed — recommendations are not supported without user history
 
     const right = document.createElement('div');
     if(it.distance_km !== null && it.distance_km !== undefined){
@@ -146,17 +184,28 @@ function updateMapMarkers(items){
 
 document.addEventListener('DOMContentLoaded', ()=>{
   byId('search-btn').addEventListener('click', fetchResults);
-  byId('search').addEventListener('keydown', (e)=>{ if(e.key==='Enter') fetchResults(); });
+  const tagInput = byId('tag');
+  if(tagInput) tagInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') fetchResults(); });
   // location UI removed; keep functionality safe if elements exist
   const useLocBtn = byId('use-location');
+  const userLocSpan = byId('user-loc');
   if(useLocBtn){
     useLocBtn.addEventListener('click', ()=>{
-      if(navigator.geolocation) navigator.geolocation.getCurrentPosition(pos=>{
-        const latEl = byId('lat'); const lonEl = byId('lon');
-        if(latEl) latEl.value = pos.coords.latitude.toFixed(6);
-        if(lonEl) lonEl.value = pos.coords.longitude.toFixed(6);
-        fetchResults();
-      }, err=>{ alert('Location denied or unavailable'); });
+      if(!navigator.geolocation){
+        if(userLocSpan) userLocSpan.textContent = 'Geolocation not supported by browser';
+        return;
+      }
+      if(userLocSpan) userLocSpan.textContent = 'Locating…';
+      navigator.geolocation.getCurrentPosition(pos=>{
+        state.user.lat = Number(pos.coords.latitude.toFixed(6));
+        state.user.lon = Number(pos.coords.longitude.toFixed(6));
+        if(userLocSpan) userLocSpan.textContent = `Using my location (${state.user.lat}, ${state.user.lon})`;
+        const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
+        if(sort_method === 'location'){
+          state.items = sortByDistance(state.items, state.user);
+          renderPage(state.page);
+        }
+      }, err=>{ if(userLocSpan) userLocSpan.textContent = 'Location denied or unavailable'; });
     });
   }
 
@@ -174,8 +223,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   }
 
-  // Recommend button removed per request; no recommendation logic here.
-
-  // initial load
   fetchResults();
 });

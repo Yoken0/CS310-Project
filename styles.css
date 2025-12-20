@@ -46,7 +46,6 @@ header h1{font-size:28px; margin:0; color:#0b2545}
 .hidden{display:none}
 
 /* map */
-/* map area (if re-enabled) */
 #map-wrap{margin-top:12px}
 #map{height:380px; border:1px solid #ddd; border-radius:6px}
 
