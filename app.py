@@ -24,29 +24,17 @@ def load_original_data():
     return _original_data
 
 def load_restaurants_data():
-    json_path = 'restaurants.json'
     csv_path = 'YELP.Restaurants.csv'
     
-    original_data = load_original_data()
-    
-    if not os.path.exists(csv_path) and os.path.exists(json_path):
-        records = []
-        for item in original_data:
-            records.append({
-                'restaurant_name': item.get('name', ''),
-                'restaurant_address': item.get('address', ''),
-                'restaurant_tag': ', '.join(item.get('tags', [])),
-                'rating': item.get('rating', None),
-                'price': item.get('price', None)
-            })
-        
-        df = pd.DataFrame(records)
-        df.to_csv(csv_path, index=False)
-        return records
-    elif os.path.exists(csv_path):
+    # Always use CSV if it exists (primary data source)
+    if os.path.exists(csv_path):
         df = pd.read_csv(csv_path)
-        return df.to_dict('records')
+        # Convert to dict records, ensuring we have the columns we need
+        records = df.to_dict('records')
+        return records
     else:
+        # Fallback to JSON if CSV doesn't exist
+        original_data = load_original_data()
         records = []
         for item in original_data:
             records.append({
@@ -60,28 +48,75 @@ def load_restaurants_data():
 
 def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=None):
     result = []
-    original_data = load_original_data()
     
+    # Try to load coordinates from coordinates.csv file
     coord_map = {}
-    for item in original_data:
-        key = item.get('address', '')
-        coord_map[key] = {
-            'lat': item.get('lat'),
-            'lon': item.get('lon'),
-            'review_count': item.get('review_count', 0)
-        }
+    coord_csv_path = 'distances/coordinates.csv'
+    if os.path.exists(coord_csv_path):
+        try:
+            coord_df = pd.read_csv(coord_csv_path, index_col=0)
+            for address, row in coord_df.iterrows():
+                # Coordinates are stored as "lat lon" string in radians
+                coord_str = str(row.iloc[0])
+                if coord_str and coord_str.lower() != 'nan':
+                    parts = coord_str.split()
+                    if len(parts) >= 2:
+                        try:
+                            # Convert from radians back to degrees for display
+                            lat_rad = float(parts[0])
+                            lon_rad = float(parts[1])
+                            coord_map[str(address)] = {
+                                'lat': math.degrees(lat_rad),
+                                'lon': math.degrees(lon_rad)
+                            }
+                        except (ValueError, IndexError):
+                            pass
+        except Exception as e:
+            app.logger.warning(f"Error loading coordinates.csv: {str(e)}")
+    
+    # Fallback to restaurants.json if coordinates.csv doesn't have the data
+    if not coord_map:
+        original_data = load_original_data()
+        for item in original_data:
+            key = item.get('address', '')
+            coord_map[key] = {
+                'lat': item.get('lat'),
+                'lon': item.get('lon')
+            }
     
     for r in restaurants:
         address = r.get('restaurant_address', '')
         
+        # Get coordinates from coord_map
         coords = coord_map.get(address, {})
         lat = coords.get('lat')
         lon = coords.get('lon')
-        review_count = coords.get('review_count', 0)
+        
+        # Use review_number from CSV, fallback to 0
+        review_count = r.get('review_number', 0)
+        if pd.isna(review_count):
+            review_count = 0
+        else:
+            review_count = int(review_count)
         
         tags = []
         if r.get('restaurant_tag'):
-            tags = [tag.strip() for tag in str(r.get('restaurant_tag', '')).split(',')]
+            # Handle NaN values
+            tag_str = str(r.get('restaurant_tag', ''))
+            if tag_str and tag_str.lower() != 'nan':
+                tags = [tag.strip() for tag in tag_str.split(',') if tag.strip()]
+        
+        # Clean up price - remove trailing spaces, handle NaN
+        price = r.get('price')
+        if pd.isna(price) or (isinstance(price, str) and price.strip() == ''):
+            price = None
+        elif isinstance(price, str):
+            price = price.strip()
+        
+        # Handle rating NaN
+        rating = r.get('rating')
+        if pd.isna(rating):
+            rating = None
         
         distance_km = None
         if dists and address in dists:
@@ -93,8 +128,8 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
             'lat': lat,
             'lon': lon,
             'tags': tags,
-            'rating': r.get('rating'),
-            'price': r.get('price'),
+            'rating': rating,
+            'price': price,
             'review_count': review_count,
             'distance_km': distance_km
         })
