@@ -63,7 +63,7 @@ and not just the end of it that the IDE doesn't cut off. uncomment it and adjust
 def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashable, Any]]: 
     to_ret = []
 
-    for restaurant in data_list[1:]: #puts every restaurant with the listed tag into the list, without case sensitivity
+    for restaurant in data_list: #puts every restaurant with the listed tag into the list, without case sensitivity
         if not (pd.isna(restaurant["restaurant_tag"])) and (tag in restaurant["restaurant_tag"].lower()):
             to_ret.append(restaurant)
 
@@ -77,7 +77,7 @@ def sortLocation(data_list: list[dict[Hashable, Any]], geo, dists, user_address,
     locations = [[], [], [], [], [], [], [], [], [], []]
 
     # counting sort by first decimal place
-    for restaurant in data_list[1:]:
+    for restaurant in data_list:
         if restaurant["restaurant_address"] not in geo.keys():
             addGeo(restaurant['restaurant_address'], geo)
             checknew = True
@@ -144,7 +144,7 @@ def sortPrice(data_list: list[dict[Hashable, Any]], geo, dists, user_address, as
     to_ret = []
     prices = [[], [], [], [], []] #index 1-4 hold 1-4 dollar sign values, index 0 holds N/A values
 
-    for restaurant in data_list[1:]: #reads every line except the first and puts each one into the prices list for counting sort
+    for restaurant in data_list: #reads every line and puts each one into the prices list for counting sort
         if pd.isna(restaurant["price"]): #N/A value
             prices[0].append(restaurant)
         else: #Non N/A value
@@ -172,7 +172,7 @@ def sortRating(data_list: list[dict[Hashable, Any]], geo, dists, user_address, a
     to_ret = []
     ratings = [[], [], [], [], [], [], [], [], [], [], [], []] #index 0-10 hold ratings, which are in .5 increments, index 11 holds N/A values
 
-    for restaurant in data_list[1:]: #reads every line except the first and puts each one into the ratings list
+    for restaurant in data_list: #reads every line and puts each one into the ratings list
         if pd.isna(restaurant["rating"]): #N/A value
             ratings[11].append(restaurant)
         else: #Non N/A value

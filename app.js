@@ -48,12 +48,13 @@ async function fetchResults(){
   const tag = byId('tag').value.trim();
   const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
   const ascending = byId('ascending') ? !!byId('ascending').checked : false;
-  const latEl = byId('lat'); const lonEl = byId('lon');
-  const lat = latEl ? (latEl.value || '').trim() : '';
-  const lon = lonEl ? (lonEl.value || '').trim() : '';
+  
+  // Use user's location from state if available (from "Use my location" button)
+  const lat = state.user.lat != null ? String(state.user.lat) : '';
+  const lon = state.user.lon != null ? String(state.user.lon) : '';
 
   const params = new URLSearchParams();
-  // send tag and sorting intent to backend. Backend sorting code can use these params.
+  // send tag and sorting intent to backend. Backend handles all sorting.
   if(tag) params.set('tag', tag);
   if(sort_method) params.set('sort_method', sort_method);
   params.set('ascending', ascending ? '1' : '0');
@@ -64,22 +65,10 @@ async function fetchResults(){
     const res = await fetch('/api/restaurants?' + params.toString());
     if(!res.ok) throw new Error('Network response was not ok');
     const data = await res.json();
+    // Backend already sorted the data, so just use it directly
     state.items = data;
     state.page = 1;
     buildTagSuggestions();
-    // if sorting by location and user coords known, do client-side distance sort
-    if(sort_method === 'location' && state.user.lat != null && state.user.lon != null){
-      state.items = sortByDistance(state.items, state.user);
-    }
-    // if ascending is explicitly requested for non-location sorts,then apply simple JS sort
-    if(sort_method !== 'location'){
-      if(sort_method === 'rating'){
-        state.items.sort((a,b)=> (ascending?1:-1) * ((a.rating||0) - (b.rating||0)));
-      }else if(sort_method === 'price'){
-        const val = v => v && typeof v === 'string' ? v.length : 999;
-        state.items.sort((a,b)=> (ascending?1:-1) * (val(a.price) - val(b.price)));
-      }
-    }
     renderPage(state.page);
   }catch(err){
     const container = byId('results');
@@ -200,13 +189,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
         state.user.lat = Number(pos.coords.latitude.toFixed(6));
         state.user.lon = Number(pos.coords.longitude.toFixed(6));
         if(userLocSpan) userLocSpan.textContent = `Using my location (${state.user.lat}, ${state.user.lon})`;
-        const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
-        if(sort_method === 'location'){
-          state.items = sortByDistance(state.items, state.user);
-          renderPage(state.page);
-        }
+        // Trigger a new search with the user's location so backend can sort by distance
+        fetchResults();
       }, err=>{ if(userLocSpan) userLocSpan.textContent = 'Location denied or unavailable'; });
     });
+  }
+
+  // Auto-refresh when sort method or ascending changes
+  const sortMethodSelect = byId('sort_method');
+  const ascendingCheckbox = byId('ascending');
+  if(sortMethodSelect){
+    sortMethodSelect.addEventListener('change', fetchResults);
+  }
+  if(ascendingCheckbox){
+    ascendingCheckbox.addEventListener('change', fetchResults);
   }
 
   byId('prev-page').addEventListener('click', ()=> renderPage(state.page - 1));
