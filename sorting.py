@@ -36,9 +36,9 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None, user_
     if sort_method == "location": #use sort method based on what is passed in
         data_list = sortLocation(data_list, geo, user_address, ascending)
     elif sort_method == "price":
-        data_list = sortPrice(data_list, ascending)
+        data_list = sortPrice(data_list, geo, user_address, ascending)
     elif sort_method == "rating":
-        data_list = sortRating(data_list, ascending)
+        data_list = sortRating(data_list, geo, user_address, ascending)
     else: 
         print("sorting option not recognized")
 
@@ -145,7 +145,7 @@ def sortLocation(data_list: list[dict[Hashable, Any]], geo, user_address, ascend
     return to_ret
 
 #Returns list sorted by price, either ascending or descending depending on what was chosesn. N/A values always come last in the list. ascending by default
-def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict[Hashable, Any]]: 
+def sortPrice(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=True) -> list[dict[Hashable, Any]]:
     to_ret = []
     prices = [[], [], [], [], []] #index 1-4 hold 1-4 dollar sign values, index 0 holds N/A values
 
@@ -155,7 +155,7 @@ def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict
         else: #Non N/A value
             prices[restaurant["price"].count("$")].append(restaurant)
 
-#SORT THE ARRAYS IN prices BY LOCATION HERE
+    sortLocation2(prices, geo, user_address)
     
     if ascending: #sorts restaurants by ascending price
         for price_category in prices[1:]:
@@ -173,7 +173,7 @@ def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict
 
 
 #N/A values come last in the list. descending by default
-def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[dict[Hashable, Any]]: 
+def sortRating(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=False) -> list[dict[Hashable, Any]]:
     to_ret = []
     ratings = [[], [], [], [], [], [], [], [], [], [], [], []] #index 0-10 hold ratings, which are in .5 increments, index 11 holds N/A values
 
@@ -183,7 +183,7 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
         else: #Non N/A value
             ratings[int(round(restaurant["rating"] * 2))].append(restaurant)
 
-#SORT THE ARRAYS IN ratings BY LOCATION HERE
+    sortLocation2(ratings, geo, user_address)
     
     if ascending: #sorts restaurants by ascending ratings
         for rating_category in ratings[:11]:
@@ -201,19 +201,17 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
 
 
 def addDistance(user_address, restaurant, geo):
-    # direct distance calculation code
-    #dist = gm.distance_matrix(restaurant["restaurant_address"], user_address)['rows'][0]['elements'][0]['distance']['text']
-    #dist = round((float(dist.split(" ")[0]) / 1.60934), 2)
+    # Get the distance between the two addresses and add it to the dictionary of distances
+    dists[f"{restaurant["restaurant_address"]}"] = getDistance(user_address, restaurant, geo)
 
-    # Calculate the distance based on the two addresses' coordinates and add it to the dictionary of distances
+def getDistance(user_address, restaurant, geo):
+    # Calculate the distance based on the two addresses' coordinates
     lat1 = float(geo[user_address].split(" ")[0])
     lat2 = float(geo[restaurant["restaurant_address"]].split(" ")[0])
     lng1 = float(geo[user_address].split(" ")[1])
     lng2 = float(geo[restaurant["restaurant_address"]].split(" ")[1])
     dist = 7912 * math.asin(math.sqrt(math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lng2 - lng1) / 2) ** 2))
-
-    dists[f"{restaurant["restaurant_address"]}"] = dist
-
+    return round(dist, 1)
 
 def addGeo(address, geo):
     # Get the latitudes and longitudes from the API and add them to the dictionary of coordinates
@@ -221,6 +219,80 @@ def addGeo(address, geo):
     lat = math.radians(l[0]['geometry']['viewport']['northeast']['lat'])
     lng = math.radians(l[0]['geometry']['viewport']['northeast']['lng'])
     geo[address] = str(lat) + " " + str(lng)
+
+
+def sortLocation2(array, geo, user_address, ascending=True):
+    checknew = False
+
+    # counting sort by first decimal place
+    for i in range(len(array)):
+        to_ret = []
+        # radix sort by distance, up to 3rd significant digit
+        locations = [[], [], [], [], [], [], [], [], [], []]
+        for restaurant in array[i]:
+            if restaurant["restaurant_address"] not in geo.keys():
+                addGeo(restaurant['restaurant_address'], geo)
+                checknew = True
+            if restaurant["restaurant_address"] not in dists.keys():
+                addDistance(user_address, restaurant, geo)
+            locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
+
+        # if coordinates have been changed or added for a user address, save it to a file
+        if checknew == True:
+            filename = user_address.replace(" ", "")
+            filename = filename.replace(",", "")
+            temp = pd.DataFrame.from_dict(geo, orient="index")
+            temp.to_csv(f"distances/{filename}.csv")
+            checknew = False
+
+        for digit in locations:
+            while len(digit) != 0:
+                to_ret.append(digit[0])
+                digit.pop(0)
+
+        # counting sort by least significant digit
+        for restaurant in to_ret:
+            locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-1])].append(restaurant)
+        to_ret = []
+
+        for digit in locations:
+            while len(digit) != 0:
+                to_ret.append(digit[0])
+                digit.pop(0)
+
+        # counting sort by 2nd least significant digit
+        for restaurant in to_ret:
+            if dists[restaurant["restaurant_address"]] >= 10.0:
+                locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-2])].append(restaurant)
+            else:
+                locations[0].append(restaurant)
+        to_ret = []
+
+        for digit in locations:
+            while len(digit) != 0:
+                to_ret.append(digit[0])
+                digit.pop(0)
+
+        # counting sort by 3rd least significant digit
+        for restaurant in to_ret:
+            if dists[restaurant["restaurant_address"]] >= 100.0:
+                locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[0][-3])].append(restaurant)
+            else:
+                locations[0].append(restaurant)
+        to_ret = []
+
+        # sort by ascending distance
+        if ascending:
+            for digit in locations:
+                for restaurant in digit:
+                    to_ret.append(restaurant)
+        # sort by descending distance
+        else:
+            for digit in locations[::-1]:
+                for restaurant in digit:
+                    to_ret.append(restaurant)
+
+        array[i] = to_ret
 
 
 #This next function would only be called for testing from this file.
