@@ -3,10 +3,9 @@ from typing import Any, Hashable
 import googlemaps
 gm = googlemaps.Client(key="AIzaSyCRoYlklKKJ7ZKSwRqeW68UaailZGmf8es")
 import math
-dists = dict()
 
 def main(tag=None, sort_method="location", ascending=None, data_list=None, user_address="100 Morrissey Blvd, Boston, MA 02125,") -> list[dict[Hashable, Any]]: #defaults to sorting by location, ascending for all restaurants
-
+    dists = dict()
     if data_list is None:
         # Load data to dictionary if not passed in
         df = pd.read_csv("YELP.Restaurants.csv", usecols=["restaurant_name", "restaurant_address", "restaurant_tag", "rating", "price"]) #reads the listed columns and puts them into a dict
@@ -32,7 +31,7 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None, user_
 
     sort_method = str(sort_method).lower() #makes sure the sort method is a lowercase string
     if sort_method == "location": #use sort method based on what is passed in
-        data_list = sortLocation(data_list, geo, user_address, ascending)
+        data_list = sortLocation(data_list, geo, dists, user_address, ascending)
     elif sort_method == "price":
         data_list = sortPrice(data_list, geo, user_address, ascending)
     elif sort_method == "rating":
@@ -71,7 +70,7 @@ def sortTags(data_list: list[dict[Hashable, Any]], tag: str) -> list[dict[Hashab
     return to_ret
 
 # Returns list of restaurants sorted by their distance to the user's address; defaults to ascending order
-def sortLocation(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=True) -> list[dict[Hashable, Any]]:
+def sortLocation(data_list: list[dict[Hashable, Any]], geo, dists, user_address, ascending=True) -> list[dict[Hashable, Any]]:
     checknew = False
     to_ret = []
     # radix sort by distance, up to 3rd significant digit
@@ -83,7 +82,7 @@ def sortLocation(data_list: list[dict[Hashable, Any]], geo, user_address, ascend
             addGeo(restaurant['restaurant_address'], geo)
             checknew = True
         if restaurant["restaurant_address"] not in dists.keys():
-            addDistance(user_address, restaurant, geo)
+            addDistance(user_address, restaurant, geo, dists)
         locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
 
     # if coordinates have been changed or added for a user address, save it to a file
@@ -196,11 +195,18 @@ def sortRating(data_list: list[dict[Hashable, Any]], geo, user_address, ascendin
     return to_ret
 
 
-def addDistance(user_address, restaurant, geo):
+def addDistance(user_address, restaurant, geo, dists):
     # Get the distance between the two addresses and add it to the dictionary of distances
-    dists[f"{restaurant["restaurant_address"]}"] = getDistance(user_address, restaurant, geo)
+    dists[f"{restaurant["restaurant_address"]}"] = getDistance(user_address, restaurant, geo, dists)
 
-def getDistance(user_address, restaurant, geo):
+
+def getDistance(user_address, restaurant, geo, dists):
+    if restaurant["restaurant_address"] in dists.keys():
+        return
+    if restaurant["restaurant_address"] not in geo.keys():
+        addGeo(restaurant["restaurant_address"], geo)
+    if user_address not in geo.keys():
+        addGeo(user_address, geo)
     # Calculate the distance based on the two addresses' coordinates
     lat1 = float(geo[user_address].split(" ")[0])
     lat2 = float(geo[restaurant["restaurant_address"]].split(" ")[0])
@@ -217,7 +223,7 @@ def addGeo(address, geo):
     geo[address] = str(lat) + " " + str(lng)
 
 
-def sortLocation2(array, geo, user_address, ascending=True):
+def sortLocation2(array, geo, dists, user_address, ascending=True):
     checknew = False
 
     # counting sort by first decimal place
@@ -230,7 +236,7 @@ def sortLocation2(array, geo, user_address, ascending=True):
                 addGeo(restaurant['restaurant_address'], geo)
                 checknew = True
             if restaurant["restaurant_address"] not in dists.keys():
-                addDistance(user_address, restaurant, geo)
+                addDistance(user_address, restaurant, geo, dists)
             locations[int(str(dists[restaurant["restaurant_address"]]).split(".")[1][0])].append(restaurant)
 
         # if coordinates have been changed or added for a user address, save it to a file
