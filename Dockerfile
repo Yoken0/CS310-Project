@@ -13,7 +13,6 @@ COPY . .
 
 EXPOSE ${PORT}
 
-# Serves the static files in the repo. Override the CMD to run an API/server
-# once one is added (e.g., `docker run ... python your_server.py`).
-CMD ["sh", "-c", "python -m http.server ${PORT}"]
+# Run Flask application
+CMD ["python", "app.py"]
 
