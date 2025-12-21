@@ -58,7 +58,7 @@ def load_restaurants_data():
             })
         return records
 
-def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None):
+def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=None):
     result = []
     original_data = load_original_data()
     
@@ -84,8 +84,8 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None):
             tags = [tag.strip() for tag in str(r.get('restaurant_tag', '')).split(',')]
         
         distance_km = None
-        if address in sorting.dists:
-            distance_km = round(sorting.dists[address], 2)
+        if dists and address in dists:
+            distance_km = round(dists[address], 2)
         
         result.append({
             'name': r.get('restaurant_name', ''),
@@ -125,7 +125,7 @@ def get_restaurants():
         
         data_list = load_restaurants_data()
         
-        sorted_data = sort_restaurants(
+        sorted_data, dists = sort_restaurants(
             tag=tag,
             sort_method=sort_method,
             ascending=ascending,
@@ -133,7 +133,7 @@ def get_restaurants():
             user_address=user_address
         )
         
-        result = convert_to_frontend_format(sorted_data, lat, lon)
+        result = convert_to_frontend_format(sorted_data, lat, lon, dists)
         
         return jsonify(result)
     

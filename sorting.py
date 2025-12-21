@@ -33,13 +33,13 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None, user_
     if sort_method == "location": #use sort method based on what is passed in
         data_list = sortLocation(data_list, geo, dists, user_address, ascending)
     elif sort_method == "price":
-        data_list = sortPrice(data_list, geo, user_address, ascending)
+        data_list = sortPrice(data_list, geo, dists, user_address, ascending)
     elif sort_method == "rating":
-        data_list = sortRating(data_list, geo, user_address, ascending)
+        data_list = sortRating(data_list, geo, dists, user_address, ascending)
     else: 
         print("sorting option not recognized")
 
-    return data_list
+    return data_list, dists
 '''
     for item in data_list: #prints sorted list
         print(*item.values())
@@ -140,7 +140,7 @@ def sortLocation(data_list: list[dict[Hashable, Any]], geo, dists, user_address,
     return to_ret
 
 #Returns list sorted by price, either ascending or descending depending on what was chosesn. N/A values always come last in the list. ascending by default
-def sortPrice(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=True) -> list[dict[Hashable, Any]]:
+def sortPrice(data_list: list[dict[Hashable, Any]], geo, dists, user_address, ascending=True) -> list[dict[Hashable, Any]]:
     to_ret = []
     prices = [[], [], [], [], []] #index 1-4 hold 1-4 dollar sign values, index 0 holds N/A values
 
@@ -150,7 +150,7 @@ def sortPrice(data_list: list[dict[Hashable, Any]], geo, user_address, ascending
         else: #Non N/A value
             prices[restaurant["price"].count("$")].append(restaurant)
 
-    sortLocation2(prices, geo, user_address)
+    sortLocation2(prices, geo, dists, user_address)
     
     if ascending: #sorts restaurants by ascending price
         for price_category in prices[1:]:
@@ -168,7 +168,7 @@ def sortPrice(data_list: list[dict[Hashable, Any]], geo, user_address, ascending
 
 
 #N/A values come last in the list. descending by default
-def sortRating(data_list: list[dict[Hashable, Any]], geo, user_address, ascending=False) -> list[dict[Hashable, Any]]:
+def sortRating(data_list: list[dict[Hashable, Any]], geo, dists, user_address, ascending=False) -> list[dict[Hashable, Any]]:
     to_ret = []
     ratings = [[], [], [], [], [], [], [], [], [], [], [], []] #index 0-10 hold ratings, which are in .5 increments, index 11 holds N/A values
 
@@ -178,7 +178,7 @@ def sortRating(data_list: list[dict[Hashable, Any]], geo, user_address, ascendin
         else: #Non N/A value
             ratings[int(round(restaurant["rating"] * 2))].append(restaurant)
 
-    sortLocation2(ratings, geo, user_address)
+    sortLocation2(ratings, geo, dists, user_address)
     
     if ascending: #sorts restaurants by ascending ratings
         for rating_category in ratings[:11]:
@@ -298,7 +298,7 @@ def sortLocation2(array, geo, dists, user_address, ascending=True):
 #This next function would only be called for testing from this file.
 #You can try parameters here. Leave the ascending? parameter blank to use the default for each. If you don't pass in a dict, it will just make a new one
 if __name__ == "__main__": 
-    data_list = main("pizza")
+    data_list, dists = main("pizza")
 
     for item in data_list: #prints sorted list
         print(*item.values())
