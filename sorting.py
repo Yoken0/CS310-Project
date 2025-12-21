@@ -155,6 +155,8 @@ def sortPrice(data_list: list[dict[Hashable, Any]], ascending=True) -> list[dict
         else: #Non N/A value
             prices[restaurant["price"].count("$")].append(restaurant)
 
+#SORT THE ARRAYS IN prices BY LOCATION HERE
+    
     if ascending: #sorts restaurants by ascending price
         for price_category in prices[1:]:
             for restaurant in price_category:
@@ -181,6 +183,8 @@ def sortRating(data_list: list[dict[Hashable, Any]], ascending=False) -> list[di
         else: #Non N/A value
             ratings[int(round(restaurant["rating"] * 2))].append(restaurant)
 
+#SORT THE ARRAYS IN ratings BY LOCATION HERE
+    
     if ascending: #sorts restaurants by ascending ratings
         for rating_category in ratings[:11]:
             for restaurant in rating_category:
