@@ -14,9 +14,7 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None, user_
 
     try:
         # If the latitudes and longitudes of restaurants have already been calculated, use the file
-        filename = user_address.replace(" ", "")
-        filename = filename.replace(",", "")
-        geodf = pd.read_csv(f"distances/{filename}.csv", index_col = 0)
+        geodf = pd.read_csv(f"distances/coordinates.csv", index_col = 0)
         geo = geodf.to_dict("split")
         geo = dict(zip(geo["index"], geo["data"]))
         for address in geo:
@@ -90,10 +88,8 @@ def sortLocation(data_list: list[dict[Hashable, Any]], geo, user_address, ascend
 
     # if coordinates have been changed or added for a user address, save it to a file
     if checknew == True:
-        filename = user_address.replace(" ", "")
-        filename = filename.replace(",", "")
         temp = pd.DataFrame.from_dict(geo, orient="index")
-        temp.to_csv(f"distances/{filename}.csv")
+        temp.to_csv(f"distances/coordinates.csv")
 
     for digit in locations:
         while len(digit) != 0:
@@ -239,10 +235,8 @@ def sortLocation2(array, geo, user_address, ascending=True):
 
         # if coordinates have been changed or added for a user address, save it to a file
         if checknew == True:
-            filename = user_address.replace(" ", "")
-            filename = filename.replace(",", "")
             temp = pd.DataFrame.from_dict(geo, orient="index")
-            temp.to_csv(f"distances/{filename}.csv")
+            temp.to_csv(f"distances/coordinates.csv")
             checknew = False
 
         for digit in locations:
