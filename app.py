@@ -26,14 +26,11 @@ def load_original_data():
 def load_restaurants_data():
     csv_path = 'YELP.Restaurants.csv'
     
-    # Always use CSV if it exists (primary data source)
     if os.path.exists(csv_path):
         df = pd.read_csv(csv_path)
-        # Convert to dict records, ensuring we have the columns we need
         records = df.to_dict('records')
         return records
     else:
-        # Fallback to JSON if CSV doesn't exist
         original_data = load_original_data()
         records = []
         for item in original_data:
@@ -49,20 +46,17 @@ def load_restaurants_data():
 def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=None):
     result = []
     
-    # Try to load coordinates from coordinates.csv file
     coord_map = {}
     coord_csv_path = 'distances/coordinates.csv'
     if os.path.exists(coord_csv_path):
         try:
             coord_df = pd.read_csv(coord_csv_path, index_col=0)
             for address, row in coord_df.iterrows():
-                # Coordinates are stored as "lat lon" string in radians
                 coord_str = str(row.iloc[0])
                 if coord_str and coord_str.lower() != 'nan':
                     parts = coord_str.split()
                     if len(parts) >= 2:
                         try:
-                            # Convert from radians back to degrees for display
                             lat_rad = float(parts[0])
                             lon_rad = float(parts[1])
                             coord_map[str(address)] = {
@@ -74,7 +68,6 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
         except Exception as e:
             app.logger.warning(f"Error loading coordinates.csv: {str(e)}")
     
-    # Fallback to restaurants.json if coordinates.csv doesn't have the data
     if not coord_map:
         original_data = load_original_data()
         for item in original_data:
@@ -87,12 +80,10 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
     for r in restaurants:
         address = r.get('restaurant_address', '')
         
-        # Get coordinates from coord_map
         coords = coord_map.get(address, {})
         lat = coords.get('lat')
         lon = coords.get('lon')
         
-        # Use review_number from CSV, fallback to 0
         review_count = r.get('review_number', 0)
         if pd.isna(review_count):
             review_count = 0
@@ -101,24 +92,20 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
         
         tags = []
         if r.get('restaurant_tag'):
-            # Handle NaN values
             tag_str = str(r.get('restaurant_tag', ''))
             if tag_str and tag_str.lower() != 'nan':
                 tags = [tag.strip() for tag in tag_str.split(',') if tag.strip()]
         
-        # Clean up price - remove trailing spaces, handle NaN
         price = r.get('price')
         if pd.isna(price) or (isinstance(price, str) and price.strip() == ''):
             price = None
         elif isinstance(price, str):
             price = price.strip()
         
-        # Handle rating NaN
         rating = r.get('rating')
         if pd.isna(rating):
             rating = None
         
-        # Convert distance from km to miles (1 km = 0.621371 miles)
         distance_miles = None
         if dists and address in dists:
             distance_km = dists[address]

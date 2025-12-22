@@ -9,7 +9,6 @@ const state = {
   markers: []
 }
 
-// we store user coordinates or address for distance sorting
 state.user = { lat: null, lon: null, address: null };
 
 //  the math formula: distance in kilometers
@@ -23,8 +22,6 @@ function haversineKm(lat1, lon1, lat2, lon2){
   return R * c;
 }
 
-// Removed sortByDistance - all sorting is now handled by backend sorting.py algorithms
-
 function setLoading(on){
   const el = byId('loading');
   if(on) el.classList.remove('hidden'); else el.classList.add('hidden');
@@ -33,26 +30,20 @@ function setLoading(on){
 async function fetchResults(){
   setLoading(true);
 
-  // UI is tag driven. Use the Tag field as primary input.
   const tag = byId('tag').value.trim();
   const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
   const ascending = byId('ascending') ? !!byId('ascending').checked : false;
   
-  // Use user's location from state if available (from "Use my location" button or address input)
   let lat = state.user.lat != null ? String(state.user.lat) : '';
   let lon = state.user.lon != null ? String(state.user.lon) : '';
   
-  // If address is provided instead of coordinates, use that
-  // Always check input field first - if it has a value use it, if empty use empty (not state)
-  // This allows users to clear the address by clearing the input field
   const addressInput = byId('user-address');
   const inputValue = addressInput ? addressInput.value.trim() : '';
-  // Use input value if present, otherwise check state only if input field doesn't exist
-  // If input exists but is empty, user cleared it so don't use state
-  const userAddress = inputValue || (addressInput ? '' : (state.user.address || ''));
+  const stateAddress = state.user.address || '';
+  const inputRawValue = addressInput ? addressInput.value : '';
+  const userAddress = inputValue || (inputRawValue === stateAddress ? stateAddress : '');
 
   const params = new URLSearchParams();
-  // send tag and sorting intent to backend. Backend handles all sorting.
   if(tag) params.set('tag', tag);
   if(sort_method) params.set('sort_method', sort_method);
   params.set('ascending', ascending ? '1' : '0');
@@ -60,7 +51,6 @@ async function fetchResults(){
     params.set('lat', lat);
     params.set('lon', lon);
   } else if(userAddress){
-    // If address is provided, send it as lat/lon will be geocoded on backend
     params.set('address', userAddress);
   }
 
@@ -68,7 +58,6 @@ async function fetchResults(){
     const res = await fetch('/api/restaurants?' + params.toString());
     if(!res.ok) throw new Error('Network response was not ok');
     const data = await res.json();
-    // Backend already sorted the data, so just use it directly
     state.items = data;
     state.page = 1;
     buildTagSuggestions();
@@ -83,7 +72,6 @@ async function fetchResults(){
 
 function renderResults(items){
   const container = byId('results');
-  // keep loading element, but clear the other nodes
   const loading = byId('loading');
   container.innerHTML = '';
   container.appendChild(loading);
@@ -203,29 +191,27 @@ document.addEventListener('DOMContentLoaded', ()=>{
   byId('search-btn').addEventListener('click', fetchResults);
   const tagInput = byId('tag');
   if(tagInput) tagInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') fetchResults(); });
-  // Location input and geolocation functionality
   const useLocBtn = byId('use-location');
   const userAddressInput = byId('user-address');
   const userLocSpan = byId('user-loc');
   
-  // Handle address input
   if(userAddressInput){
     userAddressInput.addEventListener('keydown', (e)=>{
       if(e.key === 'Enter'){
         const address = userAddressInput.value.trim();
+        state.user.lat = null;
+        state.user.lon = null;
+        state.user.address = address || null;
         if(address){
-          // Clear lat/lon and use address instead
-          state.user.lat = null;
-          state.user.lon = null;
-          state.user.address = address;
           if(userLocSpan) userLocSpan.textContent = `Using address: ${address}`;
-          fetchResults();
+        } else {
+          if(userLocSpan) userLocSpan.textContent = '';
         }
+        fetchResults();
       }
     });
   }
   
-  // Handle geolocation button
   if(useLocBtn){
     useLocBtn.addEventListener('click', ()=>{
       if(!navigator.geolocation){
@@ -239,13 +225,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
         state.user.address = null;
         if(userAddressInput) userAddressInput.value = '';
         if(userLocSpan) userLocSpan.textContent = `Using my location (${state.user.lat}, ${state.user.lon})`;
-        // Trigger a new search with the user's location so backend can sort by distance
         fetchResults();
       }, err=>{ if(userLocSpan) userLocSpan.textContent = 'Location denied or unavailable'; });
     });
   }
 
-  // Auto-refresh when sort method or ascending changes
   const sortMethodSelect = byId('sort_method');
   const ascendingCheckbox = byId('ascending');
   if(sortMethodSelect){
@@ -258,7 +242,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   byId('prev-page').addEventListener('click', ()=> renderPage(state.page - 1));
   byId('next-page').addEventListener('click', ()=> renderPage(state.page + 1));
 
-  // map toggle removed from UI; keep safe if element exists
   const toggleMapBtn = byId('toggle-map');
   if(toggleMapBtn){
     toggleMapBtn.addEventListener('click', ()=>{
