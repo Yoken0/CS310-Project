@@ -118,9 +118,11 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
         if pd.isna(rating):
             rating = None
         
-        distance_km = None
+        # Convert distance from km to miles (1 km = 0.621371 miles)
+        distance_miles = None
         if dists and address in dists:
-            distance_km = round(dists[address], 2)
+            distance_km = dists[address]
+            distance_miles = round(distance_km * 0.621371, 2)
         
         result.append({
             'name': r.get('restaurant_name', ''),
@@ -131,7 +133,7 @@ def convert_to_frontend_format(restaurants, user_lat=None, user_lon=None, dists=
             'rating': rating,
             'price': price,
             'review_count': review_count,
-            'distance_km': distance_km
+            'distance_miles': distance_miles
         })
     
     return result
@@ -153,10 +155,13 @@ def get_restaurants():
         ascending = ascending_param == '1' or ascending_param.lower() == 'true'
         lat = request.args.get('lat', None)
         lon = request.args.get('lon', None)
+        address = request.args.get('address', None)
         
         user_address = "100 Morrissey Blvd, Boston, MA 02125"
         if lat and lon:
             user_address = f"{lat}, {lon}"
+        elif address:
+            user_address = address
         
         data_list = load_restaurants_data()
         

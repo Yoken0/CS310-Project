@@ -29,7 +29,10 @@
       <label style="display:flex; align-items:center">Ascending <input id="ascending" type="checkbox" style="margin-left:6px" /></label>
 
       <button id="search-btn">Search</button>
-      <button id="use-location" title="Allow browser to get your location">Use my location</button>
+      <label style="display:flex; align-items:center; gap:6px">
+        <input id="user-address" type="text" placeholder="Enter address or use location" style="min-width:200px" />
+        <button id="use-location" title="Allow browser to get your location">📍</button>
+      </label>
       <span id="user-loc" style="font-size:13px;color:#556;margin-left:8px"></span>
     </section>
 

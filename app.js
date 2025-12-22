@@ -9,8 +9,8 @@ const state = {
   markers: []
 }
 
-// we store user coordinates for distance sorting
-state.user = { lat: null, lon: null };
+// we store user coordinates or address for distance sorting
+state.user = { lat: null, lon: null, address: null };
 
 //  the math formula: distance in kilometers
 function haversineKm(lat1, lon1, lat2, lon2){
@@ -23,18 +23,7 @@ function haversineKm(lat1, lon1, lat2, lon2){
   return R * c;
 }
 
-function sortByDistance(items, user){
-  if(!user || user.lat == null || user.lon == null) return items;
-  const out = items.map(r => {
-    let d = Infinity;
-    if(r.lat != null && r.lon != null){
-      d = haversineKm(user.lat, user.lon, Number(r.lat), Number(r.lon));
-    }
-    return Object.assign({}, r, {distance_km: d});
-  });
-  out.sort((a,b) => (a.distance_km || Infinity) - (b.distance_km || Infinity));
-  return out;
-}
+// Removed sortByDistance - all sorting is now handled by backend sorting.py algorithms
 
 function setLoading(on){
   const el = byId('loading');
@@ -49,17 +38,26 @@ async function fetchResults(){
   const sort_method = byId('sort_method') ? byId('sort_method').value : 'location';
   const ascending = byId('ascending') ? !!byId('ascending').checked : false;
   
-  // Use user's location from state if available (from "Use my location" button)
-  const lat = state.user.lat != null ? String(state.user.lat) : '';
-  const lon = state.user.lon != null ? String(state.user.lon) : '';
+  // Use user's location from state if available (from "Use my location" button or address input)
+  let lat = state.user.lat != null ? String(state.user.lat) : '';
+  let lon = state.user.lon != null ? String(state.user.lon) : '';
+  
+  // If address is provided instead of coordinates, use that
+  const addressInput = byId('user-address');
+  const userAddress = state.user.address || (addressInput ? addressInput.value.trim() : '');
 
   const params = new URLSearchParams();
   // send tag and sorting intent to backend. Backend handles all sorting.
   if(tag) params.set('tag', tag);
   if(sort_method) params.set('sort_method', sort_method);
   params.set('ascending', ascending ? '1' : '0');
-  if(lat) params.set('lat', lat);
-  if(lon) params.set('lon', lon);
+  if(lat && lon){
+    params.set('lat', lat);
+    params.set('lon', lon);
+  } else if(userAddress){
+    // If address is provided, send it as lat/lon will be geocoded on backend
+    params.set('address', userAddress);
+  }
 
   try{
     const res = await fetch('/api/restaurants?' + params.toString());
@@ -99,8 +97,8 @@ function renderResults(items){
     left.appendChild(h); left.appendChild(tags); left.appendChild(meta);
 
     const right = document.createElement('div');
-    if(it.distance_km !== null && it.distance_km !== undefined){
-      const d = document.createElement('div'); d.className = 'distance'; d.textContent = `${it.distance_km} km`;
+    if(it.distance_miles !== null && it.distance_miles !== undefined){
+      const d = document.createElement('div'); d.className = 'distance'; d.textContent = `${it.distance_miles} mi`;
       right.appendChild(d);
     }
     card.appendChild(left); card.appendChild(right);
@@ -136,13 +134,38 @@ function renderPage(page){
   if(state.mapVisible) updateMapMarkers(pageItems);
 }
 
+
+function mergeSortStrings(arr){
+  if(arr.length <= 1) return arr;
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSortStrings(arr.slice(0, mid));
+  const right = mergeSortStrings(arr.slice(mid));
+  return mergeStrings(left, right);
+}
+
+function mergeStrings(left, right){
+  const result = [];
+  let i = 0, j = 0;
+  while(i < left.length && j < right.length){
+    if(left[i].toLowerCase() <= right[j].toLowerCase()){
+      result.push(left[i++]);
+    } else {
+      result.push(right[j++]);
+    }
+  }
+  while(i < left.length) result.push(left[i++]);
+  while(j < right.length) result.push(right[j++]);
+  return result;
+}
+
 function buildTagSuggestions(){
   const set = new Set();
   for(const r of state.items){
     (r.tags || []).forEach(t=>set.add(t));
   }
   const dl = byId('tag-suggestions'); dl.innerHTML = '';
-  Array.from(set).sort().forEach(t=>{
+  const sortedTags = mergeSortStrings(Array.from(set));
+  sortedTags.forEach(t=>{
     const opt = document.createElement('option'); opt.value = t; dl.appendChild(opt);
   });
 }
@@ -175,9 +198,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
   byId('search-btn').addEventListener('click', fetchResults);
   const tagInput = byId('tag');
   if(tagInput) tagInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') fetchResults(); });
-  // location UI removed; keep functionality safe if elements exist
+  // Location input and geolocation functionality
   const useLocBtn = byId('use-location');
+  const userAddressInput = byId('user-address');
   const userLocSpan = byId('user-loc');
+  
+  // Handle address input
+  if(userAddressInput){
+    userAddressInput.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){
+        const address = userAddressInput.value.trim();
+        if(address){
+          // Clear lat/lon and use address instead
+          state.user.lat = null;
+          state.user.lon = null;
+          state.user.address = address;
+          if(userLocSpan) userLocSpan.textContent = `Using address: ${address}`;
+          fetchResults();
+        }
+      }
+    });
+  }
+  
+  // Handle geolocation button
   if(useLocBtn){
     useLocBtn.addEventListener('click', ()=>{
       if(!navigator.geolocation){
@@ -188,6 +231,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
       navigator.geolocation.getCurrentPosition(pos=>{
         state.user.lat = Number(pos.coords.latitude.toFixed(6));
         state.user.lon = Number(pos.coords.longitude.toFixed(6));
+        state.user.address = null;
+        if(userAddressInput) userAddressInput.value = '';
         if(userLocSpan) userLocSpan.textContent = `Using my location (${state.user.lat}, ${state.user.lon})`;
         // Trigger a new search with the user's location so backend can sort by distance
         fetchResults();

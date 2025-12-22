@@ -37,25 +37,11 @@ def main(tag=None, sort_method="location", ascending=None, data_list=None, user_
     elif sort_method == "rating":
         data_list = sortRating(data_list, geo, dists, user_address, ascending)
     else: 
-        print("sorting option not recognized")
+        print(f"Sorting option '{sort_method}' not recognized, defaulting to location")
+        data_list = sortLocation(data_list, geo, dists, user_address, ascending)
 
     return data_list, dists
-'''
-    for item in data_list: #prints sorted list
-        print(*item.values())
 
-
-    count = 0
-    for item in data_list: #printing SOME, but not all elements from across the list
-        count += 1
-        if count % 5 == 0: 
-            print(*item.values())
-
-    
-
-the counter is here so that in testing, you can see values from across the list, 
-and not just the end of it that the IDE doesn't cut off. uncomment it and adjust the modulo value (5 right now) to change how many restaurants get printed
-'''
     
         
 
