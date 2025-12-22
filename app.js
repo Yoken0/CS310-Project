@@ -43,8 +43,13 @@ async function fetchResults(){
   let lon = state.user.lon != null ? String(state.user.lon) : '';
   
   // If address is provided instead of coordinates, use that
+  // Always check input field first - if it has a value use it, if empty use empty (not state)
+  // This allows users to clear the address by clearing the input field
   const addressInput = byId('user-address');
-  const userAddress = state.user.address || (addressInput ? addressInput.value.trim() : '');
+  const inputValue = addressInput ? addressInput.value.trim() : '';
+  // Use input value if present, otherwise check state only if input field doesn't exist
+  // If input exists but is empty, user cleared it so don't use state
+  const userAddress = inputValue || (addressInput ? '' : (state.user.address || ''));
 
   const params = new URLSearchParams();
   // send tag and sorting intent to backend. Backend handles all sorting.
